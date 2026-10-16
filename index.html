@@ -1,0 +1,3138 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f2f6fa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e131a" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="段取工房">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>段取工房</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Klee+One:wght@600&family=Yuji+Syuku&display=swap">
+<style>
+/* Layout: one column of storyboard panels ruled in non-photo blue, like manga manuscript paper; vermilion is kept for the 決 stamp alone. */
+:root{
+  --paper:#f2f6fa; --sheet:#ffffff; --sheet-2:#e9f1f8; --ink:#162032; --ink-2:#536179; --ink-3:#7f8b9f;
+  --rule:#c4dcef; --rule-2:#93c1e6; --blue:#2471b6; --on-blue:#ffffff; --blue-soft:#e3effa;
+  --shu:#c93824; --shu-soft:#fbe8e4;
+  --st-draft:#7b8698; --st-ready:#2471b6; --st-gen:#a9700b; --st-picked:#1d8064; --st-done:#162032;
+  --warn:#9c5c08; --warn-bg:#fcf1de; --ok:#1d8064; --danger:#bb3221;
+  --overlay:rgba(10,16,26,.5); --lift:0 10px 28px rgba(12,24,44,.22);
+  --stage:#0b0f15; --stage-2:#1a222d; --on-stage:#eef2f7; --on-stage-2:#a9b4c4;
+  --f-disp:"Klee One","Hiragino Mincho ProN","Yu Mincho",serif;
+  --f-stamp:"Yuji Syuku","Hiragino Mincho ProN","Yu Mincho",serif;
+  --f-body:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Meiryo",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  --fs:15px; --fs-in:16px;
+  --r:10px; --bar-h:54px; --tab-h:60px; --col:860px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0e131a; --sheet:#151d28; --sheet-2:#1c2633; --ink:#e5ebf3; --ink-2:#a0acbf; --ink-3:#717e93;
+    --rule:#26384d; --rule-2:#3c5e82; --blue:#6aaeea; --on-blue:#0b1420; --blue-soft:#1a2b3e;
+    --shu:#ef6247; --shu-soft:#3a1d18;
+    --st-draft:#8b97a8; --st-ready:#6aaeea; --st-gen:#e2a640; --st-picked:#4cc29a; --st-done:#e5ebf3;
+    --warn:#e6ac4c; --warn-bg:#2a2216; --ok:#4cc29a; --danger:#f06a58;
+    --overlay:rgba(0,0,0,.6); --lift:0 10px 28px rgba(0,0,0,.5);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0e131a; --sheet:#151d28; --sheet-2:#1c2633; --ink:#e5ebf3; --ink-2:#a0acbf; --ink-3:#717e93;
+  --rule:#26384d; --rule-2:#3c5e82; --blue:#6aaeea; --on-blue:#0b1420; --blue-soft:#1a2b3e;
+  --shu:#ef6247; --shu-soft:#3a1d18;
+  --st-draft:#8b97a8; --st-ready:#6aaeea; --st-gen:#e2a640; --st-picked:#4cc29a; --st-done:#e5ebf3;
+  --warn:#e6ac4c; --warn-bg:#2a2216; --ok:#4cc29a; --danger:#f06a58;
+  --overlay:rgba(0,0,0,.6); --lift:0 10px 28px rgba(0,0,0,.5);
+  color-scheme:dark;
+}
+:root[data-size="l"]{ --fs:17px; --fs-in:17px; }
+
+*,*::before,*::after{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; }
+body{ background:var(--paper); color:var(--ink); font-family:var(--f-body); font-size:var(--fs); line-height:1.6; -webkit-tap-highlight-color:transparent; }
+button{ font:inherit; color:inherit; background:none; border:0; padding:0; cursor:pointer; }
+button:disabled{ cursor:default; opacity:.45; }
+a{ color:var(--blue); }
+:focus-visible{ outline:2px solid var(--blue); outline-offset:2px; }
+.mono{ font-family:var(--f-mono); font-variant-numeric:tabular-nums; }
+button svg, label svg, h3 svg{ width:20px; height:20px; flex:none; }
+#sh-miss:empty{ display:none; }
+.vh{ position:absolute !important; width:1px; height:1px; margin:-1px; padding:0; border:0; overflow:hidden; clip:rect(0 0 0 0); clip-path:inset(50%); white-space:nowrap; opacity:0; }
+label.frame-btn, label.btn{ cursor:pointer; }
+label.frame-btn:focus-within, label.btn:focus-within{ outline:2px solid var(--blue); outline-offset:2px; }
+.dim{ color:var(--ink-2); }
+.disp{ font-family:var(--f-disp); font-weight:600; }
+h1,h2,h3{ text-wrap:balance; margin:0; }
+
+/* ---- 上の帯 ---- */
+.bar{ position:sticky; top:env(safe-area-inset-top,0px); z-index:30; background:var(--paper); border-bottom:1px solid var(--rule); }
+.bar::before{ content:""; position:absolute; left:0; right:0; bottom:100%; height:env(safe-area-inset-top,0px); background:var(--paper); }
+.bar-in{ display:flex; align-items:center; gap:8px; height:var(--bar-h); max-width:var(--col); margin:0 auto;
+  padding-left:max(16px, env(safe-area-inset-left,0px)); padding-right:max(16px, env(safe-area-inset-right,0px)); }
+.bar-mid{ flex:1; min-width:0; display:flex; align-items:center; gap:10px; }
+.bar-right{ display:flex; align-items:center; gap:2px; }
+.logo{ width:32px; height:32px; border-radius:8px; flex:none; }
+.brand{ font-family:var(--f-disp); font-weight:600; font-size:1.3em; letter-spacing:.06em; white-space:nowrap; }
+.bar-title{ display:flex; align-items:center; gap:4px; min-width:0; font-weight:700; font-size:1.05em; padding:6px 4px; border-radius:8px; }
+.bar-title span.t{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.bar-title svg{ flex:none; width:18px; height:18px; color:var(--ink-3); }
+.bar-h{ font-family:var(--f-disp); font-weight:600; font-size:1.2em; letter-spacing:.04em; }
+.ibtn{ width:42px; height:42px; display:inline-grid; place-items:center; border-radius:10px; color:var(--ink-2); flex:none; }
+.ibtn svg{ width:22px; height:22px; }
+.ibtn:hover{ background:var(--sheet-2); }
+.sync{ display:inline-flex; align-items:center; gap:6px; font-size:.78em; color:var(--ink-2); white-space:nowrap; padding:0 6px; }
+.sync::before{ content:""; width:8px; height:8px; border-radius:50%; background:var(--ink-3); }
+.sync[data-s="ok"]::before{ background:var(--ok); }
+.sync[data-s="busy"]::before{ background:var(--st-gen); }
+.sync[data-s="err"]::before{ background:var(--danger); }
+.sync[data-s="local"]::before{ background:var(--ink-3); }
+
+/* ---- タブ（スマホは下、広い画面は上） ---- */
+.tabbar{ position:fixed; left:0; right:0; bottom:0; z-index:30; background:var(--sheet); border-top:1px solid var(--rule);
+  padding-bottom:env(safe-area-inset-bottom,0px); }
+.tabbar-in{ display:grid; grid-template-columns:repeat(5,1fr); max-width:var(--col); margin:0 auto;
+  padding-left:max(16px, env(safe-area-inset-left,0px)); padding-right:max(16px, env(safe-area-inset-right,0px)); }
+.tab{ height:var(--tab-h); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px;
+  font-size:.72em; color:var(--ink-3); position:relative; letter-spacing:.04em; }
+.tab svg{ width:23px; height:23px; }
+.tab[aria-current="page"]{ color:var(--blue); font-weight:700; }
+.tab[aria-current="page"]::after{ content:""; position:absolute; top:0; left:22%; right:22%; height:3px; border-radius:0 0 3px 3px; background:var(--blue); }
+.tab .badge{ position:absolute; top:7px; left:calc(50% + 8px); min-width:17px; height:17px; padding:0 4px; border-radius:9px; font-size:10px; line-height:17px;
+  background:var(--blue); color:var(--on-blue); font-family:var(--f-mono); font-weight:600; }
+
+/* ---- 本文 ---- */
+main{ max-width:var(--col); margin:0 auto; padding-left:max(16px, env(safe-area-inset-left,0px)); padding-right:max(16px, env(safe-area-inset-right,0px));
+  padding-block:14px calc(var(--tab-h) + 100px + env(safe-area-inset-bottom,0px)); display:grid; gap:14px; }
+main.no-tabs{ padding-block:16px calc(110px + env(safe-area-inset-bottom,0px)); }
+.stack{ display:grid; gap:10px; }
+.stack-lg{ display:grid; gap:16px; }
+.row-wrap{ display:flex; flex-wrap:wrap; align-items:center; gap:8px; }
+.row2{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.sec-h{ display:flex; align-items:baseline; gap:10px; margin-top:6px; }
+.sec-h h2{ font-family:var(--f-disp); font-weight:600; font-size:1.15em; letter-spacing:.04em; }
+.sec-h .dim{ font-size:.85em; }
+.lede{ color:var(--ink-2); margin:0; font-size:.92em; }
+.hint{ color:var(--ink-2); font-size:.82em; margin:0; line-height:1.55; }
+.hint b{ color:var(--ink); }
+.warn-t{ color:var(--warn); }
+.card{ background:var(--sheet); border:1px solid var(--rule); border-radius:var(--r); }
+
+/* 空のコマ枠（追加ボタン・空の状態） */
+.frame-btn{ width:100%; min-height:64px; border:1.5px dashed var(--rule-2); border-radius:var(--r); color:var(--blue); font-weight:700;
+  display:flex; align-items:center; justify-content:center; gap:8px; background:transparent; }
+.frame-btn svg{ width:20px; height:20px; }
+.frame-btn:hover{ background:var(--blue-soft); }
+.empty{ border:1.5px dashed var(--rule-2); border-radius:var(--r); padding:22px 18px; display:grid; gap:8px; text-align:left; }
+.empty h3{ font-family:var(--f-disp); font-weight:600; font-size:1.15em; }
+.empty p{ margin:0; color:var(--ink-2); font-size:.92em; }
+.banner{ border:1px solid var(--rule); background:var(--sheet-2); border-radius:var(--r); padding:10px 12px; font-size:.86em; color:var(--ink-2); }
+.banner.warn{ border-color:var(--warn); background:var(--warn-bg); color:var(--ink); }
+.banner .link{ font-size:inherit; padding:0 2px; }
+.steps{ margin:0; padding-left:1.5em; display:grid; gap:6px; color:var(--ink-2); font-size:.9em; }
+.steps li::marker{ font-family:var(--f-mono); color:var(--blue); font-weight:600; }
+.nophoto{ display:grid; place-items:center; width:100%; height:100%; min-height:3em; color:var(--ink-3); font-size:.8em; padding:6px; text-align:center; }
+.loading{ padding:40px 0; text-align:center; color:var(--ink-2); font-size:.9em; }
+.loading i{ display:inline-block; width:8px; height:8px; margin:0 3px; border-radius:50%; background:var(--rule-2); animation:blink 1.2s infinite; }
+.loading i:nth-child(2){ animation-delay:.2s } .loading i:nth-child(3){ animation-delay:.4s }
+@keyframes blink{ 0%,100%{ opacity:.25 } 50%{ opacity:1 } }
+
+/* ---- ボタン ---- */
+.btn{ min-height:42px; padding:8px 14px; border-radius:9px; border:1px solid var(--rule-2); background:var(--sheet); color:var(--blue); font-weight:700;
+  display:inline-flex; align-items:center; justify-content:center; gap:6px; white-space:nowrap; }
+.btn svg{ width:18px; height:18px; }
+.btn:hover{ background:var(--blue-soft); }
+.btn.pri{ background:var(--blue); border-color:var(--blue); color:var(--on-blue); }
+.btn.pri:hover{ filter:brightness(1.06); }
+.btn.sm{ min-height:36px; padding:5px 11px; font-size:.88em; }
+.btn.ghost{ border-color:transparent; background:transparent; }
+.btn.ghost:hover{ background:var(--sheet-2); }
+.btn.danger{ color:var(--danger); border-color:var(--danger); }
+.btn.wide{ width:100%; }
+.tbtn{ display:inline-flex; align-items:center; gap:4px; color:var(--blue); font-weight:700; padding:8px 6px; border-radius:8px; font-size:.95em; }
+.tbtn svg{ width:20px; height:20px; }
+.link{ color:var(--blue); text-decoration:underline; text-underline-offset:2px; font-weight:600; }
+.fab{ position:fixed; z-index:28; right:max(16px, env(safe-area-inset-right,0px)); bottom:calc(var(--tab-h) + 16px + env(safe-area-inset-bottom,0px));
+  height:52px; padding:0 22px 0 18px; border-radius:26px; background:var(--blue); color:var(--on-blue); font-weight:700; font-size:1em;
+  display:inline-flex; align-items:center; gap:6px; box-shadow:var(--lift); }
+.fab svg{ width:22px; height:22px; }
+main.no-tabs ~ .fab, .fab.no-tabs{ bottom:calc(20px + env(safe-area-inset-bottom,0px)); }
+
+/* ---- 判子（区分） ---- */
+.stamp{ width:36px; height:36px; display:grid; place-items:center; border:2px solid; border-radius:5px; font-family:var(--f-stamp); font-size:21px; line-height:1; flex:none; }
+.stamp.k{ color:var(--shu); border-color:var(--shu); transform:rotate(-5deg); background:var(--shu-soft); }
+.stamp.t{ color:var(--ink-2); border-color:var(--rule-2); }
+.stamp.m{ color:var(--ink-3); border-style:dashed; border-color:var(--rule-2); }
+.stamp-s{ width:24px; height:24px; display:inline-grid; place-items:center; border:1.5px solid; border-radius:4px; font-family:var(--f-stamp); font-size:14px; line-height:1; flex:none; }
+.stamp-s.k{ color:var(--shu); border-color:var(--shu); }
+.stamp-s.t{ color:var(--ink-2); border-color:var(--rule-2); }
+.stamp-s.m{ color:var(--ink-3); border-style:dashed; border-color:var(--rule-2); }
+
+/* ---- 状態の札 ---- */
+.pill{ display:inline-flex; align-items:center; font-size:.74em; font-weight:700; padding:1px 8px; border-radius:999px; border:1px solid currentColor; white-space:nowrap; line-height:1.6; }
+.pill[data-st="draft"]{ color:var(--st-draft); }
+.pill[data-st="ready"]{ color:var(--st-ready); }
+.pill[data-st="gen"]{ color:var(--st-gen); }
+.pill[data-st="picked"]{ color:var(--st-picked); }
+.pill[data-st="done"]{ color:var(--st-done); }
+.stbar{ display:flex; height:6px; border-radius:3px; overflow:hidden; background:var(--sheet-2); }
+.stbar i{ display:block; height:100%; }
+.stbar .s-draft{ background:var(--st-draft); } .stbar .s-ready{ background:var(--st-ready); } .stbar .s-gen{ background:var(--st-gen); }
+.stbar .s-picked{ background:var(--st-picked); } .stbar .s-done{ background:var(--st-done); }
+
+/* ---- 作品カード ---- */
+.proj{ display:grid; gap:8px; padding:14px 16px; text-align:left; width:100%; }
+.proj:hover{ border-color:var(--rule-2); }
+.proj-top{ display:flex; align-items:center; gap:8px; font-size:.78em; color:var(--ink-2); }
+.proj-top .kind{ border:1px solid var(--rule-2); border-radius:4px; padding:0 6px; }
+.proj-top .date{ margin-left:auto; font-family:var(--f-mono); }
+.proj-title{ font-weight:800; font-size:1.12em; line-height:1.4; }
+.proj-log{ color:var(--ink-2); font-size:.88em; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.proj-stats{ display:flex; flex-wrap:wrap; gap:4px 12px; font-size:.8em; color:var(--ink-2); }
+.proj-stats b{ font-family:var(--f-mono); color:var(--ink); font-weight:600; }
+
+/* ---- コマ一覧 ---- */
+.sumbox{ display:grid; gap:10px; }
+.sumline{ display:flex; flex-wrap:wrap; align-items:center; gap:6px 14px; font-size:.86em; color:var(--ink-2); }
+.sumline .g{ display:inline-flex; align-items:center; gap:5px; }
+.sumline b{ font-family:var(--f-mono); color:var(--ink); font-weight:600; }
+.pagehead{ display:flex; align-items:center; gap:10px; margin-top:8px; }
+.pagehead .pno{ font-family:var(--f-mono); font-weight:600; font-size:1.05em; letter-spacing:.04em; }
+.pagehead .rule{ flex:1; height:1px; background:var(--rule); }
+.pagehead .cnt{ font-size:.8em; color:var(--ink-2); }
+.pagehead .nthumb{ width:34px; height:34px; border-radius:6px; overflow:hidden; border:1px solid var(--rule); flex:none; background:var(--sheet-2); }
+.pagehead .nthumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+.cut{ display:flex; align-items:flex-start; gap:12px; padding:12px 14px; text-align:left; width:100%; }
+.cut:hover{ border-color:var(--rule-2); }
+.cut .stamp{ margin-top:2px; }
+.cut-body{ flex:1; min-width:0; display:grid; gap:2px; }
+.cut-meta,.cut-line,.cut-picks,.cut-miss{ display:block; }
+.cut-top{ display:flex; align-items:center; gap:8px; min-width:0; }
+.cut-id{ font-family:var(--f-mono); font-weight:600; font-size:1.05em; letter-spacing:.02em; }
+.cut-cnt{ font-family:var(--f-mono); font-size:.82em; color:var(--ink-2); }
+.cut-top .pill{ margin-left:auto; }
+.cut-who{ display:flex; flex-wrap:wrap; gap:4px 10px; font-size:.86em; font-weight:700; }
+.who{ display:inline-flex; align-items:center; gap:5px; }
+.dot{ width:9px; height:9px; border-radius:50%; background:var(--c, var(--ink-3)); flex:none; display:inline-block; }
+.cut-meta{ color:var(--ink-2); font-size:.82em; }
+.cut-act{ font-size:.92em; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.cut-line{ color:var(--ink-2); font-size:.84em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.cut-miss{ color:var(--warn); font-size:.8em; font-weight:700; }
+.cut-picks{ font-size:.82em; font-family:var(--f-mono); color:var(--st-picked); }
+
+/* ---- 入力 ---- */
+.field{ display:grid; gap:7px; min-width:0; }
+.lbl{ font-size:.78em; color:var(--ink-2); letter-spacing:.06em; font-weight:700; }
+input[type="text"],input[type="number"],textarea,select{ width:100%; font-family:inherit; font-size:var(--fs-in); color:var(--ink); background:var(--sheet);
+  border:1px solid var(--rule); border-radius:9px; padding:9px 11px; line-height:1.5; }
+textarea{ resize:vertical; min-height:68px; display:block; }
+input::placeholder,textarea::placeholder{ color:var(--ink-3); }
+input:focus,textarea:focus,select:focus{ outline:2px solid var(--blue); outline-offset:0; border-color:transparent; }
+.mono-ta{ font-family:var(--f-mono); font-size:max(13px, .86em); }
+.chips{ display:flex; flex-wrap:wrap; gap:6px; }
+.chips.scroll{ flex-wrap:nowrap; overflow-x:auto; scrollbar-width:none; padding-bottom:2px; margin-inline:-2px; padding-inline:2px; }
+.chips.scroll::-webkit-scrollbar{ display:none; }
+.chip{ min-height:38px; padding:5px 12px; border-radius:8px; border:1px solid var(--rule); background:var(--sheet); color:var(--ink); font-size:.92em;
+  display:inline-flex; align-items:center; gap:6px; white-space:nowrap; flex:none; }
+.chip small{ font-family:var(--f-mono); font-size:.78em; color:var(--ink-3); }
+.chip[aria-pressed="true"]{ background:var(--blue); border-color:var(--blue); color:var(--on-blue); font-weight:700; }
+.chip[aria-pressed="true"] small{ color:inherit; opacity:.8; }
+.chip[aria-pressed="true"] .dot{ box-shadow:0 0 0 2px var(--on-blue); }
+.chip .n{ font-family:var(--f-mono); font-size:.85em; opacity:.75; }
+.seg3{ display:grid; grid-template-columns:repeat(3,1fr); gap:6px; }
+.segbtn{ min-height:46px; border:1px solid var(--rule); border-radius:9px; background:var(--sheet); display:flex; align-items:center; justify-content:center; gap:7px; font-size:.9em; }
+.segbtn[aria-pressed="true"]{ border:2px solid var(--blue); background:var(--blue-soft); font-weight:700; }
+.stepper{ display:inline-flex; align-items:stretch; border:1px solid var(--rule); border-radius:9px; overflow:hidden; background:var(--sheet); width:max-content; }
+.stepper button{ width:42px; min-height:42px; font-size:20px; color:var(--blue); }
+.stepper button:hover{ background:var(--blue-soft); }
+.stepper input{ width:58px; text-align:center; border:0; border-left:1px solid var(--rule); border-right:1px solid var(--rule); border-radius:0;
+  font-family:var(--f-mono); font-weight:600; padding:6px 2px; -moz-appearance:textfield; }
+.stepper input::-webkit-outer-spin-button,.stepper input::-webkit-inner-spin-button{ -webkit-appearance:none; margin:0; }
+.switch{ display:flex; align-items:center; gap:10px; min-height:42px; font-weight:700; cursor:pointer; }
+.switch input{ width:22px; height:22px; accent-color:var(--blue); flex:none; }
+.sub{ display:grid; gap:14px; padding:12px 0 2px 14px; border-left:2px solid var(--rule); }
+
+/* 吹き出しの余白（コマ枠の3×3） */
+.spacegrid{ display:grid; grid-template-columns:repeat(3,64px); grid-template-rows:repeat(3,44px); gap:4px; padding:6px; border:2px solid var(--rule-2);
+  border-radius:4px; width:max-content; background:var(--sheet); }
+.spacegrid button{ border:1px dashed var(--rule); border-radius:4px; font-size:.72em; color:var(--ink-3); display:grid; place-items:center; position:relative; }
+.spacegrid button svg{ width:22px; height:22px; position:absolute; top:4px; color:var(--blue); }
+.spacegrid button span{ position:absolute; bottom:2px; }
+.spacegrid button[aria-pressed="true"]{ border:1.5px solid var(--blue); background:var(--blue-soft); color:var(--blue); font-weight:700; }
+.spacegrid .sg-c{ display:grid; place-items:center; font-size:.72em; color:var(--ink-3); background:var(--sheet-2); border-radius:4px; }
+
+/* ---- シート（下から出る編集画面） ---- */
+.sheet-wrap{ position:fixed; inset:0; z-index:60; background:var(--overlay); display:flex; align-items:flex-end; justify-content:center; }
+.sheet{ background:var(--paper); width:100%; max-width:720px; height:100%; display:flex; flex-direction:column; min-height:0; }
+.sheet-head{ display:flex; align-items:center; gap:6px; background:var(--paper); border-bottom:1px solid var(--rule);
+  padding:calc(env(safe-area-inset-top,0px) + 6px) max(10px, env(safe-area-inset-right,0px)) 6px max(10px, env(safe-area-inset-left,0px)); }
+.sheet-title{ flex:1; min-width:0; display:flex; align-items:center; justify-content:center; gap:4px; }
+.sheet-title .big{ font-size:1.25em; font-weight:600; min-width:4.5em; text-align:center; }
+.sheet-title .tt{ font-weight:800; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.sheet-body{ flex:1; min-height:0; overflow-y:auto; overscroll-behavior:contain; -webkit-overflow-scrolling:touch;
+  padding:16px max(16px, env(safe-area-inset-right,0px)) 28px max(16px, env(safe-area-inset-left,0px)); display:grid; gap:20px; align-content:start; }
+.sheet-foot{ display:flex; gap:8px; background:var(--sheet); border-top:1px solid var(--rule);
+  padding:10px max(16px, env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px, env(safe-area-inset-left,0px)); }
+.sheet-foot .btn{ flex:1; padding-inline:8px; }
+.miss{ border:1px solid var(--warn); background:var(--warn-bg); border-radius:9px; padding:9px 12px; font-size:.88em; }
+.miss b{ color:var(--warn); margin-right:6px; }
+.okline{ display:flex; flex-wrap:wrap; align-items:center; gap:8px 10px; font-size:.88em; color:var(--ok); font-weight:700; }
+.okline svg{ width:18px; height:18px; }
+.picks{ margin:0; font-family:var(--f-mono); font-size:.92em; }
+.sheet.compact{ height:auto; max-height:100%; border-radius:14px 14px 0 0; }
+.sheet.compact .sheet-head{ padding-top:8px; border-radius:14px 14px 0 0; }
+.plan .xline .lbl{ min-width:6.5em; }
+@media (min-width:900px){
+  .sheet-wrap{ align-items:center; padding:24px; }
+  .sheet{ height:min(92vh, 940px); border-radius:14px; overflow:hidden; border:1px solid var(--rule); box-shadow:var(--lift); }
+  .sheet.compact{ height:auto; max-height:92vh; }
+  .sheet-head{ padding-top:8px; }
+  .sheet-foot{ padding-bottom:10px; }
+}
+
+/* 小さな確認窓 */
+.dlg-wrap{ position:fixed; inset:0; z-index:90; background:var(--overlay); display:grid; place-items:center;
+  padding:16px max(16px, env(safe-area-inset-right,0px)) 16px max(16px, env(safe-area-inset-left,0px)); }
+.dlg{ background:var(--sheet); border:1px solid var(--rule); border-radius:14px; width:100%; max-width:420px; padding:18px; display:grid; gap:12px; box-shadow:var(--lift); }
+.dlg h3{ font-size:1.05em; }
+.dlg p{ margin:0; color:var(--ink-2); font-size:.92em; white-space:pre-wrap; }
+.dlg .acts{ display:flex; justify-content:flex-end; gap:8px; flex-wrap:wrap; }
+.menu{ display:grid; gap:4px; }
+.menu button{ text-align:left; padding:11px 12px; border-radius:9px; font-weight:600; }
+.menu button:hover{ background:var(--sheet-2); }
+.menu button.danger{ color:var(--danger); }
+
+/* ---- 台本・ネーム ---- */
+.script-ta{ min-height:220px; font-size:var(--fs-in); line-height:1.75; }
+.ngrid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(96px, 1fr)); gap:8px; }
+.nitem{ position:relative; border:1px solid var(--rule); border-radius:8px; overflow:hidden; background:var(--sheet-2); aspect-ratio:3/4; max-width:100%; }
+.nitem img{ width:100%; height:100%; object-fit:cover; display:block; }
+.nitem .pg{ position:absolute; left:4px; top:4px; font-family:var(--f-mono); font-size:11px; font-weight:600; background:var(--sheet); color:var(--ink); border-radius:4px; padding:0 5px; }
+.nitem[aria-pressed="true"]{ outline:3px solid var(--blue); outline-offset:-3px; }
+.nitem .ck{ position:absolute; right:4px; top:4px; width:22px; height:22px; border-radius:50%; background:var(--blue); color:var(--on-blue); display:grid; place-items:center; }
+.nitem .ck svg{ width:15px; height:15px; }
+.aibox{ display:grid; gap:12px; padding:14px; }
+.aibox h3{ font-size:1em; display:flex; align-items:center; gap:8px; }
+.aibox h3 svg{ color:var(--blue); }
+.aiprog{ display:flex; align-items:center; gap:10px; font-size:.88em; color:var(--ink-2); }
+.dr-list{ display:grid; gap:6px; }
+.dr-item{ display:grid; grid-template-columns:auto auto minmax(0,1fr); gap:4px 10px; align-items:start; padding:9px 10px; border:1px solid var(--rule); border-radius:9px; background:var(--sheet); text-align:left; width:100%; }
+.dr-item input{ width:20px; height:20px; margin-top:3px; accent-color:var(--blue); }
+.dr-item .t{ font-size:.86em; display:grid; gap:2px; min-width:0; }
+.dr-item .t b{ font-family:var(--f-mono); }
+
+/* ---- 選別 ---- */
+.groups{ display:flex; gap:6px; overflow-x:auto; scrollbar-width:none; padding-bottom:2px; }
+.groups::-webkit-scrollbar{ display:none; }
+.cgrid{ display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:6px; }
+@media (min-width:640px){ .cgrid{ grid-template-columns:repeat(5, minmax(0,1fr)); } }
+.cand{ position:relative; border-radius:8px; overflow:hidden; background:var(--sheet-2); border:1px solid var(--rule); aspect-ratio:3/4; max-width:100%; }
+.cand img{ width:100%; height:100%; object-fit:cover; display:block; }
+.cand .no{ position:absolute; left:4px; bottom:4px; font-family:var(--f-mono); font-size:11px; font-weight:600; background:var(--sheet); color:var(--ink); padding:0 5px; border-radius:4px; }
+.cand .mk{ position:absolute; right:4px; top:4px; min-width:28px; height:28px; border-radius:7px; display:grid; place-items:center; font-size:17px; font-weight:800;
+  background:var(--sheet); color:var(--ink); border:1.5px solid var(--rule-2); }
+.cand .mk[data-m="◎"]{ background:var(--st-picked); color:var(--sheet); border-color:var(--st-picked); }
+.cand .mk[data-m="○"]{ color:var(--st-ready); border-color:var(--st-ready); }
+.cand .mk[data-m="△"]{ color:var(--st-gen); border-color:var(--st-gen); }
+.cand .mk[data-m="×"]{ color:var(--ink-3); }
+.cand[data-m="×"] img{ opacity:.35; }
+
+/* 選別の全画面ビューア（どちらのテーマでも暗い台で見せる） */
+.viewer{ position:fixed; inset:0; z-index:70; background:var(--stage); color:var(--on-stage); display:flex; flex-direction:column; }
+.viewer-top{ display:flex; align-items:center; gap:8px; padding:calc(env(safe-area-inset-top,0px) + 6px) max(10px, env(safe-area-inset-right,0px)) 6px max(10px, env(safe-area-inset-left,0px)); }
+.viewer-top .ibtn{ color:var(--on-stage); }
+.viewer-top .ibtn:hover{ background:var(--stage-2); }
+.viewer-top .vt{ flex:1; min-width:0; font-family:var(--f-mono); font-size:.92em; text-align:center; }
+.viewer-img{ flex:1; min-height:0; position:relative; display:grid; place-items:center; overflow:auto; touch-action:pan-y pinch-zoom; }
+.viewer-img img{ max-width:100%; max-height:100%; object-fit:contain; display:block; }
+.viewer-img.zoom{ place-items:start; }
+.viewer-img.zoom img{ max-width:none; max-height:none; width:200%; }
+.vnav{ position:absolute; top:50%; transform:translateY(-50%); width:44px; height:64px; display:grid; place-items:center; color:var(--on-stage); background:var(--stage-2); border-radius:10px; opacity:.85; }
+.vnav svg{ width:26px; height:26px; }
+.vnav.l{ left:max(8px, env(safe-area-inset-left,0px)); } .vnav.r{ right:max(8px, env(safe-area-inset-right,0px)); }
+.viewer-bot{ display:grid; gap:8px; padding:8px max(12px, env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px, env(safe-area-inset-left,0px)); background:var(--stage-2); }
+.marks{ display:grid; grid-template-columns:repeat(4,1fr); gap:6px; }
+.markbtn{ min-height:54px; border-radius:10px; border:1.5px solid var(--on-stage-2); color:var(--on-stage); display:grid; place-items:center; gap:0; line-height:1.2; }
+.markbtn b{ font-size:20px; }
+.markbtn span{ font-size:.72em; color:var(--on-stage-2); }
+.markbtn[aria-pressed="true"]{ background:var(--on-stage); color:var(--stage); border-color:var(--on-stage); }
+.markbtn[aria-pressed="true"] span{ color:var(--stage); }
+.viewer-bot input{ background:var(--stage); color:var(--on-stage); border-color:var(--on-stage-2); }
+
+/* 書き出し */
+.xacts{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:8px; }
+.xacts .btn{ white-space:normal; text-align:center; line-height:1.3; min-height:48px; font-size:.9em; padding-inline:8px; }
+.xrow{ display:grid; gap:8px; padding:12px 14px; }
+.xrow-top{ display:flex; align-items:center; gap:8px; }
+.xrow-top .pill{ margin-left:auto; }
+.xline{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; font-size:.88em; }
+.xline .lbl{ min-width:4em; }
+.xline code{ font-family:var(--f-mono); background:var(--sheet-2); padding:2px 7px; border-radius:5px; word-break:break-all; }
+.xprompt pre{ margin:0; font-family:var(--f-mono); font-size:.8em; line-height:1.55; white-space:pre-wrap; word-break:break-word; background:var(--sheet-2);
+  border-radius:8px; padding:9px 10px; max-height:9.5em; overflow:auto; }
+
+/* キャラ名簿 */
+.charc{ display:flex; align-items:flex-start; gap:12px; padding:12px 14px; text-align:left; width:100%; }
+.charc .dot{ width:14px; height:14px; margin-top:6px; }
+.charc .stamp-s{ margin-top:2px; }
+.charc-body{ flex:1; min-width:0; display:grid; gap:3px; }
+.charc .nm{ display:block; font-weight:800; font-size:1.05em; }
+.charc .tg{ display:block; font-family:var(--f-mono); font-size:.84em; color:var(--blue); }
+.charc .ft{ font-size:.86em; color:var(--ink-2); display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.swatches{ display:flex; flex-wrap:wrap; gap:8px; }
+.swatch{ width:34px; height:34px; border-radius:50%; background:var(--c); border:2px solid var(--sheet); box-shadow:0 0 0 1px var(--rule-2); }
+.swatch[aria-pressed="true"]{ box-shadow:0 0 0 3px var(--blue); }
+.cosrow{ display:grid; grid-template-columns:minmax(0,7em) minmax(0,1fr) auto; gap:6px; align-items:center; }
+
+/* 設定 */
+.setc{ display:grid; gap:12px; padding:14px; }
+.setc h3{ font-size:1em; }
+.tpl-ta{ min-height:260px; font-family:var(--f-mono); font-size:max(13px,.84em); }
+.phs{ display:flex; flex-wrap:wrap; gap:4px; }
+.phs code{ font-family:var(--f-mono); font-size:.78em; background:var(--sheet-2); border-radius:4px; padding:1px 5px; }
+
+.toast{ position:fixed; left:50%; transform:translateX(-50%); z-index:95; bottom:calc(var(--tab-h) + 84px + env(safe-area-inset-bottom,0px));
+  background:var(--ink); color:var(--paper); padding:10px 16px; border-radius:10px; font-size:.9em; max-width:calc(100% - 32px); box-shadow:var(--lift); text-align:center; }
+
+/* 広い画面: タブを上に、編集画面は中央の窓に */
+@media (min-width:900px){
+  .tabbar{ position:sticky; top:calc(env(safe-area-inset-top,0px) + var(--bar-h) + 1px); bottom:auto; border-top:0; border-bottom:1px solid var(--rule); background:var(--paper); padding-bottom:0; z-index:29; }
+  .tab{ height:46px; flex-direction:row; gap:8px; font-size:.9em; }
+  .tab svg{ width:20px; height:20px; }
+  .tab[aria-current="page"]::after{ top:auto; bottom:-1px; left:12%; right:12%; border-radius:3px 3px 0 0; }
+  .tab .badge{ position:static; margin-left:2px; }
+  main{ padding-block:18px 110px; }
+  .fab{ bottom:28px; right:max(24px, calc((100vw - var(--col)) / 2 + 16px)); }
+  .toast{ bottom:40px; }
+}
+@media (prefers-reduced-motion: reduce){ *{ animation:none !important; transition:none !important; } }
+</style>
+</head>
+<body>
+<div class="app" id="app">
+  <header class="bar"><div class="bar-in" id="bar"></div></header>
+  <nav class="tabbar" id="tabbar" aria-label="作品の画面" hidden><div class="tabbar-in" id="tabs"></div></nav>
+  <main id="main"><div class="loading">保存先に接続しています <i></i><i></i><i></i></div></main>
+  <button type="button" class="fab" id="fab" hidden></button>
+</div>
+<div id="layer"></div>
+<div id="dialog"></div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<script>window.DANDORI_OFFLINE = true;</script>
+<script>
+(() => {
+'use strict';
+
+/* =====================================================================
+   段取工房 — 出張先のスマホでカット表を書き、家のPCで同じページから流す
+   ===================================================================== */
+
+const LOGO = (document.querySelector('link[rel="icon"]') || {}).href || '';
+const OFFLINE = !!window.DANDORI_OFFLINE; // スマホに入れて使うオフライン版
+
+/* ---------- 決まりごと ---------- */
+const GRADES = [
+  { k: '決', cls: 'k', desc: '見せ場', count: 16 },
+  { k: '通', cls: 't', desc: '通常', count: 8 },
+  { k: '無', cls: 'm', desc: '生成なし', count: 0 },
+];
+const GRADE = Object.fromEntries(GRADES.map(g => [g.k, g]));
+const STATUSES = [
+  { k: 'draft', label: '下書き' },
+  { k: 'ready', label: '生成待ち' },
+  { k: 'gen', label: '選別待ち' },
+  { k: 'picked', label: '採用済' },
+  { k: 'done', label: '完成' },
+];
+const ST = Object.fromEntries(STATUSES.map((s, i) => [s.k, Object.assign({ i }, s)]));
+const SHOTS = ['顔アップ', 'バストアップ', '腰上', '全身', '引き', '背景のみ', '手元・小物'];
+const NOCHAR_SHOTS = ['背景のみ', '手元・小物'];
+const ANGLES = ['アイレベル', '煽り', '俯瞰', '真横', '背後から', '肩越し', '傾き'];
+const FACINGS = ['左向き', '右向き', '正面', '背中'];
+const ASPECTS = [
+  { k: '縦', w: 832, h: 1216 },
+  { k: 'やや縦', w: 896, h: 1152 },
+  { k: '細長縦', w: 768, h: 1344 },
+  { k: '正方形', w: 1024, h: 1024 },
+  { k: 'やや横', w: 1152, h: 896 },
+  { k: '横', w: 1216, h: 832 },
+  { k: 'ワイド', w: 1344, h: 768 },
+  { k: '超ワイド', w: 1536, h: 640 },
+];
+const ASPECT = Object.fromEntries(ASPECTS.map(a => [a.k, a]));
+const SPACE_GRID = ['左上', '上', '右上', '左', null, '右', '左下', '下', '右下'];
+const SPACES = SPACE_GRID.filter(Boolean);
+const MUTE_KINDS = ['トーク画面（既読工房）', '実績通知（勲章工房）', '作中文書（写本工房）', 'キャラ紹介（絵札工房）', '文字だけ', '黒ベタ・間', 'その他'];
+const TIMES = ['朝', '昼', '夕方', '夜', '深夜'];
+const LIGHTS = ['自然光', '逆光', '窓明かり', 'ランプの暖色', '月明かり', 'ネオン', '室内灯'];
+const WEATHERS = ['晴れ', '曇り', '雨', '雪', '霧'];
+const VSECS = [3, 5, 6, 8, 10];
+const CAMERAS = ['固定', 'ゆっくり寄る', 'ゆっくり引く', '横に流す', '手持ち風'];
+const SOUNDS = ['環境音のみ', '環境音＋BGM', '無音'];
+const COUNTS = [4, 8, 12, 16, 24, 32];
+const MARKS = [
+  { k: '◎', label: '採用' },
+  { k: '○', label: '保留' },
+  { k: '△', label: '直す' },
+  { k: '×', label: '没' },
+];
+const CHAR_COLORS = ['#d24b7c', '#8a5ad6', '#3a8fd8', '#1f9c88', '#5c9a2e', '#c38a12', '#d4682b', '#8d6e5c', '#5f7187', '#b24fc4'];
+const KINDS = [{ k: 'manga', label: 'マンガ' }, { k: 'illust', label: 'イラスト' }];
+
+const DEFAULT_TEMPLATE = [
+  '■ {ID} [{区分}] {候補}',
+  '保存名: {保存名}',
+  'キャラ: {キャラ}',
+  '固定の特徴: {特徴}',
+  '衣装: {衣装}',
+  '構図: {構図}',
+  '表情・ポーズ: {表情}',
+  '背景: {背景}',
+  '小物: {小物}',
+  '縦横比: {縦横比}',
+  '吹き出しの余白: {余白}',
+  '作り方: {作り方}',
+  '内容: {内容}',
+  '台詞: {台詞}',
+  '保険: {保険}',
+  '動画: {動画}',
+  'プロンプト: {プロンプト}',
+  'メモ: {メモ}',
+].join('\n');
+const PLACEHOLDERS = ['作品', 'ID', '区分', '候補', '保存名', 'キャラ', '特徴', '衣装', '構図', '表情', '背景', '小物', '縦横比', '余白', '作り方', '内容', '台詞', '保険', '動画', 'プロンプト', 'メモ', '状態', '採用', '品質', 'ネガティブ'];
+
+const DEFAULT_INSTRUCTION = [
+  'あなたは、アニメ調の画像生成モデル（ANIMA など、Danbooru 形式のタグと短い英文を混ぜて使うもの）向けに、プロンプトを書く係です。',
+  '日本語で書かれたコマの発注書を、そのまま ComfyUI に貼れる英語のプロンプトにしてください。',
+  '',
+  '書き方:',
+  '- カンマ区切りのタグを中心に、次の順で並べる: 共通の品質タグ → 人数（1girl, 2girls など。分からなければ付けない）→ キャラのトリガーワード → 固定の特徴 → 服装 → 表情・ポーズ → 画角・アングル → 背景・時間帯・光',
+  '- タグで表しにくい動きや位置関係は、最後に短い英文を1〜2文足す（左向き・右向きもここで書く。例: she is facing left）',
+  '- トリガーワードは書き換えずにそのまま入れる。固定の特徴は毎回入れる',
+  '- 吹き出しの余白がある場合は、その方向に空きができる構図の語を入れる（例: empty space on the upper right）',
+  '- 発注書にないものは足さない',
+].join('\n');
+
+/* ---------- アイコン ---------- */
+const sv = d => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
+const ICON = {
+  back: sv('<path d="M15 5l-7 7 7 7"/>'),
+  left: sv('<path d="M14.5 6l-6 6 6 6"/>'),
+  right: sv('<path d="M9.5 6l6 6-6 6"/>'),
+  caret: sv('<path d="M7 10l5 5 5-5"/>'),
+  plus: sv('<path d="M12 5v14M5 12h14"/>'),
+  more: sv('<circle cx="5.5" cy="12" r="1.2" fill="currentColor"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/><circle cx="18.5" cy="12" r="1.2" fill="currentColor"/>'),
+  close: sv('<path d="M6 6l12 12M18 6L6 18"/>'),
+  people: sv('<circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.9-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.4"/><path d="M15.8 13.6c2.4-.2 4.2 1.3 4.7 4.4"/>'),
+  sliders: sv('<path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/>'),
+  cuts: sv('<rect x="4" y="3.5" width="16" height="7" rx="1"/><rect x="4" y="13" width="7" height="7.5" rx="1"/><rect x="13" y="13" width="7" height="7.5" rx="1"/>'),
+  scene: sv('<rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 16l5-5 4 4 3-3 6 6"/><circle cx="16.5" cy="9" r="1.4"/>'),
+  script: sv('<path d="M6 3.5h9l3 3v14H6z"/><path d="M9 10h6M9 13.5h6M9 17h4"/>'),
+  select: sv('<circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/><path d="M8.5 11l2 2 3.5-3.8"/>'),
+  export: sv('<path d="M12 15V4M7.5 8.5L12 4l4.5 4.5"/><path d="M4.5 14.5v5h15v-5"/>'),
+  copy: sv('<rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H8"/>'),
+  camera: sv('<rect x="3" y="6.5" width="18" height="13" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8.5 6.5L10 4h4l1.5 2.5"/>'),
+  trash: sv('<path d="M5 7h14M10 7V5h4v2M7 7l1 13h8l1-13"/>'),
+  check: sv('<path d="M5 12.5l4.5 4.5L19 7.5"/>'),
+  balloon: sv('<ellipse cx="12" cy="10" rx="7.5" ry="5.2"/><path d="M8.7 14.4L7.2 18.8l4.3-3.5"/>'),
+  image: sv('<rect x="3.5" y="4.5" width="17" height="15" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M20.5 16l-5-5-8.5 8.5"/>'),
+  spark: sv('<path d="M12 3.5l1.9 5.2 5.1 1.9-5.1 1.9L12 17.7l-1.9-5.2L5 10.6l5.1-1.9z"/>'),
+  download: sv('<path d="M12 4v11M7.5 10.5L12 15l4.5-4.5"/><path d="M4.5 15.5v4h15v-4"/>'),
+  swap: sv('<path d="M6 8h12.5M15 4.5L18.5 8 15 11.5"/><path d="M18 16H5.5M9 12.5L5.5 16 9 19.5"/>'),
+};
+
+/* ---------- 小道具 ---------- */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+const ESC = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ESC[c]);
+const uid = p => p + Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+const clone = o => (o == null ? o : JSON.parse(JSON.stringify(o)));
+const pad2 = n => String(n).padStart(2, '0');
+const trim = s => String(s == null ? '' : s).trim();
+const now = () => Date.now();
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const num = (v, d = 0) => { const n = Number(v); return Number.isFinite(n) ? n : d; };
+const lsGet = (k, d) => { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } };
+const lsSet = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; } };
+const safeColor = c => (/^#[0-9a-f]{6}$/i.test(c || '') ? c : '#5f7187');
+const lines = s => String(s || '').split('\n').map(x => x.trim()).filter(Boolean);
+function fmtDate(t) {
+  if (!t) return '';
+  const d = new Date(t), n = new Date();
+  if (d.toDateString() === n.toDateString()) return `${d.getHours()}:${pad2(d.getMinutes())}`;
+  return `${d.getMonth() + 1}/${d.getDate()}`;
+}
+function getField(d, f) { return f.split('.').reduce((o, k) => (o == null ? undefined : o[k]), d); }
+function setField(d, f, v) {
+  const ks = f.split('.');
+  if (ks.length === 1) { d[ks[0]] = v; return; }
+  const k0 = ks.shift();
+  d[k0] = Object.assign({}, d[k0] || {});
+  setField(d[k0], ks.join('.'), v);
+}
+function sanitizeName(s) { return String(s || '').replace(/[\\/:*?"<>|\u0000-\u001f]/g, '').replace(/\s+/g, ' ').trim().slice(0, 40); }
+
+/* ---------- 保存先（このページのデータベース／この端末） ---------- */
+const P = {
+  roster: 'roster', char: id => 'roster/' + id,
+  settings: 'settings/main',
+  projects: 'projects', project: pid => 'projects/' + pid,
+  scenes: pid => `projects/${pid}/scenes`, scene: (pid, id) => `projects/${pid}/scenes/${id}`,
+  cuts: pid => `projects/${pid}/cuts`, cut: (pid, id) => `projects/${pid}/cuts/${id}`,
+  names: pid => `projects/${pid}/names`, name: (pid, id) => `projects/${pid}/names/${id}`,
+  tombs: 'sync/tombs', // 消したものの記録（受け渡しで相手側でも消すため）
+};
+const SINGLE = new Set([P.settings, P.tombs]);
+const LS_DATA = 'dandori.local.v1';
+
+const Store = {
+  mode: 'connecting', // connecting | cloud | local
+  db: null,
+  cols: new Map(), docs: new Map(),
+  ready: new Set(),
+  dirty: new Set(), deleted: new Set(),
+  timers: new Map(), inflight: new Map(), again: new Set(), retries: new Map(), hold: new Set(),
+  subs: new Map(),
+  err: '', lost: false,
+};
+
+function splitPath(path) { const i = path.lastIndexOf('/'); return [path.slice(0, i), path.slice(i + 1)]; }
+function colMap(c) { let m = Store.cols.get(c); if (!m) { m = new Map(); Store.cols.set(c, m); } return m; }
+function getDoc(path) {
+  if (SINGLE.has(path)) return Store.docs.get(path);
+  const [c, id] = splitPath(path);
+  const m = Store.cols.get(c);
+  return m ? m.get(id) : undefined;
+}
+function setMem(path, d) {
+  if (SINGLE.has(path)) Store.docs.set(path, d);
+  else { const [c, id] = splitPath(path); colMap(c).set(id, d); }
+}
+function delMem(path) {
+  if (SINGLE.has(path)) Store.docs.delete(path);
+  else { const [c, id] = splitPath(path); const m = Store.cols.get(c); if (m) m.delete(id); }
+}
+function rows(c) {
+  const m = Store.cols.get(c);
+  if (!m) return [];
+  return Array.from(m, ([id, d]) => Object.assign({}, d, { id }));
+}
+function loaded(key) { return Store.mode === 'local' || Store.ready.has(key); }
+
+function mutate(path, fn, opts = {}) {
+  if (Store.lost) { toast('このページへの保存ができなくなりました。ページを開き直してください'); return null; }
+  let d = getDoc(path);
+  if (!d) { if (!opts.create) return null; d = {}; }
+  else if (Object.isFrozen(d)) d = clone(d);
+  fn(d);
+  if (!opts.keepTime) d.updatedAt = now();
+  setMem(path, d);
+  Store.deleted.delete(path);
+  touch(path, opts.now);
+  if (!opts.keepTime && path !== P.tombs) markLocalEdit();
+  changed(path);
+  return d;
+}
+function create(path, data) {
+  setMem(path, data);
+  Store.deleted.delete(path);
+  touch(path, true);
+  markLocalEdit();
+  changed(path);
+}
+function removeDoc(path, opts = {}) {
+  delMem(path);
+  Store.dirty.delete(path);
+  clearTimeout(Store.timers.get(path));
+  if (Store.mode === 'cloud') { Store.deleted.add(path); flush(path); }
+  else persistLocalSoon();
+  if (path !== P.tombs && !opts.noTomb) recordTomb(path, opts.at || now());
+  markLocalEdit();
+  changed(path);
+}
+function pruneTombs(m) {
+  const limit = now() - 365 * 864e5;
+  let ent = Object.entries(m).filter(([, t]) => num(t) >= limit);
+  if (ent.length > 4000) ent = ent.sort((a, b) => num(b[1]) - num(a[1])).slice(0, 4000);
+  return Object.fromEntries(ent);
+}
+function recordTomb(path, at) {
+  mutate(P.tombs, d => {
+    const m = Object.assign({}, d.map || {});
+    if (!(num(m[path]) >= at)) m[path] = at;
+    d.map = pruneTombs(m);
+  }, { create: true });
+}
+// 受け渡し用: この端末で最後に手で変更した時刻（取り込みによる変更は数えない）
+let IMPORTING = false, localEditAt = lsGet('dandori.localEditAt', 0), editTimer = null;
+function markLocalEdit() {
+  if (IMPORTING) return;
+  localEditAt = now();
+  if (typeof SYNC !== 'undefined' && SYNC.prepared) SYNC.prepared = null;
+  clearTimeout(editTimer);
+  editTimer = setTimeout(() => lsSet('dandori.localEditAt', localEditAt), 400);
+}
+function touch(path, immediate) {
+  if (Store.mode === 'local') { persistLocalSoon(); return; }
+  if (Store.mode !== 'cloud') return;
+  Store.dirty.add(path);
+  Store.hold.delete(path);
+  clearTimeout(Store.timers.get(path));
+  Store.timers.set(path, setTimeout(() => flush(path), immediate ? 0 : 650));
+  setSync();
+}
+async function flush(path) {
+  Store.timers.delete(path);
+  if (Store.inflight.has(path)) { Store.again.add(path); return; }
+  if (Store.inflight.size >= 4) { Store.timers.set(path, setTimeout(() => flush(path), 150)); return; }
+  const isDel = Store.deleted.has(path);
+  if (!isDel && !Store.dirty.has(path)) return;
+  const data = isDel ? null : getDoc(path);
+  Store.dirty.delete(path);
+  Store.inflight.set(path, true);
+  setSync();
+  try {
+    if (isDel) { await Store.db.doc(path).delete(); Store.deleted.delete(path); }
+    else if (data) await Store.db.doc(path).set(clone(data));
+    Store.retries.delete(path);
+    if (Store.err) { Store.err = ''; }
+  } catch (e) {
+    onWriteError(e, path, isDel);
+  } finally {
+    Store.inflight.delete(path);
+    const want = Store.again.has(path) || Store.dirty.has(path) || Store.deleted.has(path);
+    Store.again.delete(path);
+    if (want && !Store.timers.has(path) && !Store.hold.has(path)) {
+      Store.timers.set(path, setTimeout(() => flush(path), 400));
+    }
+    setSync();
+  }
+}
+function onWriteError(e, path, isDel) {
+  const code = (e && e.code) || 'unavailable';
+  const redo = () => { if (isDel) Store.deleted.add(path); else Store.dirty.add(path); };
+  if (code === 'unavailable' || code === 'resource_exhausted') {
+    const n = (Store.retries.get(path) || 0) + 1;
+    Store.retries.set(path, n);
+    redo();
+    if (n <= 4) {
+      clearTimeout(Store.timers.get(path));
+      Store.timers.set(path, setTimeout(() => flush(path), 1200 * n + Math.random() * 800));
+    } else {
+      Store.hold.add(path);
+      Store.err = '保存できていない変更があります。通信を確かめてから、もう一度編集してください。';
+    }
+  } else if (code === 'quota_exceeded') {
+    redo(); Store.hold.add(path);
+    Store.err = '保存の上限に達しました。使わない作品やネーム写真を消すと保存できます。';
+    toast(Store.err);
+  } else if (code === 'invalid_argument' || code === 'transform_error') {
+    Store.hold.add(path);
+    Store.err = '保存できなかった変更があります（内容が大きすぎるか、書き込みの権限がありません）。';
+    toast(Store.err);
+  } else {
+    Store.lost = true;
+    Store.err = 'このページへの保存ができなくなりました。ページを開き直してください。';
+    scheduleRender();
+  }
+}
+function pendingCount() { return Store.dirty.size + Store.inflight.size + Store.deleted.size; }
+function setSync() {
+  const el = $('#sync');
+  if (!el) return;
+  const s = syncState();
+  el.dataset.s = s.s;
+  el.textContent = s.t;
+}
+function syncState() {
+  if (Store.mode === 'connecting') return { s: 'busy', t: '接続中' };
+  if (Store.mode === 'local') return { s: 'local', t: OFFLINE ? 'オフライン版' : 'この端末のみ' };
+  if (Store.lost || Store.err) return { s: 'err', t: '保存できません' };
+  if (pendingCount()) return { s: 'busy', t: '保存中' };
+  return { s: 'ok', t: '保存済み' };
+}
+
+function watchCol(c) {
+  if (Store.mode !== 'cloud' || Store.subs.has(c)) return;
+  let unsub = null;
+  try {
+    unsub = Store.db.collection(c).onSnapshot(snap => {
+      const m = new Map();
+      for (const d of snap.docs) if (d.exists) m.set(d.id, d.data());
+      const cur = Store.cols.get(c);
+      if (cur) for (const [id, data] of cur) {
+        const p = c + '/' + id;
+        if (Store.dirty.has(p) || Store.inflight.has(p)) m.set(id, data);
+      }
+      for (const p of Store.deleted) { const [pc, id] = splitPath(p); if (pc === c) m.delete(id); }
+      Store.cols.set(c, m);
+      Store.ready.add(c);
+      changed(c + '/*', true);
+    }, err => {
+      Store.subs.delete(c);
+      const code = err && err.code;
+      if (code === 'unavailable') setTimeout(() => watchCol(c), 2500);
+      else if (code === 'revoked') { Store.lost = true; Store.err = 'このページへのアクセスが変わりました。ページを開き直してください。'; }
+      else { Store.ready.add(c); Store.err = '読み込みに失敗しました。ページを開き直してください。'; }
+      scheduleRender();
+    });
+  } catch (e) { Store.ready.add(c); }
+  if (unsub) Store.subs.set(c, unsub);
+}
+function watchDoc(path) {
+  if (Store.mode !== 'cloud' || Store.subs.has(path)) return;
+  let unsub = null;
+  try {
+    unsub = Store.db.doc(path).onSnapshot(snap => {
+      if (!(Store.dirty.has(path) || Store.inflight.has(path))) {
+        if (snap.exists) Store.docs.set(path, snap.data()); else Store.docs.delete(path);
+      }
+      Store.ready.add(path);
+      changed(path, true);
+    }, err => {
+      Store.subs.delete(path);
+      if (err && err.code === 'unavailable') setTimeout(() => watchDoc(path), 2500);
+      else Store.ready.add(path);
+      scheduleRender();
+    });
+  } catch (e) { Store.ready.add(path); }
+  if (unsub) Store.subs.set(path, unsub);
+}
+function unwatch(key) { const u = Store.subs.get(key); if (u) { try { u(); } catch (e) { /* 既に止まっている */ } } Store.subs.delete(key); Store.ready.delete(key); }
+
+let persistTimer = null;
+function persistLocalSoon() { clearTimeout(persistTimer); persistTimer = setTimeout(persistLocal, 250); }
+function persistLocal() {
+  const out = { cols: {}, docs: {} };
+  for (const [c, m] of Store.cols) out.cols[c] = Object.fromEntries(m);
+  for (const [p, d] of Store.docs) out.docs[p] = d;
+  if (!lsSet(LS_DATA, out)) {
+    Store.err = 'この端末の保存領域がいっぱいです。書き出しで控えを取ってください。';
+    toast(Store.err);
+  }
+  setSync();
+}
+function loadLocal() {
+  const raw = lsGet(LS_DATA, null);
+  if (raw) {
+    for (const [c, docs] of Object.entries(raw.cols || {})) Store.cols.set(c, new Map(Object.entries(docs)));
+    for (const [p, d] of Object.entries(raw.docs || {})) Store.docs.set(p, d);
+  }
+}
+async function readCol(c) {
+  if (Store.mode === 'cloud') {
+    const snap = await Store.db.collection(c).get();
+    return snap.docs.filter(d => d.exists).map(d => Object.assign({}, d.data(), { id: d.id }));
+  }
+  return rows(c);
+}
+
+/* ---------- ネーム写真（Claude の中ではページの保存庫、オフライン版では端末の中） ---------- */
+const IDB = {
+  p: null,
+  open() {
+    if (this.p) return this.p;
+    this.p = new Promise((res, rej) => {
+      try {
+        const rq = indexedDB.open('dandori-kobo', 1);
+        rq.onupgradeneeded = () => { rq.result.createObjectStore('photos'); };
+        rq.onsuccess = () => res(rq.result);
+        rq.onerror = () => rej(rq.error);
+        rq.onblocked = () => rej(new Error('blocked'));
+      } catch (e) { rej(e); }
+    });
+    this.p.catch(() => { this.p = null; });
+    return this.p;
+  },
+  async run(mode, fn) {
+    const db = await this.open();
+    return new Promise((res, rej) => {
+      const tx = db.transaction('photos', mode);
+      const rq = fn(tx.objectStore('photos'));
+      tx.oncomplete = () => res(rq ? rq.result : undefined);
+      tx.onerror = () => rej(tx.error);
+      tx.onabort = () => rej(tx.error);
+    });
+  },
+  put(k, v) { return this.run('readwrite', st => st.put(v, k)); },
+  get(k) { return this.run('readonly', st => st.get(k)); },
+  del(k) { return this.run('readwrite', st => st.delete(k)); },
+};
+const PHOTO_URLS = new Map(), PHOTO_LOADING = new Set();
+const photoKeyOf = n => (n && (n.photo || (n.asset ? 'a' + n.asset : ''))) || '';
+const photosLocalOK = () => Store.mode === 'local' && typeof indexedDB !== 'undefined';
+function photoSrc(n) {
+  if (!n) return '';
+  if (Store.mode === 'cloud') return n.asset ? '/_blob/' + n.asset : '';
+  const k = n.photo;
+  if (!k || typeof indexedDB === 'undefined') return '';
+  if (PHOTO_URLS.has(k)) return PHOTO_URLS.get(k);
+  if (!PHOTO_LOADING.has(k)) {
+    PHOTO_LOADING.add(k);
+    IDB.get(k).then(v => {
+      if (v && v.buf) { PHOTO_URLS.set(k, URL.createObjectURL(new Blob([v.buf], { type: v.type || 'image/jpeg' }))); scheduleRender(); }
+    }).catch(() => { /* 読めない写真は空欄のまま */ });
+  }
+  return '';
+}
+async function photoBlob(n) {
+  if (Store.mode === 'cloud') {
+    if (!n.asset) return null;
+    const r = await fetch('/_blob/' + n.asset);
+    return r.ok ? r.blob() : null;
+  }
+  if (!n.photo) return null;
+  const v = await IDB.get(n.photo);
+  return v && v.buf ? new Blob([v.buf], { type: v.type || 'image/jpeg' }) : null;
+}
+function dropPhoto(n) {
+  if (!n) return;
+  if (Store.mode === 'cloud') { if (n.asset && Caps.assets) Caps.assets.delete(n.asset).catch(() => null); return; }
+  if (n.photo) {
+    IDB.del(n.photo).catch(() => null);
+    const u = PHOTO_URLS.get(n.photo);
+    if (u) { try { URL.revokeObjectURL(u); } catch (e) { /* noop */ } PHOTO_URLS.delete(n.photo); }
+  }
+}
+
+/* ---------- 使える機能（Claude・写真の保存・ファイル保存） ---------- */
+const Caps = { sample: null, limits: null, assets: null, downloads: null };
+const useCap = name => {
+  try { return (window.claude && typeof window.claude.use === 'function') ? Promise.resolve(window.claude.use(name)).catch(() => null) : Promise.resolve(null); }
+  catch (e) { return Promise.resolve(null); }
+};
+async function loadCaps() {
+  const [sample, assets, downloads] = await Promise.all([useCap('sample'), useCap('assets'), useCap('downloads')]);
+  Caps.sample = sample || null;
+  Caps.assets = assets || null;
+  Caps.downloads = downloads || null;
+  if (Caps.sample && typeof Caps.sample.limits === 'function') Caps.limits = await Caps.sample.limits().catch(() => null);
+  scheduleRender();
+}
+const aiReady = () => !!Caps.sample && !AI.off;
+const aiImages = () => !!(aiReady() && Caps.limits && Caps.limits.images);
+
+/* ---------- 画面の状態 ---------- */
+const UI = {
+  view: 'home', prev: 'home', pid: null, tab: 'cuts',
+  filter: 'all', expSt: 'ready', expPage: 'all',
+  sheet: null,
+};
+const AI = { off: false, one: null, oneMsg: '', bulk: null, bulkMsg: '' };
+const DRAFT = { pid: null, useScript: true, photos: new Set(), extra: [], startPage: null, state: 'idle', msg: '', chars: 0, ctl: null, result: null, retry: false };
+const SEL = { pid: null, items: [], cur: null, assign: {}, seq: 0 };
+let UP = null; // ネーム写真の保存中 {done,total}
+
+/* ---------- 読み出し ---------- */
+function settings() {
+  const d = getDoc(P.settings) || {};
+  return {
+    secPerImage: num(d.secPerImage, 0),
+    template: d.template || '',
+    instruction: d.instruction || '',
+    quality: d.quality || '',
+    negative: d.negative || '',
+  };
+}
+function roster() {
+  return rows(P.roster).sort((a, b) => num(a.order) - num(b.order) || num(a.createdAt) - num(b.createdAt));
+}
+function charById(id) { return getDoc(P.char(id)); }
+function projects() { return rows(P.projects).sort((a, b) => num(b.lastEdit || b.updatedAt) - num(a.lastEdit || a.updatedAt)); }
+function project(pid = UI.pid) { return pid ? getDoc(P.project(pid)) : null; }
+function cutsOf(pid = UI.pid) {
+  return rows(P.cuts(pid)).sort((a, b) => num(a.page) - num(b.page) || num(a.panel) - num(b.panel) || num(a.createdAt) - num(b.createdAt));
+}
+function scenesOf(pid = UI.pid) {
+  return rows(P.scenes(pid)).sort((a, b) => String(a.code || '').localeCompare(String(b.code || ''), 'ja', { numeric: true }) || num(a.createdAt) - num(b.createdAt));
+}
+function namesOf(pid = UI.pid) { return rows(P.names(pid)).sort((a, b) => num(a.page) - num(b.page) || num(a.createdAt) - num(b.createdAt)); }
+const cutKey = c => `P${pad2(num(c.page, 1))}-${num(c.panel, 1)}`;
+function sceneOf(c, pid = UI.pid) { return c && c.sceneId ? getDoc(P.scene(pid, c.sceneId)) : null; }
+function abbrOf(p) { return sanitizeName((p && (p.abbr || p.title)) || '作品') || '作品'; }
+function saveName(p, c) { return `${abbrOf(p)}/${cutKey(c)}`; }
+function aspectText(k) { const a = ASPECT[k]; return a ? `${a.k} ${a.w}×${a.h}` : ''; }
+
+function missingOf(c) {
+  const m = [];
+  if (c.grade === '無') {
+    if (!c.muteKind) m.push('作り方');
+    if (!trim(c.muteText)) m.push('内容');
+    return m;
+  }
+  const noChar = NOCHAR_SHOTS.includes(c.shot);
+  if (!noChar && !(c.chars || []).length) m.push('キャラ');
+  if (!c.shot) m.push('画角');
+  if (!noChar && !trim(c.action)) m.push('表情・ポーズ');
+  if (!c.sceneId && !trim(c.bg)) m.push('背景');
+  if (!c.aspect) m.push('縦横比');
+  if (!(num(c.count) > 0)) m.push('候補数');
+  return m;
+}
+function computeStats(cuts) {
+  const s = { n: cuts.length, k: 0, t: 0, m: 0, cand: 0, miss: 0, st: { draft: 0, ready: 0, gen: 0, picked: 0, done: 0 } };
+  for (const c of cuts) {
+    if (c.grade === '決') s.k++; else if (c.grade === '無') s.m++; else s.t++;
+    if (c.grade !== '無') s.cand += Math.max(0, num(c.count));
+    if (missingOf(c).length) s.miss++;
+    const k = ST[c.status] ? c.status : 'draft';
+    s.st[k]++;
+  }
+  return s;
+}
+function picksOf(c) {
+  const g = { '◎': [], '○': [], '△': [], '×': [] };
+  for (const [n, v] of Object.entries(c.picks || {})) if (v && g[v.m]) g[v.m].push({ n, note: v.n || '' });
+  for (const k in g) g[k].sort((a, b) => num(a.n) - num(b.n) || String(a.n).localeCompare(String(b.n)));
+  return g;
+}
+function picksText(c) {
+  const g = picksOf(c);
+  return ['◎', '○', '△'].filter(k => g[k].length)
+    .map(k => k + g[k].map(x => x.n + (x.note && k === '△' ? `（${x.note}）` : '')).join(',')).join(' ');
+}
+function sceneSummary(sc) {
+  const parts = [sc.place, sc.time, sc.light, trim(sc.lightNote), sc.weather].map(trim).filter(Boolean);
+  const cos = costumeLines(sc);
+  return parts.join('・') + (cos.length ? ' ／ ' + cos.join('、') : '');
+}
+function costumeOf(sc, charId) {
+  if (!sc) return '';
+  const ch = charById(charId);
+  const cid = sc.costumes && sc.costumes[charId];
+  const note = trim(sc.costumeNotes && sc.costumeNotes[charId]);
+  if (cid && ch && Array.isArray(ch.costumes)) {
+    const co = ch.costumes.find(x => x.id === cid);
+    if (co) return co.name + (trim(co.desc) ? `（${trim(co.desc)}）` : '') + (note ? ` ${note}` : '');
+  }
+  return note;
+}
+function costumeLines(sc) {
+  const out = [];
+  for (const ch of roster()) { const t = costumeOf(sc, ch.id); if (t) out.push(`${ch.name}＝${t}`); }
+  return out;
+}
+
+/* ---------- 書き出しの文面 ---------- */
+function cutVars(p, c, pid = UI.pid) {
+  const sc = sceneOf(c, pid);
+  const s = settings();
+  const chars = (c.chars || []).map(id => Object.assign({ id }, charById(id) || { name: '（削除したキャラ）' }));
+  const mu = c.grade === '無';
+  const v = c.video || {};
+  return {
+    作品: (p && p.title) || '',
+    ID: cutKey(c),
+    区分: c.grade || '通',
+    候補: !mu && num(c.count) > 0 ? `候補${num(c.count)}枚` : '',
+    保存名: mu ? '' : saveName(p, c),
+    キャラ: mu ? '' : chars.map(ch => (trim(ch.trigger) ? `${ch.name}（${trim(ch.trigger)}）` : ch.name)).join('、'),
+    特徴: mu ? '' : chars.filter(ch => trim(ch.features)).map(ch => `${ch.name}＝${trim(ch.features)}`).join('；'),
+    衣装: mu ? '' : chars.map(ch => { const t = costumeOf(sc, ch.id); return t ? `${ch.name}＝${t}` : ''; }).filter(Boolean).join('；'),
+    構図: mu ? '' : [c.shot, c.angle, c.facing].filter(Boolean).join('・'),
+    表情: mu ? '' : trim(c.action),
+    背景: mu ? '' : [sc && sc.place, sc && sc.time, sc && sc.light, sc && trim(sc.lightNote), sc && sc.weather, trim(c.bg)].map(trim).filter(Boolean).join('／'),
+    小物: mu ? '' : trim(sc && sc.props),
+    縦横比: mu ? '' : aspectText(c.aspect),
+    余白: mu ? '' : (c.space || []).join('・'),
+    作り方: mu ? (c.muteKind || '') : '',
+    内容: mu ? trim(c.muteText) : '',
+    台詞: lines(c.lines).join(' / '),
+    保険: mu ? '' : trim(c.backup),
+    動画: !mu && v.on ? [`${num(v.sec, 5)}秒`, trim(v.motion) && `動き: ${trim(v.motion)}`, v.camera && `カメラ: ${v.camera}`, v.sound && `音: ${v.sound}`].filter(Boolean).join('／') : '',
+    プロンプト: mu ? '' : trim(c.prompt),
+    メモ: trim(c.notes),
+    状態: (ST[c.status] || ST.draft).label,
+    採用: picksText(c),
+    品質: s.quality,
+    ネガティブ: s.negative,
+  };
+}
+function fillTemplate(tpl, vars) {
+  return tpl.split('\n').map(line => {
+    const keys = Array.from(line.matchAll(/\{([^{}]+)\}/g), m => m[1]).filter(k => k in vars);
+    if (keys.length && keys.every(k => !trim(vars[k]))) return null;
+    return line.replace(/\{([^{}]+)\}/g, (m, k) => (k in vars ? vars[k] : m)).replace(/\s+$/, '');
+  }).filter(l => l !== null).join('\n');
+}
+function orderText(p, cuts, pid = UI.pid) {
+  const tpl = settings().template || DEFAULT_TEMPLATE;
+  const st = computeStats(cuts);
+  const head = `${(p && p.title) || '作品'} 発注書（${cuts.length}コマ・候補 計${st.cand}枚）`;
+  return [head, ...cuts.map(c => fillTemplate(tpl, cutVars(p, c, pid)))].join('\n\n') + '\n';
+}
+function videoBrief(p, c) {
+  const v = c.video || {};
+  return [`［動画］${cutKey(c)}の採用絵から　${num(v.sec, 5)}秒`,
+    `動き：${trim(v.motion) || '（未記入）'}`,
+    `カメラ：${v.camera || '固定'}`,
+    `音：${v.sound === '環境音のみ' ? '環境音のみ（BGMなし）' : (v.sound || '環境音のみ（BGMなし）')}`].join('\n');
+}
+
+/* ---------- 描画のしくみ ---------- */
+let renderQueued = false, mainBlocked = false, sheetBlocked = false, pointerDown = false, lastMain = '', lastSheet = '';
+const isTyping = el => !!(el && el.matches && el.matches('textarea, select, input:not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="button"])'));
+function editingIn(root) { const a = document.activeElement; return !!(root && a && root.contains(a) && isTyping(a)); }
+function scheduleRender() {
+  if (renderQueued) return;
+  renderQueued = true;
+  requestAnimationFrame(() => {
+    renderQueued = false;
+    if (pointerDown) { setTimeout(scheduleRender, 120); return; }
+    render();
+  });
+}
+function changed(path, external) {
+  if (UI.pid && path.startsWith(`projects/${UI.pid}/cuts`)) scheduleStats();
+  scheduleRender();
+  setSync();
+}
+function render() {
+  renderBar();
+  renderTabs();
+  renderFab();
+  const main = $('#main');
+  if (editingIn(main)) mainBlocked = true;
+  else {
+    mainBlocked = false;
+    const html = viewHTML();
+    if (html !== lastMain) { main.innerHTML = html; lastMain = html; afterMain(); }
+    main.className = UI.view === 'project' ? '' : 'no-tabs';
+  }
+  if (UI.sheet) {
+    if (editingIn($('#layer'))) sheetBlocked = true;
+    else { sheetBlocked = false; renderSheet(false); }
+  }
+}
+function flushBlocked() {
+  if (pointerDown) return;
+  if ((mainBlocked && !editingIn($('#main'))) || (sheetBlocked && !editingIn($('#layer')))) scheduleRender();
+}
+document.addEventListener('pointerdown', () => { pointerDown = true; }, true);
+document.addEventListener('pointerup', () => { pointerDown = false; setTimeout(flushBlocked, 350); }, true);
+document.addEventListener('pointercancel', () => { pointerDown = false; }, true);
+document.addEventListener('focusout', () => setTimeout(flushBlocked, 350));
+
+function afterMain() {
+  $$('#main textarea[data-auto]').forEach(autosize);
+}
+function autosize(t) { t.style.height = 'auto'; t.style.height = Math.min(Math.max(t.scrollHeight + 2, 68), 2400) + 'px'; }
+
+function renderBar() {
+  let left = '', mid = '', right = `<span class="sync" id="sync" data-s="${syncState().s}">${esc(syncState().t)}</span>`;
+  if (UI.view === 'home') {
+    left = LOGO ? `<img class="logo" src="${esc(LOGO)}" alt="" width="32" height="32">` : '';
+    mid = `<span class="brand">段取工房</span>`;
+    right += `<button type="button" class="ibtn" data-act="go" data-view="sync" aria-label="受け渡し">${ICON.swap}</button>`
+      + `<button type="button" class="ibtn" data-act="go" data-view="settings" aria-label="設定">${ICON.sliders}</button>`;
+  } else {
+    left = `<button type="button" class="ibtn" data-act="back" aria-label="戻る">${ICON.back}</button>`;
+    if (UI.view === 'project') {
+      const p = project();
+      mid = `<button type="button" class="bar-title" data-act="projSettings" aria-label="作品の設定"><span class="t">${esc((p && p.title) || '作品')}</span>${ICON.caret}</button>`;
+    } else if (UI.view === 'roster') mid = `<span class="bar-h">キャラ名簿</span>`;
+    else if (UI.view === 'settings') mid = `<span class="bar-h">設定</span>`;
+    else if (UI.view === 'sync') mid = `<span class="bar-h">受け渡し</span>`;
+  }
+  const html = left + `<div class="bar-mid">${mid}</div><div class="bar-right">${right}</div>`;
+  const bar = $('#bar');
+  if (bar.dataset.h !== html) { bar.innerHTML = html; bar.dataset.h = html; }
+}
+const TABS = [
+  { k: 'cuts', label: 'カット', icon: 'cuts' },
+  { k: 'scenes', label: 'シーン', icon: 'scene' },
+  { k: 'script', label: '台本', icon: 'script' },
+  { k: 'select', label: '選別', icon: 'select' },
+  { k: 'export', label: '書き出し', icon: 'export' },
+];
+function renderTabs() {
+  const nav = $('#tabbar');
+  const on = UI.view === 'project' && !!project();
+  nav.hidden = !on;
+  if (!on) return;
+  let readyN = 0;
+  if (loaded(P.cuts(UI.pid))) readyN = cutsOf().filter(c => c.grade !== '無' && c.status === 'ready').length;
+  const html = TABS.map(t => `<button type="button" class="tab" data-act="tab" data-tab="${t.k}" ${UI.tab === t.k ? 'aria-current="page"' : ''}>${ICON[t.icon]}<span>${t.label}</span>${t.k === 'export' && readyN ? `<span class="badge">${readyN}</span>` : ''}</button>`).join('');
+  const tabs = $('#tabs');
+  if (tabs.dataset.h !== html) { tabs.innerHTML = html; tabs.dataset.h = html; }
+}
+function renderFab() {
+  const fab = $('#fab');
+  let label = '', act = '';
+  if (UI.view === 'project' && project() && loaded(P.cuts(UI.pid))) {
+    if (UI.tab === 'cuts') { label = 'コマ'; act = 'addCutEnd'; }
+    else if (UI.tab === 'scenes') { label = 'シーン'; act = 'addScene'; }
+  } else if (UI.view === 'roster' && loaded(P.roster)) { label = 'キャラ'; act = 'addChar'; }
+  fab.hidden = !label || !!UI.sheet;
+  fab.classList.toggle('no-tabs', UI.view !== 'project');
+  if (label) { fab.dataset.act = act; fab.innerHTML = `${ICON.plus}<span>${label}</span>`; }
+}
+
+function viewHTML() {
+  if (Store.mode === 'connecting') return `<div class="loading">保存先に接続しています <i></i><i></i><i></i></div>`;
+  const notes = [];
+  if (Store.mode === 'local' && !OFFLINE) notes.push(`<div class="banner">この画面では保存先につながらないため、<b>この端末の中だけ</b>に保存しています。別の端末とは<button type="button" class="link" data-act="go" data-view="sync">受け渡し</button>でやり取りできます。</div>`);
+  if (Store.err) notes.push(`<div class="banner warn">${esc(Store.err)}</div>`);
+  let body = '';
+  if (UI.view === 'home') body = viewHome();
+  else if (UI.view === 'roster') body = viewRoster();
+  else if (UI.view === 'settings') body = viewSettings();
+  else if (UI.view === 'sync') body = viewSync();
+  else if (UI.view === 'project') {
+    if (!loaded(P.projects)) body = loadingHTML('作品を読み込んでいます');
+    else if (!project()) body = `<div class="empty"><h3>この作品は見つかりません</h3><p>消されたか、別の端末で移動された可能性があります。</p><div><button type="button" class="btn" data-act="back">作品の一覧へ</button></div></div>`;
+    else body = { cuts: viewCuts, scenes: viewScenes, script: viewScript, select: viewSelect, export: viewExport }[UI.tab]();
+  }
+  return notes.join('') + body;
+}
+const loadingHTML = t => `<div class="loading">${esc(t)} <i></i><i></i><i></i></div>`;
+
+/* ---------- 作品の一覧 ---------- */
+function stbarHTML(st, n) {
+  if (!n) return `<div class="stbar" aria-hidden="true"></div>`;
+  return `<div class="stbar" aria-hidden="true">${STATUSES.map(s => st[s.k] ? `<i class="s-${s.k}" style="width:${(st[s.k] / n * 100).toFixed(2)}%"></i>` : '').join('')}</div>`;
+}
+function viewHome() {
+  if (!loaded(P.projects)) return loadingHTML('作品を読み込んでいます');
+  const ps = projects();
+  const list = ps.map(p => {
+    const s = p.stats || null;
+    const kind = (KINDS.find(k => k.k === p.kind) || KINDS[0]).label;
+    const stats = s && s.n ? `<div class="proj-stats"><span>決 <b>${s.k}</b></span><span>通 <b>${s.t}</b></span><span>無 <b>${s.m}</b></span><span>候補 計 <b>${s.cand}</b>枚</span><span>完成 <b>${s.st.done}</b>/${s.n}</span>${s.miss ? `<span class="warn-t">未記入 <b class="warn-t">${s.miss}</b></span>` : ''}</div>` : `<div class="proj-stats"><span>まだコマがありません</span></div>`;
+    return `<button type="button" class="card proj" data-act="openProject" data-id="${esc(p.id)}">
+      <div class="proj-top"><span class="kind">${kind}</span><span class="date">${esc(fmtDate(p.lastEdit || p.updatedAt))}</span></div>
+      <div class="proj-title">${esc(p.title || '無題')}</div>
+      ${trim(p.logline) ? `<div class="proj-log">${esc(p.logline)}</div>` : ''}
+      ${s && s.n ? stbarHTML(s.st, s.n) : ''}
+      ${stats}
+    </button>`;
+  }).join('');
+  const intro = ps.length ? '' : OFFLINE
+    ? `<div class="empty"><h3>最初の作品を作りましょう</h3><p>作品を作り、コマを1行ずつ書いていきます。Claude の段取工房で書き出したファイルがあれば、「受け渡し」で取り込むと続きから書けます。</p></div>`
+    : `<div class="empty"><h3>最初の作品を作りましょう</h3><p>作品を作り、コマを1行ずつ書いていきます。家のPCでこのページを開けば、同じカット表からそのまま生成を始められます。</p></div>`;
+  return `${OFFLINE ? offlineNotes() : ''}<p class="lede">出張先で決めて、家では流すだけに。</p>${intro}<div class="stack">${list}
+    <button type="button" class="frame-btn" data-act="newProject">${ICON.plus}新しい作品</button></div>
+    <div class="row-wrap"><button type="button" class="btn ghost" data-act="go" data-view="roster">${ICON.people}キャラ名簿</button><button type="button" class="btn ghost" data-act="go" data-view="sync">${ICON.swap}受け渡し</button><button type="button" class="btn ghost" data-act="go" data-view="settings">${ICON.sliders}設定</button></div>`;
+}
+function isStandalone() {
+  try { return (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone === true; } catch (e) { return false; }
+}
+function offlineNotes() {
+  const out = [];
+  if (!isStandalone()) out.push(`<div class="banner warn"><b>ホーム画面に追加してから使ってください。</b>アプリのように電波なしで開けるようになり、データも消えにくくなります。iPhone は共有ボタン →「ホーム画面に追加」、Android は右上のメニュー →「ホーム画面に追加」です。</div>`);
+  const last = lsGet('dandori.lastExport', 0);
+  if (localEditAt > last) out.push(`<div class="banner">まだ渡していない変更があります${last ? `（前回の書き出し: ${esc(fmtDateTime(last))}）` : ''}。家のPCで続ける前に、<button type="button" class="link" data-act="go" data-view="sync">受け渡し</button>から書き出してください。</div>`);
+  return out.join('');
+}
+
+/* ---------- コマ一覧 ---------- */
+function viewCuts() {
+  const pid = UI.pid;
+  if (!loaded(P.cuts(pid))) return loadingHTML('コマを読み込んでいます');
+  const all = cutsOf(pid);
+  const st = computeStats(all);
+  const s = settings();
+  if (!all.length) {
+    return `<div class="empty"><h3>まだコマがありません</h3><p>下の「＋ コマ」で1コマずつ書いていくか、台本タブで Claude に台本やネーム写真から下書きを起こしてもらえます。</p>
+      <div class="row-wrap"><button type="button" class="btn pri" data-act="addCutEnd">${ICON.plus}最初のコマ</button><button type="button" class="btn" data-act="tab" data-tab="script">台本タブへ</button></div></div>`;
+  }
+  const est = s.secPerImage > 0 && st.cand ? ` ・ 約${Math.max(1, Math.round(st.cand * s.secPerImage / 60))}分` : '';
+  const fopts = [{ k: 'all', label: 'すべて', n: all.length }, { k: 'miss', label: '未記入', n: st.miss }]
+    .concat(STATUSES.map(x => ({ k: x.k, label: x.label, n: st.st[x.k] })));
+  const filt = `<div class="chips scroll" role="group" aria-label="絞り込み">${fopts.map(o => `<button type="button" class="chip" data-act="filter" data-k="${o.k}" aria-pressed="${UI.filter === o.k}">${o.label} <span class="n">${o.n}</span></button>`).join('')}</div>`;
+  const shown = all.filter(c => UI.filter === 'all' ? true : UI.filter === 'miss' ? missingOf(c).length > 0 : (c.status || 'draft') === UI.filter);
+  const names = namesOf(pid);
+  const pages = new Map();
+  for (const c of shown) { const k = num(c.page, 1); if (!pages.has(k)) pages.set(k, []); pages.get(k).push(c); }
+  let list = '';
+  for (const [pg, cs] of pages) {
+    const nm = names.find(n => num(n.page) === pg && photoKeyOf(n));
+    const nsrc = nm ? photoSrc(nm) : '';
+    const totalInPage = all.filter(c => num(c.page, 1) === pg).length;
+    list += `<div class="pagehead"><span class="pno">P${pad2(pg)}</span>${nm && nsrc ? `<button type="button" class="nthumb" data-act="openName" data-id="${esc(nm.id)}" aria-label="P${pad2(pg)} のネーム"><img src="${esc(nsrc)}" alt="" loading="lazy"></button>` : ''}<span class="rule"></span><span class="cnt">${totalInPage}コマ</span>
+      <button type="button" class="ibtn" data-act="pageMenu" data-page="${pg}" aria-label="P${pad2(pg)} の操作">${ICON.more}</button></div>`;
+    list += cs.map(cutCardHTML).join('');
+  }
+  if (!shown.length) list = `<p class="hint">この絞り込みに当てはまるコマはありません。</p>`;
+  return `<section class="sumbox">
+      <div class="sumline"><span class="g"><span class="stamp-s k">決</span><b>${st.k}</b></span><span class="g"><span class="stamp-s t">通</span><b>${st.t}</b></span><span class="g"><span class="stamp-s m">無</span><b>${st.m}</b></span><span>候補 計 <b>${st.cand}</b>枚${est}</span></div>
+      ${stbarHTML(st.st, st.n)}
+      ${filt}
+    </section>
+    <div class="stack">${list}</div>`;
+}
+function cutCardHTML(c) {
+  const g = GRADE[c.grade] || GRADE['通'];
+  const mu = c.grade === '無';
+  const miss = missingOf(c);
+  const who = mu ? `<span class="cut-who"><span class="dim">${esc(c.muteKind || '作り方 未記入')}</span></span>`
+    : (c.chars || []).length ? `<span class="cut-who">${(c.chars || []).map(id => { const ch = charById(id); return `<span class="who"><i class="dot" style="--c:${safeColor(ch && ch.color)}"></i>${esc(ch ? ch.name : '（削除したキャラ）')}</span>`; }).join('')}</span>`
+      : NOCHAR_SHOTS.includes(c.shot) ? `<span class="cut-who"><span class="dim">${esc(c.shot)}</span></span>` : '';
+  const meta = mu ? '' : [c.shot, c.angle, c.facing, c.aspect].filter(Boolean).join('・');
+  const act = mu ? trim(c.muteText) : trim(c.action) || trim(c.bg);
+  const l1 = lines(c.lines)[0];
+  const pk = mu ? '' : picksText(c);
+  return `<button type="button" class="card cut" data-act="openCut" data-id="${esc(c.id)}">
+    <span class="stamp ${g.cls}" aria-label="${g.desc}">${g.k}</span>
+    <span class="cut-body">
+    <span class="cut-top"><span class="cut-id">${cutKey(c)}</span>${!mu && num(c.count) ? `<span class="cut-cnt">×${num(c.count)}</span>` : ''}${c.video && c.video.on && !mu ? `<span class="cut-cnt">動画</span>` : ''}<span class="pill" data-st="${esc(ST[c.status] ? c.status : 'draft')}">${(ST[c.status] || ST.draft).label}</span></span>
+    ${who}
+    ${meta ? `<span class="cut-meta">${esc(meta)}</span>` : ''}
+    ${act ? `<span class="cut-act">${esc(act)}</span>` : ''}
+    ${l1 ? `<span class="cut-line">${esc(l1)}</span>` : ''}
+    ${pk ? `<span class="cut-picks">${esc(pk)}</span>` : ''}
+    ${miss.length ? `<span class="cut-miss">未記入: ${esc(miss.join('・'))}</span>` : ''}
+    </span>
+  </button>`;
+}
+
+/* ---------- シーン ---------- */
+function viewScenes() {
+  const pid = UI.pid;
+  if (!loaded(P.scenes(pid))) return loadingHTML('シーンを読み込んでいます');
+  const scs = scenesOf(pid);
+  const cuts = cutsOf(pid);
+  const intro = `<p class="lede">場所・時間帯・光・衣装のように、何コマも続けて同じにしたい条件のまとまりです。先に決めておくと、コマごとに書かずに済み、コマをまたいでも絵がぶれにくくなります。</p>`;
+  if (!scs.length) return intro + `<div class="empty"><h3>まだシーンがありません</h3><p>「＋ シーン」で、最初の場面（例: 宿の部屋／夜／ランプの暖色／雨）を作りましょう。</p><div><button type="button" class="btn pri" data-act="addScene">${ICON.plus}シーンを作る</button></div></div>`;
+  return intro + `<div class="stack">${scs.map(sc => {
+    const used = cuts.filter(c => c.sceneId === sc.id).length;
+    const chipsTxt = [sc.time, sc.light, sc.weather].filter(Boolean);
+    const cos = costumeLines(sc);
+    return `<button type="button" class="card charc" data-act="openScene" data-id="${esc(sc.id)}">
+      <span class="stamp-s t">場</span>
+      <span class="charc-body">
+      <span class="nm"><span class="mono">${esc(sc.code || 'S??')}</span> ${esc(sc.place || '場所 未記入')}</span>
+      ${chipsTxt.length || trim(sc.lightNote) ? `<span class="ft">${esc(chipsTxt.concat(trim(sc.lightNote) ? [trim(sc.lightNote)] : []).join('・'))}</span>` : ''}
+      ${cos.length ? `<span class="ft">衣装: ${esc(cos.join('、'))}</span>` : ''}
+      <span class="ft">${used ? `${used}コマで使用` : 'まだ使われていません'}${trim(sc.props) ? ` ・ 小物: ${esc(sc.props)}` : ''}</span>
+      </span>
+    </button>`;
+  }).join('')}</div>`;
+}
+
+/* ---------- 台本・ネーム ---------- */
+function viewScript() {
+  const pid = UI.pid;
+  const p = project();
+  const path = P.project(pid);
+  const names = namesOf(pid);
+  const nameLoaded = loaded(P.names(pid));
+  if (DRAFT.pid !== pid) resetDraft(pid);
+  const maxPage = cutsOf(pid).reduce((m, c) => Math.max(m, num(c.page, 0)), 0);
+  if (DRAFT.startPage == null) DRAFT.startPage = maxPage + 1;
+  const photosHTML = !nameLoaded ? loadingHTML('ネーム写真を読み込んでいます')
+    : names.length ? `<div class="ngrid">${names.map(n => { const src = photoSrc(n); return `<button type="button" class="nitem" data-act="openName" data-id="${esc(n.id)}" aria-label="P${pad2(num(n.page, 1))} のネーム写真">${src ? `<img src="${esc(src)}" alt="" loading="lazy">` : '<span class="nophoto">写真なし</span>'}<span class="pg">P${pad2(num(n.page, 1))}</span></button>`; }).join('')}</div>`
+      : `<p class="hint">${OFFLINE ? '紙に描いたネームを撮って貼っておくと、コマ一覧の横で見られます。受け渡しで家のPCにも持っていけます。' : '紙に描いたネームを撮って貼っておくと、家のPCでもコマ一覧の横で見られます。'}</p>`;
+  const canUpload = (Store.mode === 'cloud' && !!Caps.assets) || photosLocalOK();
+  return `<section class="stack" data-doc="${esc(path)}">
+      <div class="field"><label class="lbl" for="f-logline">一行あらすじ</label><input id="f-logline" type="text" data-bind="logline" value="${esc(p.logline || '')}" placeholder="この話は何の話か、一文で"></div>
+      <div class="field"><label class="lbl" for="f-script">台本</label><textarea id="f-script" class="script-ta" data-auto data-bind="script" placeholder="台詞とト書きだけで、話を最後まで。絵のことはまだ考えずに。\n\n（例）\n宿の部屋。雨の音。\nルル、扉を開けて固まる。\nピナ「さっきから待ってたよ」">${esc(p.script || '')}</textarea>
+        <p class="hint">${(p.script || '').length}字。音声入力でも書けます。</p></div>
+    </section>
+    <section class="stack">
+      <div class="sec-h"><h2>ネーム写真</h2><span class="dim">${names.length ? names.length + '枚' : ''}</span></div>
+      ${photosHTML}
+      ${canUpload ? `<label class="frame-btn" for="f-nameup">${ICON.camera}${UP ? `保存中 ${UP.done}/${UP.total}` : 'ネームの写真を追加'}</label><input id="f-nameup" type="file" accept="image/*" multiple class="vh" data-file="names">`
+        : `<p class="hint">この画面では写真を保存できません。</p>`}
+    </section>
+    ${draftHTML(pid)}`;
+}
+function resetDraft(pid) {
+  if (DRAFT.ctl) { try { DRAFT.ctl.abort(); } catch (e) { /* noop */ } }
+  Object.assign(DRAFT, { pid, useScript: true, photos: new Set(), extra: [], startPage: null, state: 'idle', msg: '', chars: 0, ctl: null, result: null, retry: false });
+}
+function draftHTML(pid) {
+  if (!aiReady()) {
+    const why = OFFLINE
+      ? 'オフライン版では Claude を呼べません。「受け渡し」で Claude の段取工房に取り込むと、そちらで台本やネーム写真から下書きを起こせます。'
+      : 'この画面では Claude を呼び出せません。claude.ai や Claude アプリの中でこのページを開くと、台本やネーム写真からカット表の下書きを起こせます。';
+    return `<section class="card aibox"><h3>${ICON.spark}Claude に下書きを起こしてもらう</h3><p class="hint">${why}</p></section>`;
+  }
+  const p = project();
+  const names = namesOf(pid).filter(n => n.asset);
+  const maxImg = aiImages() ? num(Caps.limits.images.maxCount, 0) : 0;
+  let inner = '';
+  if (DRAFT.state === 'running') {
+    inner = `<div class="aiprog"><span class="loading" style="padding:0"><i></i><i></i><i></i></span><span>${DRAFT.chars ? `書いています（${DRAFT.chars}字）` : '考えています。1分ほどかかることがあります'}</span><button type="button" class="btn sm" data-act="draftStop">止める</button></div>`;
+  } else if (DRAFT.state === 'done' && DRAFT.result) {
+    inner = draftResultHTML();
+  } else {
+    const photoPick = maxImg && names.length ? `<div class="field"><span class="lbl">使うネーム写真（最大${maxImg}枚）</span><div class="ngrid">${names.map(n => {
+      const on = DRAFT.photos.has(n.id);
+      return `<button type="button" class="nitem" data-act="draftPhoto" data-id="${esc(n.id)}" aria-pressed="${on}"><img src="/_blob/${esc(n.asset)}" alt="" loading="lazy"><span class="pg">P${pad2(num(n.page, 1))}</span>${on ? `<span class="ck">${ICON.check}</span>` : ''}</button>`;
+    }).join('')}</div></div>` : '';
+    const extra = maxImg ? `<div class="row-wrap"><label class="btn sm" for="f-draftimg">${ICON.image}その場で写真を選ぶ</label><input id="f-draftimg" type="file" accept="image/*" multiple class="vh" data-file="draftimg">${DRAFT.extra.length ? `<span class="hint">${DRAFT.extra.length}枚を選択中 <button type="button" class="link" data-act="draftClearExtra">外す</button></span>` : ''}</div>` : '';
+    const scriptLen = (p.script || '').length;
+    inner = `<label class="switch"><input type="checkbox" id="f-draftscript" data-act="draftScript" ${DRAFT.useScript ? 'checked' : ''} ${scriptLen ? '' : 'disabled'}><span>台本を使う（${scriptLen}字）</span></label>
+      ${photoPick}${extra}
+      <div class="field"><span class="lbl">最初のページ番号</span>${stepper('draftStart', DRAFT.startPage, { min: 1, label: '最初のページ番号' })}</div>
+      ${DRAFT.msg ? `<p class="hint warn-t">${esc(DRAFT.msg)}</p>` : ''}
+      <div><button type="button" class="btn pri" data-act="draftRun">${ICON.spark}下書きを起こす</button></div>`;
+  }
+  return `<section class="card aibox"><h3>${ICON.spark}Claude に下書きを起こしてもらう</h3>
+    <p class="hint">台本やネーム写真を読んで、コマ番号・キャラ・画角・台詞などを埋めた下書きを作ります。できたものは確かめてから追加します。</p>${inner}</section>`;
+}
+function draftResultHTML() {
+  const r = DRAFT.result;
+  const nSel = r.cuts.filter(x => x.sel).length + r.scenes.filter(x => x.sel).length;
+  const sc = r.scenes.length ? `<div class="field"><span class="lbl">新しいシーン</span><div class="dr-list">${r.scenes.map((s, i) => `<label class="dr-item"><input type="checkbox" data-act="draftToggle" data-kind="scenes" data-i="${i}" ${s.sel ? 'checked' : ''}><span class="stamp-s t">場</span><span class="t"><b>${esc(s.code)}</b><span>${esc([s.place, s.time, s.light, s.weather].filter(Boolean).join('／'))}</span></span></label>`).join('')}</div></div>` : '';
+  const cu = `<div class="field"><span class="lbl">コマ（${r.cuts.length}）</span><div class="dr-list">${r.cuts.map((c, i) => {
+    const g = GRADE[c.grade] || GRADE['通'];
+    const who = (c.chars || []).map(id => (charById(id) || {}).name).filter(Boolean).join('・');
+    const meta = c.grade === '無' ? c.muteKind : [c.shot, c.angle, c.facing, c.aspect].filter(Boolean).join('・');
+    return `<label class="dr-item"><input type="checkbox" data-act="draftToggle" data-kind="cuts" data-i="${i}" ${c.sel ? 'checked' : ''}><span class="stamp-s ${g.cls}">${g.k}</span><span class="t"><b>${esc(cutKey(c))}${c.moved ? ' （番号を後ろへずらします）' : ''}</b>${who ? `<span>${esc(who)}</span>` : ''}${meta ? `<span class="dim">${esc(meta)}</span>` : ''}${trim(c.action || c.muteText) ? `<span>${esc(trim(c.action || c.muteText))}</span>` : ''}${lines(c.lines)[0] ? `<span class="dim">${esc(lines(c.lines)[0])}</span>` : ''}${trim(c.notes) ? `<span class="warn-t">${esc(c.notes)}</span>` : ''}</span></label>`;
+  }).join('')}</div></div>`;
+  return `${sc}${cu}${DRAFT.msg ? `<p class="hint warn-t">${esc(DRAFT.msg)}</p>` : ''}<div class="row-wrap"><button type="button" class="btn pri" data-act="draftApply" ${nSel ? '' : 'disabled'}>選んだものを追加（${nSel}）</button><button type="button" class="btn" data-act="draftRedo">やり直す</button><button type="button" class="btn ghost" data-act="draftDiscard">捨てる</button></div>`;
+}
+
+/* ---------- 選別 ---------- */
+function selGroups() {
+  const m = new Map();
+  for (const it of SEL.items) { if (!m.has(it.key)) m.set(it.key, []); m.get(it.key).push(it); }
+  for (const arr of m.values()) arr.sort((a, b) => num(a.num) - num(b.num) || a.name.localeCompare(b.name));
+  return m;
+}
+function selCutFor(key) {
+  const pid = UI.pid;
+  const assigned = SEL.assign[key];
+  if (assigned) { const d = getDoc(P.cut(pid, assigned)); if (d) return Object.assign({}, d, { id: assigned }); }
+  if (!key || key === '?') return null;
+  return cutsOf(pid).find(c => cutKey(c) === key) || null;
+}
+function viewSelect() {
+  const pid = UI.pid;
+  if (SEL.pid !== pid) clearSel(pid);
+  const intro = `<p class="lede">家で出した候補の縮小版をスマホに入れておき、ここで読み込んで印を付けます。ファイル名の頭がコマ番号（例: <span class="mono">P05-1_00007_.png</span>）なら、コマごとに自動で分かれます。画像はこの端末の中だけで表示し、どこにも送りません。</p>`;
+  const loader = `<label class="frame-btn" for="f-selimg">${ICON.image}候補の画像を読み込む</label><input id="f-selimg" type="file" accept="image/*" multiple class="vh" data-file="sel">`;
+  if (!SEL.items.length) return intro + loader + `<p class="hint">印は ◎採用・○保留・△直す・×没 の4つ。付けた印はコマに保存され、家のPCでも見られます。</p>`;
+  const groups = selGroups();
+  if (!SEL.cur || !groups.has(SEL.cur)) SEL.cur = groups.keys().next().value;
+  const gchips = `<div class="groups" role="group" aria-label="コマ">${Array.from(groups, ([k, arr]) => {
+    const c = selCutFor(k);
+    const marked = c ? arr.filter(it => c.picks && c.picks[it.num]).length : 0;
+    return `<button type="button" class="chip" data-act="selGroup" data-k="${esc(k)}" aria-pressed="${SEL.cur === k}">${k === '?' ? 'コマ番号なし' : esc(k)} <span class="n">${marked}/${arr.length}</span></button>`;
+  }).join('')}</div>`;
+  const arr = groups.get(SEL.cur) || [];
+  const cut = selCutFor(SEL.cur);
+  let head = '';
+  if (!cut) {
+    const opts = cutsOf(pid).filter(c => c.grade !== '無').map(c => `<option value="${esc(c.id)}">${cutKey(c)} ${esc(trim(c.action).slice(0, 18))}</option>`).join('');
+    head = `<div class="banner warn">${SEL.cur === '?' ? 'ファイル名からコマ番号が読めない画像です。' : `${esc(SEL.cur)} はこの作品にないコマです。`}どのコマの候補か選ぶと、印を付けられます。
+      <div style="margin-top:8px"><select id="f-selassign" data-change="selAssign"><option value="">コマを選ぶ</option>${opts}</select></div></div>`;
+  } else {
+    const pk = picksText(cut);
+    head = `<div class="card xrow"><div class="xrow-top"><span class="stamp-s ${(GRADE[cut.grade] || GRADE['通']).cls}">${esc(cut.grade || '通')}</span><b class="mono">${cutKey(cut)}</b><span class="dim" style="font-size:.85em">${esc(trim(cut.action).slice(0, 24))}</span><span class="pill" data-st="${esc(ST[cut.status] ? cut.status : 'draft')}">${(ST[cut.status] || ST.draft).label}</span></div>
+      <div class="xline"><span class="lbl">印</span><span class="mono">${esc(pk || 'まだありません')}</span></div>
+      <div class="row-wrap"><button type="button" class="btn sm" data-act="selDone" ${picksOf(cut)['◎'].length ? '' : 'disabled'}>選別を終えて「採用済」にする</button></div></div>`;
+  }
+  const grid = `<div class="cgrid">${arr.map((it, i) => {
+    const m = cut && cut.picks && cut.picks[it.num] ? cut.picks[it.num].m : '';
+    return `<button type="button" class="cand" data-act="selOpen" data-i="${i}" data-m="${esc(m)}" aria-label="候補 ${esc(it.num)}${m ? ' ' + m : ''}"><img src="${esc(it.url)}" alt="" loading="lazy" decoding="async"><span class="no">#${esc(it.num)}</span>${m ? `<span class="mk" data-m="${esc(m)}">${esc(m)}</span>` : ''}</button>`;
+  }).join('')}</div>`;
+  return intro + gchips + head + grid + `<div class="row-wrap"><label class="btn sm" for="f-selimg">${ICON.image}画像を足す</label><input id="f-selimg" type="file" accept="image/*" multiple class="vh" data-file="sel"><button type="button" class="btn sm ghost" data-act="selClear">読み込んだ画像を片付ける</button></div>`;
+}
+function clearSel(pid) {
+  for (const it of SEL.items) { try { URL.revokeObjectURL(it.url); } catch (e) { /* noop */ } }
+  Object.assign(SEL, { pid, items: [], cur: null, assign: {}, seq: 0 });
+}
+function parseCandName(name) {
+  const base = String(name).replace(/\.[^.]+$/, '');
+  const m = base.match(/(?:^|[^A-Za-z0-9])P(\d{1,3})-(\d{1,3})(?!\d)/i);
+  const key = m ? `P${pad2(+m[1])}-${+m[2]}` : '?';
+  const rest = m ? base.replace(m[0], ' ') : base;
+  const c = rest.match(/_(\d{2,6})_?$/) || rest.match(/(\d+)(?!.*\d)/);
+  return { key, num: c ? String(+c[1]) : null };
+}
+function selAdd(files) {
+  let added = 0;
+  for (const f of files) {
+    if (!/^image\//.test(f.type || '') && !/\.(png|jpe?g|webp|gif|avif|heic)$/i.test(f.name)) continue;
+    const pr = parseCandName(f.name);
+    let n = pr.num;
+    const taken = SEL.items.some(it => it.key === pr.key && it.num === n);
+    if (!n || taken) n = 'x' + (++SEL.seq);
+    SEL.items.push({ key: pr.key, num: n, name: f.name, url: URL.createObjectURL(f) });
+    added++;
+  }
+  if (added && !SEL.cur) SEL.cur = SEL.items[0].key;
+  toast(added ? `${added}枚を読み込みました` : '画像が見つかりませんでした');
+  scheduleRender();
+}
+
+/* ---------- 書き出し ---------- */
+function exportCuts() {
+  const all = cutsOf().filter(c => c.grade !== '無');
+  return all.filter(c => (UI.expSt === 'all' || (c.status || 'draft') === UI.expSt) && (UI.expPage === 'all' || num(c.page, 1) === num(UI.expPage)));
+}
+function viewExport() {
+  const pid = UI.pid;
+  if (!loaded(P.cuts(pid))) return loadingHTML('コマを読み込んでいます');
+  const p = project();
+  const gens = cutsOf(pid).filter(c => c.grade !== '無');
+  const cuts = exportCuts();
+  const st = computeStats(cuts);
+  const s = settings();
+  const pagesSet = Array.from(new Set(gens.map(c => num(c.page, 1)))).sort((a, b) => a - b);
+  const stOpts = [{ k: 'ready', label: '生成待ち' }, { k: 'gen', label: '選別待ち' }, { k: 'picked', label: '採用済' }, { k: 'all', label: 'すべて' }];
+  const cnt = k => k === 'all' ? gens.length : gens.filter(c => (c.status || 'draft') === k).length;
+  const est = s.secPerImage > 0 && st.cand ? `約${Math.max(1, Math.round(st.cand * s.secPerImage / 60))}分（1枚${s.secPerImage}秒）` : '';
+  const noPrompt = cuts.filter(c => !trim(c.prompt)).length;
+  const vids = cutsOf(pid).filter(c => c.grade !== '無' && c.video && c.video.on);
+  const bulk = AI.bulk ? `<div class="card aibox"><div class="aiprog"><span class="loading" style="padding:0"><i></i><i></i><i></i></span><span>英語にしています ${AI.bulk.done}/${AI.bulk.total}${AI.bulk.chars ? `（${AI.bulk.chars}字）` : ''}</span><button type="button" class="btn sm" data-act="bulkStop">止める</button></div></div>` : (AI.bulkMsg ? `<p class="hint warn-t">${esc(AI.bulkMsg)}</p>` : '');
+  const head = `<p class="lede">家のPCでこのページを開き、上から順にコピーして流します。保存名は ComfyUI の Save Image の「filename_prefix」に貼ると、画像がコマごとのファイル名で出てきます。</p>
+    <div class="chips scroll" role="group" aria-label="状態で絞る">${stOpts.map(o => `<button type="button" class="chip" data-act="expSt" data-k="${o.k}" aria-pressed="${UI.expSt === o.k}">${o.label} <span class="n">${cnt(o.k)}</span></button>`).join('')}</div>
+    ${pagesSet.length > 1 ? `<div class="chips scroll" role="group" aria-label="ページで絞る"><button type="button" class="chip" data-act="expPage" data-k="all" aria-pressed="${UI.expPage === 'all'}">全ページ</button>${pagesSet.map(pg => `<button type="button" class="chip" data-act="expPage" data-k="${pg}" aria-pressed="${String(UI.expPage) === String(pg)}">P${pad2(pg)}</button>`).join('')}</div>` : ''}
+    <div class="sumline"><span><b>${cuts.length}</b>コマ</span><span>候補 計 <b>${st.cand}</b>枚</span>${est ? `<span>${est}</span>` : ''}${noPrompt ? `<span class="warn-t">プロンプト未作成 <b class="warn-t">${noPrompt}</b></span>` : ''}</div>
+    <div class="xacts">
+      <button type="button" class="btn" data-act="copyOrderAll" ${cuts.length ? '' : 'disabled'}>${ICON.copy}発注書をコピー</button>
+      <button type="button" class="btn" data-act="copyPromptsAll" ${cuts.length - noPrompt ? '' : 'disabled'}>${ICON.copy}プロンプト一覧</button>
+      ${aiReady() ? `<button type="button" class="btn" data-act="bulkConvert" ${noPrompt && !AI.bulk ? '' : 'disabled'}>${ICON.spark}Claudeで英語に</button>` : ''}
+      <button type="button" class="btn" data-act="saveMenu">${ICON.download}ファイルに保存</button>
+      ${vids.length ? `<button type="button" class="btn" data-act="copyVideos">${ICON.copy}動画ブリーフ</button>` : ''}
+      <button type="button" class="btn" data-act="copyPicks">${ICON.copy}選別結果をコピー</button>
+    </div>${bulk}${!aiReady() && OFFLINE ? '<p class="hint">英語プロンプトは、受け渡しで Claude の段取工房に取り込めば、そちらで作れます。家の変換を使うなら、発注書をコピーしてください。</p>' : ''}`;
+  if (!cuts.length) {
+    return head + `<div class="empty"><h3>${UI.expSt === 'ready' ? '生成待ちのコマはまだありません' : '当てはまるコマはありません'}</h3><p>コマの状態を「生成待ち」にすると、ここに並びます。</p></div>`;
+  }
+  const list = cuts.map(c => {
+    const g = GRADE[c.grade] || GRADE['通'];
+    return `<article class="card xrow">
+      <div class="xrow-top"><span class="stamp-s ${g.cls}">${g.k}</span><b class="mono">${cutKey(c)}</b><span class="cut-cnt">×${num(c.count)}</span>${c.video && c.video.on ? '<span class="cut-cnt">動画</span>' : ''}<span class="pill" data-st="${esc(ST[c.status] ? c.status : 'draft')}">${(ST[c.status] || ST.draft).label}</span></div>
+      <div class="xline"><span class="lbl">保存名</span><code>${esc(saveName(p, c))}</code><button type="button" class="tbtn" data-act="copyName" data-id="${esc(c.id)}">${ICON.copy}コピー</button></div>
+      <div class="xline"><span class="lbl">大きさ</span><span class="mono">${esc(aspectText(c.aspect) || '未記入')}</span></div>
+      <div class="xprompt">${trim(c.prompt) ? `<pre>${esc(c.prompt)}</pre>` : `<p class="hint">プロンプト未作成。発注書を家の変換にかけるか、Claude で英語にしてください。</p>`}</div>
+      <div class="row-wrap">
+        <button type="button" class="btn sm" data-act="copyPrompt" data-id="${esc(c.id)}" ${trim(c.prompt) ? '' : 'disabled'}>${ICON.copy}プロンプト</button>
+        <button type="button" class="btn sm ghost" data-act="copyOrder" data-id="${esc(c.id)}">発注書</button>
+        <button type="button" class="btn sm ghost" data-act="openCut" data-id="${esc(c.id)}">開く</button>
+        ${c.status === 'ready' ? `<button type="button" class="btn sm pri" data-act="markGen" data-id="${esc(c.id)}">${ICON.check}生成した</button>` : ''}
+      </div>
+    </article>`;
+  }).join('');
+  return head + `<div class="stack">${list}</div>`;
+}
+
+/* ---------- キャラ名簿 ---------- */
+function viewRoster() {
+  if (!loaded(P.roster)) return loadingHTML('キャラ名簿を読み込んでいます');
+  const rs = roster();
+  const intro = `<p class="lede">コマの「登場キャラ」に並ぶ顔ぶれです。トリガーワードと「毎回同じにしたい特徴」をここに書いておくと、発注書や英語プロンプトに毎回入ります。</p>`;
+  if (!rs.length) return intro + `<div class="empty"><h3>まだキャラがいません</h3><p>「＋ キャラ」で、LoRA のトリガーワードや固定の特徴（ツノの形・髪・瞳など）を登録します。</p><div><button type="button" class="btn pri" data-act="addChar">${ICON.plus}キャラを追加</button></div></div>`;
+  return intro + `<div class="stack">${rs.map(ch => `<button type="button" class="card charc" data-act="openChar" data-id="${esc(ch.id)}">
+      <i class="dot" style="--c:${safeColor(ch.color)}"></i>
+      <span class="charc-body">
+      <span class="nm">${esc(ch.name || '名無し')}</span>
+      ${trim(ch.trigger) ? `<span class="tg">${esc(ch.trigger)}</span>` : '<span class="ft">トリガーワード 未記入</span>'}
+      ${trim(ch.features) ? `<span class="ft">${esc(ch.features)}</span>` : ''}
+      ${(ch.costumes || []).length ? `<span class="ft">衣装: ${esc(ch.costumes.map(c => c.name).filter(Boolean).join('・'))}</span>` : ''}
+      </span>
+    </button>`).join('')}</div>`;
+}
+
+/* ---------- 設定 ---------- */
+function viewSettings() {
+  if (!loaded(P.settings)) return loadingHTML('設定を読み込んでいます');
+  const s = settings();
+  const size = lsGet('dandori.size', 'm');
+  const where = Store.mode === 'cloud' ? 'このページ（家のPCと共通）' : OFFLINE ? 'このスマホの中（オフライン版）' : 'この端末の中だけ';
+  return `<section class="stack-lg" data-doc="${P.settings}" data-create="1">
+    <div class="card setc"><h3>見積もり</h3>
+      <div class="field"><label class="lbl" for="f-sec">1枚あたりの生成時間（秒）</label><input id="f-sec" type="number" inputmode="decimal" min="0" step="1" data-bind="secPerImage" data-type="num" value="${s.secPerImage || ''}" placeholder="例: 15"><p class="hint">候補の合計枚数から、家での生成時間の目安を出します。</p></div>
+    </div>
+    <div class="card setc"><h3>プロンプトの決まり文句</h3>
+      <div class="field"><label class="lbl" for="f-quality">共通の品質タグ（頭に付けるもの）</label><textarea id="f-quality" class="mono-ta" rows="2" data-bind="quality" placeholder="例: masterpiece, best quality">${esc(s.quality)}</textarea></div>
+      <div class="field"><label class="lbl" for="f-neg">共通のネガティブ</label><textarea id="f-neg" class="mono-ta" rows="2" data-bind="negative" placeholder="例: lowres, bad hands, text, watermark">${esc(s.negative)}</textarea><p class="hint">Claude で英語にするときにも渡します。発注書の型では {品質} {ネガティブ} で入れられます。</p></div>
+    </div>
+    <div class="card setc"><h3>発注書の型</h3>
+      <p class="hint">書き出しの「発注書」はこの型で作ります。値が空の行は自動で省きます。家で使っている設計シートの形に合わせて書き換えられます。</p>
+      <textarea id="f-tpl" class="tpl-ta" data-bind="template" data-auto>${esc(s.template || DEFAULT_TEMPLATE)}</textarea>
+      <div class="phs">${PLACEHOLDERS.map(k => `<code>{${k}}</code>`).join('')}</div>
+      <div><button type="button" class="btn sm" data-act="resetField" data-field="template">初期の型に戻す</button></div>
+    </div>
+    <div class="card setc"><h3>Claude で英語にするときの指示</h3>
+      <p class="hint">家で使っている変換の指示文があれば、ここに貼るとその流儀で変換します。</p>
+      <textarea id="f-inst" class="tpl-ta" data-bind="instruction" data-auto>${esc(s.instruction || DEFAULT_INSTRUCTION)}</textarea>
+      <div><button type="button" class="btn sm" data-act="resetField" data-field="instruction">初期の指示に戻す</button></div>
+    </div>
+    <div class="card setc"><h3>表示（この端末だけ）</h3>
+      <div class="field"><span class="lbl">文字の大きさ</span><div class="chips"><button type="button" class="chip" data-act="size" data-k="m" aria-pressed="${size !== 'l'}">標準</button><button type="button" class="chip" data-act="size" data-k="l" aria-pressed="${size === 'l'}">大きめ</button></div></div>
+    </div>
+    <div class="card setc"><h3>データ</h3>
+      <p class="hint">保存先: <b>${where}</b></p>
+      <div><button type="button" class="btn" data-act="go" data-view="sync">${ICON.swap}受け渡し（書き出し・取り込み）</button></div>
+      <p class="hint">${OFFLINE ? 'Claude の段取工房とは、ファイル1つでデータをやり取りします。' : 'スマホのオフライン版とは、ファイル1つでデータをやり取りします。'}</p>
+    </div>
+  </section>`;
+}
+
+/* ---------- 部品 ---------- */
+function chips(field, opts, cur, o = {}) {
+  return `<div class="chips${o.scroll ? ' scroll' : ''}" role="group">${opts.map(op => {
+    const isObj = op && typeof op === 'object';
+    const v = isObj ? op.v : op;
+    const label = isObj ? (op.raw ? op.label : esc(op.label)) : esc(op);
+    const on = o.multi ? (cur || []).includes(v) : cur === v;
+    return `<button type="button" class="chip" data-act="pick" data-field="${field}" data-val="${esc(v)}"${o.num ? ' data-num="1"' : ''}${o.multi ? ' data-multi="1"' : ''}${o.req ? ' data-req="1"' : ''} aria-pressed="${on}">${label}${isObj && op.sub ? `<small>${esc(op.sub)}</small>` : ''}</button>`;
+  }).join('')}</div>`;
+}
+function stepper(field, val, o = {}) {
+  const id = 'st-' + field;
+  return `<div class="stepper"><button type="button" data-act="step" data-field="${field}" data-d="-1" aria-label="${esc(o.label || field)}を減らす">−</button><input id="${id}" type="number" inputmode="numeric" min="${o.min == null ? 1 : o.min}" value="${val == null ? '' : esc(val)}" data-change="${field}" aria-label="${esc(o.label || field)}"><button type="button" data-act="step" data-field="${field}" data-d="1" aria-label="${esc(o.label || field)}を増やす">＋</button></div>`;
+}
+function spaceGrid(sel) {
+  sel = sel || [];
+  return `<div class="spacegrid" role="group" aria-label="吹き出しの余白">${SPACE_GRID.map(s => s
+    ? `<button type="button" data-act="pick" data-field="space" data-val="${s}" data-multi="1" aria-pressed="${sel.includes(s)}" aria-label="${s}">${sel.includes(s) ? ICON.balloon : ''}<span>${s}</span></button>`
+    : `<div class="sg-c">人物</div>`).join('')}</div>`;
+}
+function linesInfo(t) {
+  const ls = lines(t);
+  if (!ls.length) return '1行が吹き出し1つ。1つの吹き出しは2〜3行（30字前後）が目安です。';
+  const max = Math.max.apply(null, ls.map(x => x.replace(/[「」『』]/g, '').length));
+  return `吹き出し${ls.length}つ・いちばん長いもの${max}字${max > 40 ? ' — 長めです。分けるか削ると読みやすくなります' : ''}`;
+}
+function twoHint(c) {
+  if ((c.chars || []).length >= 2 && c.grade === '通') return '2人以上が同じコマに入ると崩れやすいので、通常のコマなら1人ずつの切り返しに分けるのも手です。';
+  if ((c.chars || []).length >= 2 && c.grade === '決') return '見せ場の複数人コマ。候補を多めに出し、崩れたときの保険も書いておくと安心です。';
+  return '';
+}
+function missHTML(c) {
+  const miss = missingOf(c);
+  if (miss.length) return `<div class="miss"><b>未記入</b>${esc(miss.join('・'))}</div>`;
+  if ((c.status || 'draft') === 'draft') {
+    const mu = c.grade === '無';
+    return `<div class="okline">${ICON.check}<span>書き漏れなし</span><button type="button" class="btn sm" data-act="setStatus" data-val="${mu ? 'done' : 'ready'}">${mu ? '完成にする' : '生成待ちにする'}</button></div>`;
+  }
+  return '';
+}
+
+/* ---------- 編集シート ---------- */
+const SHEETS = {};
+function openSheet(kind, args) {
+  UI.sheet = Object.assign({ kind }, args || {});
+  document.documentElement.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
+  lastSheet = '';
+  renderSheet(true);
+  renderFab();
+}
+function closeSheet() {
+  const s = UI.sheet;
+  if (s && s.kind === 'import') { if (SYNC.busy === 'apply') return; SYNC.plan = null; SYNC.msg = ''; }
+  if (s && s.fresh && s.path) {
+    // 作ってすぐ何も書かずに閉じたキャラ・シーンは残さない
+    const d = getDoc(s.path);
+    const empty = d && (s.kind === 'char'
+      ? !trim(d.name) && !trim(d.trigger) && !trim(d.features)
+      : !trim(d.place) && !d.time && !d.light && !trim(d.lightNote) && !d.weather && !trim(d.props) && !cutsOf().some(c => c.sceneId === splitPath(s.path)[1]));
+    if (empty) removeDoc(s.path);
+  }
+  UI.sheet = null;
+  $('#layer').innerHTML = '';
+  lastSheet = '';
+  document.documentElement.style.overflow = '';
+  document.body.style.overflow = '';
+  sheetBlocked = false;
+  if (s && s.returnTo && getDoc(s.returnTo.path)) { openSheet(s.returnTo.kind, { path: s.returnTo.path }); return; }
+  scheduleRender();
+}
+function renderSheet(reset) {
+  const s = UI.sheet;
+  if (!s) return;
+  const fn = SHEETS[s.kind];
+  const html = fn ? fn(s) : null;
+  if (html == null) { closeSheet(); return; }
+  if (html === lastSheet && !reset) return;
+  const body = $('#layer .sheet-body');
+  const top = body && !reset ? body.scrollTop : 0;
+  $('#layer').innerHTML = html;
+  lastSheet = html;
+  const nb = $('#layer .sheet-body');
+  if (nb) nb.scrollTop = top;
+  $$('#layer textarea[data-auto]').forEach(autosize);
+}
+function sheetFrame({ title, docPath, left, right, body, foot, label, compact }) {
+  return `<div class="sheet-wrap" data-act="sheetBg"><section class="sheet${compact ? ' compact' : ''}" role="dialog" aria-modal="true" aria-label="${esc(label || '')}"${docPath ? ` data-doc="${esc(docPath)}"` : ''}>
+    <header class="sheet-head">${left || `<button type="button" class="tbtn" data-act="closeSheet">${ICON.back}<span>閉じる</span></button>`}<div class="sheet-title">${title || ''}</div>${right || '<span style="width:42px"></span>'}</header>
+    <div class="sheet-body">${body}</div>
+    ${foot ? `<footer class="sheet-foot">${foot}</footer>` : ''}
+  </section></div>`;
+}
+
+SHEETS.cut = s => {
+  const pid = UI.pid;
+  const c0 = getDoc(s.path);
+  if (!c0) return null;
+  const id = splitPath(s.path)[1];
+  const c = Object.assign({}, c0, { id });
+  const cuts = cutsOf(pid);
+  const idx = cuts.findIndex(x => x.id === id);
+  const prev = cuts[idx - 1], next = cuts[idx + 1];
+  const mu = c.grade === '無';
+  const scs = scenesOf(pid);
+  const sc = sceneOf(c);
+  const title = `<button type="button" class="ibtn" data-act="cutNav" data-id="${prev ? esc(prev.id) : ''}" ${prev ? '' : 'disabled'} aria-label="前のコマ">${ICON.left}</button><span class="mono big" id="sh-id">${cutKey(c)}</span><button type="button" class="ibtn" data-act="cutNav" data-id="${next ? esc(next.id) : ''}" ${next ? '' : 'disabled'} aria-label="次のコマ">${ICON.right}</button>`;
+  const right = `<button type="button" class="ibtn" data-act="cutMenu" aria-label="このコマの操作">${ICON.more}</button>`;
+  const sceneOpts = scs.map(x => ({ v: x.id, label: `<b class="mono">${esc(x.code || 'S')}</b> ${esc(x.place || '')}`, raw: true })).concat([{ v: '', label: 'なし' }]);
+  let body = `<div id="sh-miss">${missHTML(c)}</div>
+    <div class="row2"><div class="field"><span class="lbl">ページ</span>${stepper('page', num(c.page, 1), { label: 'ページ' })}</div><div class="field"><span class="lbl">コマ</span>${stepper('panel', num(c.panel, 1), { label: 'コマ' })}</div></div>
+    <div class="field"><span class="lbl">区分</span><div class="seg3">${GRADES.map(g => `<button type="button" class="segbtn" data-act="setGrade" data-val="${g.k}" aria-pressed="${c.grade === g.k}"><span class="stamp-s ${g.cls}">${g.k}</span>${g.desc}</button>`).join('')}</div></div>
+    <div class="field"><span class="lbl">状態</span>${chips('status', STATUSES.map(x => ({ v: x.k, label: x.label })), ST[c.status] ? c.status : 'draft', { scroll: true, req: true })}</div>
+    <div class="field"><span class="lbl">シーン</span>${scs.length ? chips('sceneId', sceneOpts, c.sceneId || '') : `<p class="hint">シーンはまだありません。<button type="button" class="link" data-act="addSceneFromCut">ここで作る</button></p>`}${sc ? `<p class="hint">${esc(sceneSummary(sc))}</p>` : ''}</div>`;
+  if (mu) {
+    body += `<div class="field"><span class="lbl">作り方</span>${chips('muteKind', MUTE_KINDS, c.muteKind || '')}</div>
+      <div class="field"><label class="lbl" for="f-mtext">内容</label><textarea id="f-mtext" data-bind="muteText" data-live="1" rows="3" placeholder="例: 実績解除「雨宿りの先客」／スマホに届くメッセージの文面">${esc(c.muteText || '')}</textarea></div>`;
+  } else {
+    const rs = roster();
+    const ids = c.chars || [];
+    const extra = ids.filter(x => !rs.find(r => r.id === x));
+    const charChips = rs.length || extra.length ? `<div class="chips">${rs.map(r => `<button type="button" class="chip" data-act="pick" data-field="chars" data-val="${esc(r.id)}" data-multi="1" aria-pressed="${ids.includes(r.id)}"><i class="dot" style="--c:${safeColor(r.color)}"></i>${esc(r.name || '名無し')}</button>`).join('')}${extra.map(x => `<button type="button" class="chip" data-act="pick" data-field="chars" data-val="${esc(x)}" data-multi="1" aria-pressed="true">（削除したキャラ）</button>`).join('')}</div>`
+      : `<p class="hint">キャラ名簿が空です。<button type="button" class="link" data-act="go" data-view="roster">名簿に追加</button></p>`;
+    body += `<div class="field"><span class="lbl">登場キャラ</span>${charChips}<p class="hint" id="sh-two">${esc(twoHint(c))}</p></div>
+      <div class="field"><span class="lbl">画角</span>${chips('shot', SHOTS, c.shot || '')}</div>
+      <div class="field"><span class="lbl">アングル</span>${chips('angle', ANGLES, c.angle || '')}</div>
+      <div class="field"><span class="lbl">向き</span>${chips('facing', FACINGS, c.facing || '')}<p class="hint">右から左へ読むので、話を前へ進めるコマは左向き、ためらい・振り返りは右向きが基本です。</p></div>
+      <div class="field"><label class="lbl" for="f-action">表情・ポーズ</label><textarea id="f-action" data-bind="action" data-live="1" rows="2" placeholder="例: 振り向いて驚く／腕を組んで壁にもたれる">${esc(c.action || '')}</textarea></div>
+      <div class="field"><label class="lbl" for="f-bg">このコマだけの背景・小物</label><input id="f-bg" type="text" data-bind="bg" data-live="1" value="${esc(c.bg || '')}" placeholder="シーンと違うときだけ。例: 窓の外の雨"></div>
+      <div class="field"><span class="lbl">縦横比</span>${chips('aspect', ASPECTS.map(a => ({ v: a.k, label: a.k, sub: `${a.w}×${a.h}` })), c.aspect || '')}</div>
+      <div class="field"><span class="lbl">吹き出しの余白</span>${spaceGrid(c.space)}<p class="hint">吹き出しを置く場所。家では引き気味に出して、あとでトリミングします。</p></div>
+      <div class="field"><span class="lbl">候補数</span><div class="row-wrap">${stepper('count', num(c.count), { min: 0, label: '候補数' })}${chips('count', COUNTS.map(n => ({ v: n, label: String(n) })), num(c.count), { num: true, req: true })}</div></div>
+      <div class="field"><label class="lbl" for="f-backup">保険（崩れたときの代案）</label><input id="f-backup" type="text" data-bind="backup" value="${esc(c.backup || '')}" placeholder="例: 横顔の寄りに逃がす／2人を別々のコマに分ける"></div>`;
+  }
+  body += `<div class="field"><label class="lbl" for="f-lines">台詞</label><textarea id="f-lines" data-bind="lines" data-live="1" rows="3" placeholder="1行が吹き出し1つ。例: 「……いつから？」">${esc(c.lines || '')}</textarea><p class="hint" id="sh-lines">${esc(linesInfo(c.lines))}</p></div>`;
+  if (!mu) {
+    const v = c.video || {};
+    body += `<div class="field"><label class="switch"><input type="checkbox" id="f-vid" data-bind="video.on" ${v.on ? 'checked' : ''}><span>動画にする（採用絵から動かすブリーフ）</span></label>
+      ${v.on ? `<div class="sub">
+        <div class="field"><span class="lbl">長さ</span>${chips('video.sec', VSECS.map(n => ({ v: n, label: n + '秒' })), num(v.sec, 5), { num: true, req: true })}</div>
+        <div class="field"><label class="lbl" for="f-vmotion">動き</label><input id="f-vmotion" type="text" data-bind="video.motion" value="${esc(v.motion || '')}" placeholder="例: 振り向き、髪が少し遅れて揺れる"></div>
+        <div class="field"><span class="lbl">カメラ</span>${chips('video.camera', CAMERAS, v.camera || '固定', { req: true })}</div>
+        <div class="field"><span class="lbl">音</span>${chips('video.sound', SOUNDS, v.sound || '環境音のみ', { req: true })}</div>
+      </div>` : ''}</div>
+      <div class="field"><label class="lbl" for="f-prompt">英語プロンプト</label>
+        <textarea id="f-prompt" class="mono-ta" data-bind="prompt" rows="4" placeholder="家で ComfyUI に貼るプロンプト。Claude に作らせることもできます">${esc(c.prompt || '')}</textarea>
+        <div class="row-wrap">${aiReady() ? `<button type="button" class="btn sm" data-act="aiOne" ${AI.one ? 'disabled' : ''}>${ICON.spark}${AI.one && AI.one.path === s.path ? '英語にしています…' : (trim(c.prompt) ? 'Claudeで作り直す' : 'Claudeで英語にする')}</button>` : ''}<button type="button" class="btn sm ghost" data-act="copyPromptSheet" ${trim(c.prompt) ? '' : 'disabled'}>${ICON.copy}コピー</button></div>
+        ${AI.oneMsg && AI.oneMsgPath === s.path ? `<p class="hint warn-t">${esc(AI.oneMsg)}</p>` : ''}
+        ${trim(c.promptNote) ? `<p class="hint">Claude のメモ: ${esc(c.promptNote)}</p>` : ''}
+      </div>
+      <div class="field"><span class="lbl">選別・採用</span><p class="picks">${esc(picksText(c)) || '<span class="hint">選別タブで印を付けると、ここに出ます</span>'}</p>
+        <input id="f-chosen" type="text" data-bind="chosen" value="${esc(c.chosen || '')}" placeholder="採用メモ（例: 7 を使う。11 は差し替え候補）"></div>`;
+  }
+  body += `<div class="field"><label class="lbl" for="f-notes">メモ</label><textarea id="f-notes" data-bind="notes" rows="2" placeholder="家で気をつけること、ネームとの違いなど">${esc(c.notes || '')}</textarea></div>`;
+  const foot = `<button type="button" class="btn" data-act="cutAddNext">${ICON.plus}次のコマ</button><button type="button" class="btn" data-act="cutDup">複製</button><button type="button" class="btn" data-act="cutNewPage">${ICON.plus}新しいページ</button>`;
+  return sheetFrame({ title, right, body, foot, docPath: s.path, label: `コマ ${cutKey(c)}` });
+};
+
+SHEETS.scene = s => {
+  const d0 = getDoc(s.path);
+  if (!d0) return null;
+  const id = splitPath(s.path)[1];
+  const d = Object.assign({}, d0, { id });
+  const used = cutsOf().filter(c => c.sceneId === id);
+  const rs = roster();
+  const cos = rs.map(ch => {
+    const list = Array.isArray(ch.costumes) ? ch.costumes.filter(x => x && x.id) : [];
+    const cur = (d.costumes || {})[ch.id] || '';
+    return `<div class="field"><span class="lbl"><i class="dot" style="--c:${safeColor(ch.color)};margin-right:6px"></i>${esc(ch.name || '名無し')}</span>
+      ${list.length ? chips('costumes.' + ch.id, list.map(x => ({ v: x.id, label: x.name || '衣装' })).concat([{ v: '', label: '指定なし' }]), cur) : ''}
+      <input id="f-cn-${esc(ch.id)}" type="text" data-bind="costumeNotes.${esc(ch.id)}" value="${esc((d.costumeNotes || {})[ch.id] || '')}" placeholder="${list.length ? '補足（例: 上着を脱いでいる）' : '衣装（例: 白いワンピース）'}"></div>`;
+  }).join('');
+  const body = `<div class="row2"><div class="field"><label class="lbl" for="f-scode">番号</label><input id="f-scode" type="text" data-bind="code" value="${esc(d.code || '')}"></div><div class="field"><label class="lbl" for="f-splace">場所</label><input id="f-splace" type="text" data-bind="place" value="${esc(d.place || '')}" placeholder="例: 宿の部屋"></div></div>
+    <div class="field"><span class="lbl">時間帯</span>${chips('time', TIMES, d.time || '')}</div>
+    <div class="field"><span class="lbl">光</span>${chips('light', LIGHTS, d.light || '')}<input id="f-slight" type="text" data-bind="lightNote" value="${esc(d.lightNote || '')}" placeholder="光の補足（例: 窓からの青い光と、ランプの暖色）"></div>
+    <div class="field"><span class="lbl">天気</span>${chips('weather', WEATHERS, d.weather || '')}</div>
+    <div class="field"><span class="lbl">衣装</span>${rs.length ? `<div class="stack">${cos}</div>` : `<p class="hint">キャラ名簿にキャラを入れると、キャラごとの衣装を決められます。</p>`}</div>
+    <div class="field"><label class="lbl" for="f-sprops">小物・背景の決まり</label><textarea id="f-sprops" data-bind="props" rows="2" placeholder="例: 机の上の地図、窓は右側">${esc(d.props || '')}</textarea></div>
+    <div class="field"><label class="lbl" for="f-snotes">メモ</label><textarea id="f-snotes" data-bind="notes" rows="2">${esc(d.notes || '')}</textarea></div>
+    <div class="field"><span class="lbl">このシーンのコマ</span>${used.length ? `<div class="chips">${used.map(c => `<button type="button" class="chip" data-act="openCut" data-id="${esc(c.id)}"><span class="mono">${cutKey(c)}</span></button>`).join('')}</div>` : '<p class="hint">まだありません</p>'}</div>
+    <div><button type="button" class="btn danger sm" data-act="delScene">${ICON.trash}このシーンを消す</button></div>`;
+  return sheetFrame({ title: `<span class="tt">シーン <span class="mono">${esc(d.code || '')}</span></span>`, body, docPath: s.path, label: 'シーンの編集' });
+};
+
+SHEETS.char = s => {
+  const d0 = getDoc(s.path);
+  if (!d0) return null;
+  const d = Object.assign({}, d0);
+  const cos = Array.isArray(d.costumes) ? d.costumes : [];
+  const body = `<div class="field"><label class="lbl" for="f-cname">名前</label><input id="f-cname" type="text" data-bind="name" value="${esc(d.name || '')}" placeholder="例: RURU"></div>
+    <div class="field"><label class="lbl" for="f-ctrig">LoRA のトリガーワード</label><input id="f-ctrig" type="text" data-bind="trigger" value="${esc(d.trigger || '')}" placeholder="例: RURULoRA" autocapitalize="off" spellcheck="false"></div>
+    <div class="field"><label class="lbl" for="f-cfeat">毎回同じにしたい特徴</label><textarea id="f-cfeat" data-bind="features" rows="3" placeholder="例: 白い巻きヅノ2本、銀髪ボブ、赤い瞳">${esc(d.features || '')}</textarea><p class="hint">ツノの形や本数・髪・瞳など、コマをまたいでぶれてほしくない所。英語プロンプトにも毎回入ります。</p></div>
+    <div class="field"><span class="lbl">衣装</span>
+      <div class="stack">${cos.map((x, i) => `<div class="cosrow"><input id="f-cos-n-${i}" type="text" data-cos="${i}" data-k="name" value="${esc(x.name || '')}" placeholder="衣装A"><input id="f-cos-d-${i}" type="text" data-cos="${i}" data-k="desc" value="${esc(x.desc || '')}" placeholder="例: 黒いワンピース"><button type="button" class="ibtn" data-act="delCostume" data-i="${i}" aria-label="この衣装を消す">${ICON.trash}</button></div>`).join('')}</div>
+      <div><button type="button" class="btn sm" data-act="addCostume">${ICON.plus}衣装を足す</button></div>
+      <p class="hint">ここに登録した衣装を、シーンごとに選べます。</p></div>
+    <div class="field"><label class="lbl" for="f-cspeech">口調・一人称</label><input id="f-cspeech" type="text" data-bind="speech" value="${esc(d.speech || '')}" placeholder="例: 一人称「わたし」、語尾はやわらかめ"><p class="hint">台詞を書くときや、Claude に下書きを起こしてもらうときの手がかりになります。</p></div>
+    <div class="field"><span class="lbl">色（コマ一覧での目印）</span><div class="swatches">${CHAR_COLORS.map(c => `<button type="button" class="swatch" style="--c:${c}" data-act="pick" data-field="color" data-val="${c}" data-req="1" aria-pressed="${safeColor(d.color) === c}" aria-label="色 ${c}"></button>`).join('')}</div></div>
+    <div><button type="button" class="btn danger sm" data-act="delChar">${ICON.trash}このキャラを名簿から消す</button></div>`;
+  return sheetFrame({ title: `<span class="tt">${esc(d.name || 'キャラ')}</span>`, body, docPath: s.path, label: 'キャラの編集' });
+};
+
+SHEETS.project = s => {
+  const isNew = !!s.isNew;
+  const d = isNew ? (s.draft || {}) : project();
+  if (!d) return null;
+  const body = `<div class="field"><label class="lbl" for="f-ptitle">題名</label><input id="f-ptitle" type="text" ${isNew ? 'data-draft="title"' : 'data-bind="title"'} value="${esc(d.title || '')}" placeholder="例: 雨の宿"></div>
+    <div class="field"><span class="lbl">種類</span><div class="chips">${KINDS.map(k => `<button type="button" class="chip" data-act="${isNew ? 'draftKind' : 'pick'}" data-field="kind" data-val="${k.k}" data-req="1" aria-pressed="${(d.kind || 'manga') === k.k}">${k.label}</button>`).join('')}</div></div>
+    <div class="field"><label class="lbl" for="f-pabbr">保存名の頭（略称）</label><input id="f-pabbr" type="text" ${isNew ? 'data-draft="abbr"' : 'data-bind="abbr"'} value="${esc(d.abbr || '')}" placeholder="例: amayado" autocapitalize="off" spellcheck="false"><p class="hint">家で画像を保存するときのフォルダ名になります（例: amayado/P05-1_00001_.png）。空なら題名を使います。半角英数字が無難です。</p></div>
+    <div class="field"><label class="lbl" for="f-plog">一行あらすじ</label><input id="f-plog" type="text" ${isNew ? 'data-draft="logline"' : 'data-bind="logline"'} value="${esc(d.logline || '')}" placeholder="この話は何の話か、一文で"></div>
+    ${isNew ? '' : `<div><button type="button" class="btn danger sm" data-act="delProject">${ICON.trash}この作品を消す</button></div>`}`;
+  const foot = isNew ? `<button type="button" class="btn pri" data-act="createProject">作る</button>` : '';
+  return sheetFrame({ title: `<span class="tt">${isNew ? '新しい作品' : '作品の設定'}</span>`, body, foot, docPath: isNew ? '' : P.project(UI.pid), label: isNew ? '新しい作品' : '作品の設定' });
+};
+
+SHEETS.copy = s => {
+  const body = `<p class="hint">この画面では自動でコピーできませんでした。下の枠を長押しして「すべて選択」→「コピー」してください。</p>
+    <textarea id="f-copybox" class="mono-ta" rows="14" readonly>${esc(s.text)}</textarea>
+    <div><button type="button" class="btn" data-act="selectCopy">枠の中を全部選ぶ</button></div>`;
+  return sheetFrame({ title: `<span class="tt">${esc(s.title || 'コピー')}</span>`, body, label: 'コピー' });
+};
+
+SHEETS.name = s => {
+  const d0 = getDoc(s.path);
+  if (!d0) return null;
+  const pg = num(d0.page, 1);
+  const zoom = !!s.zoom;
+  const body = `<div class="field"><span class="lbl">ページ</span>${stepper('namePage', pg, { label: 'ページ' })}</div>
+    <div class="viewer-img${zoom ? ' zoom' : ''}" style="background:var(--sheet-2);border-radius:10px;min-height:50vh" data-act="nameZoom">${photoSrc(d0) ? `<img src="${esc(photoSrc(d0))}" alt="P${pad2(pg)} のネーム">` : '<span class="nophoto">この端末には写真がありません</span>'}</div>
+    <p class="hint">写真を押すと拡大／元に戻します。</p>
+    <div class="row-wrap"><button type="button" class="btn" data-act="nameToCuts">P${pad2(pg)} のコマを見る</button><button type="button" class="btn danger sm" data-act="delName">${ICON.trash}この写真を消す</button></div>`;
+  return sheetFrame({ title: `<span class="tt">P${pad2(pg)} のネーム</span>`, body, docPath: s.path, label: 'ネーム写真' });
+};
+
+SHEETS.import = s => {
+  const pl = SYNC.plan;
+  if (!pl) return null;
+  const nothing = !pl.put.length && !pl.del.length;
+  const lines = KIND_ORDER.filter(k => pl.counts[k]).map(k => {
+    const c = pl.counts[k];
+    const parts = [c.add && `追加 ${c.add}`, c.upd && `更新 ${c.upd}`, c.del && `削除 ${c.del}`].filter(Boolean);
+    return `<div class="xline"><span class="lbl">${KIND_LABEL[k]}</span><span>${parts.join('・')}</span></div>`;
+  }).join('');
+  const when = pl.exportedAt ? fmtDateTime(Date.parse(pl.exportedAt)) : '';
+  const src = FROM_LABEL[pl.from] || '';
+  const nPh = Object.keys(pl.photos).length;
+  const body = `<p class="lede">${when ? esc(when) + ' に' : ''}${src ? esc(src) + 'で' : ''}書き出したファイルです${nPh ? `（ネーム写真 ${nPh}枚入り）` : ''}。</p>
+    ${nothing ? '<div class="empty"><h3>取り込むものはありません</h3><p>この端末と同じ内容か、この端末の方が新しい内容です。</p></div>' : `<div class="card xrow plan">${lines}</div>`}
+    ${pl.newer ? `<p class="hint">この端末の方が新しいもの ${pl.newer}件は、そのまま残します。</p>` : ''}
+    ${pl.del.length ? '<p class="hint">「削除」は、向こうで消したものです。こちらでも消えます。</p>' : ''}
+    ${SYNC.busy === 'apply' ? `<div class="aiprog"><span class="loading" style="padding:0"><i></i><i></i><i></i></span><span>取り込んでいます ${esc(SYNC.prog)}</span></div>` : ''}
+    ${SYNC.msg ? `<p class="hint warn-t">${esc(SYNC.msg)}</p>` : ''}`;
+  const foot = nothing
+    ? '<button type="button" class="btn" data-act="closeSheet">閉じる</button>'
+    : `<button type="button" class="btn" data-act="closeSheet" ${SYNC.busy ? 'disabled' : ''}>やめる</button><button type="button" class="btn pri" data-act="importApply" ${SYNC.busy ? 'disabled' : ''}>取り込む</button>`;
+  return sheetFrame({ title: '<span class="tt">取り込みの確認</span>', body, foot, label: '取り込みの確認', compact: true });
+};
+
+SHEETS.pick = s => {
+  const groups = selGroups();
+  const arr = groups.get(s.key) || [];
+  if (!arr.length) return null;
+  const i = Math.max(0, Math.min(arr.length - 1, s.i || 0));
+  s.i = i;
+  const it = arr[i];
+  const cut = selCutFor(s.key);
+  const cur = cut && cut.picks && cut.picks[it.num] ? cut.picks[it.num] : null;
+  const m = cur ? cur.m : '';
+  return `<div class="viewer" role="dialog" aria-modal="true" aria-label="候補の確認">
+    <div class="viewer-top"><button type="button" class="ibtn" data-act="closeSheet" aria-label="閉じる">${ICON.close}</button><div class="vt">${esc(s.key === '?' ? (cut ? cutKey(cut) : 'コマ番号なし') : s.key)} · #${esc(it.num)} · ${i + 1}/${arr.length}</div><span style="width:42px"></span></div>
+    <div class="viewer-img${s.zoom ? ' zoom' : ''}" id="pick-stage" data-act="pickZoom"><img src="${esc(it.url)}" alt="候補 ${esc(it.num)}">
+      ${i > 0 ? `<button type="button" class="vnav l" data-act="pickNav" data-d="-1" aria-label="前の候補">${ICON.left}</button>` : ''}
+      ${i < arr.length - 1 ? `<button type="button" class="vnav r" data-act="pickNav" data-d="1" aria-label="次の候補">${ICON.right}</button>` : ''}
+    </div>
+    <div class="viewer-bot">
+      ${cut ? `<div class="marks">${MARKS.map(x => `<button type="button" class="markbtn" data-act="pickMark" data-m="${x.k}" aria-pressed="${m === x.k}"><b>${x.k}</b><span>${x.label}</span></button>`).join('')}</div>
+        ${m === '△' ? `<input id="f-picknote" type="text" data-pick-note="1" value="${esc(cur.n || '')}" placeholder="直す所（例: 指が6本、ツノの長さが左右で違う）">` : ''}`
+      : `<p class="hint" style="color:var(--on-stage-2)">どのコマの候補か決めると、印を付けられます（選別タブで選びます）。</p>`}
+    </div>
+  </div>`;
+};
+
+/* ---------- 確認の小窓 ---------- */
+let dlgResolve = null;
+function ask({ title, body, ok = 'はい', cancel = 'やめる', danger = false }) {
+  return new Promise(res => {
+    dlgResolve = res;
+    $('#dialog').innerHTML = `<div class="dlg-wrap"><div class="dlg" role="alertdialog" aria-modal="true" aria-label="${esc(title)}"><h3>${esc(title)}</h3>${body ? `<p>${esc(body)}</p>` : ''}<div class="acts"><button type="button" class="btn ghost" data-dlg="0">${esc(cancel)}</button><button type="button" class="btn ${danger ? 'danger' : 'pri'}" data-dlg="1">${esc(ok)}</button></div></div></div>`;
+  });
+}
+function menu(title, items) {
+  return new Promise(res => {
+    dlgResolve = res;
+    $('#dialog').innerHTML = `<div class="dlg-wrap" data-dlg-bg="1"><div class="dlg" role="dialog" aria-modal="true" aria-label="${esc(title)}"><h3>${esc(title)}</h3><div class="menu">${items.map(it => `<button type="button" class="${it.danger ? 'danger' : ''}" data-dlg="${esc(it.k)}" ${it.disabled ? 'disabled' : ''}>${esc(it.label)}</button>`).join('')}</div><div class="acts"><button type="button" class="btn ghost" data-dlg="">閉じる</button></div></div></div>`;
+  });
+}
+document.addEventListener('click', e => {
+  const t = e.target.closest('[data-dlg]');
+  const bg = e.target.matches && e.target.matches('[data-dlg-bg]');
+  if (!t && !bg) return;
+  const v = t ? t.dataset.dlg : '';
+  $('#dialog').innerHTML = '';
+  const r = dlgResolve; dlgResolve = null;
+  if (r) r(v === '1' ? true : v === '0' ? false : v);
+});
+
+/* ---------- お知らせ ---------- */
+let toastTimer = null;
+function toast(msg) {
+  const el = $('#toast');
+  el.textContent = msg;
+  el.hidden = false;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { el.hidden = true; }, 2600);
+}
+
+/* ---------- コピーと保存 ---------- */
+function copyText(text, what) {
+  const done = () => toast(`${what}をコピーしました`);
+  const fallback = () => openSheet('copy', { title: what, text });
+  try {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, () => { if (!legacyCopy(text)) fallback(); else done(); });
+      return;
+    }
+  } catch (e) { /* 下で試す */ }
+  if (legacyCopy(text)) done(); else fallback();
+}
+function legacyCopy(text) {
+  try {
+    const ta = document.createElement('textarea');
+    ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.top = '-1000px';
+    document.body.appendChild(ta); ta.select();
+    const ok = document.execCommand && document.execCommand('copy');
+    ta.remove();
+    return !!ok;
+  } catch (e) { return false; }
+}
+async function saveFile(filename, text, mime) {
+  const dl = Caps.downloads;
+  if (dl) {
+    try {
+      const r = await dl.save({ filename, data: text });
+      if (r && r.status === 'saved') toast('保存しました');
+      return true;
+    } catch (e) {
+      const code = e && e.code;
+      if (code === 'declined') return false;
+      if (code === 'rate_limited') { toast('保存の確認が開いたままです。閉じてからもう一度押してください'); return false; }
+    }
+  }
+  if (OFFLINE || !window.claude) {
+    // このページだけで開いているとき（オフライン版）: スマホは共有シート、ほかは普通のダウンロード
+    const blob = new Blob([text], { type: mime || 'text/plain' });
+    try {
+      if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent) && typeof File === 'function' && navigator.canShare) {
+        const file = new File([blob], filename, { type: blob.type });
+        if (navigator.canShare({ files: [file] })) { await navigator.share({ files: [file] }); return true; }
+      }
+    } catch (e) {
+      if (e && e.name === 'AbortError') return false;
+    }
+    try {
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = filename; a.rel = 'noopener';
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 15000);
+      toast('保存しました');
+      return true;
+    } catch (e) { /* 下でコピーに切り替える */ }
+  }
+  openSheet('copy', { title: filename, text });
+  return false;
+}
+function dateStamp() { const d = new Date(); return `${d.getFullYear()}${pad2(d.getMonth() + 1)}${pad2(d.getDate())}`; }
+
+/* ---------- コマの追加・並べ替え ---------- */
+function newCutData(page, panel, base) {
+  const t = now();
+  return {
+    page, panel, sceneId: base && base.sceneId ? base.sceneId : '', grade: '通', chars: [], shot: '', angle: '', facing: '', action: '', bg: '',
+    aspect: base && base.aspect ? base.aspect : '', space: [], count: GRADE['通'].count, lines: '', backup: '', notes: '', muteKind: '', muteText: '',
+    video: { on: false, sec: 5, motion: '', camera: '固定', sound: '環境音のみ' }, prompt: '', promptNote: '', status: 'draft', picks: {}, chosen: '',
+    createdAt: t, updatedAt: t,
+  };
+}
+function pageCuts(pg, pid = UI.pid) { return cutsOf(pid).filter(c => num(c.page, 1) === pg); }
+function maxPanel(pg, pid = UI.pid) { return pageCuts(pg, pid).reduce((m, c) => Math.max(m, num(c.panel, 0)), 0); }
+const generated = c => ST[c.status] && ST[c.status].i >= ST.gen.i;
+async function shiftPanels(pg, from, by, exceptId) {
+  const targets = pageCuts(pg).filter(c => num(c.panel) >= from && c.id !== exceptId);
+  const gen = targets.filter(generated);
+  if (gen.length) {
+    const ok = await ask({ title: 'コマ番号がずれます', body: `生成済みのコマ（${gen.map(cutKey).join('、')}）の番号が変わり、家で保存した画像のファイル名と合わなくなります。続けますか？`, ok: '続ける' });
+    if (!ok) return false;
+  }
+  targets.sort((a, b) => num(b.panel) - num(a.panel)).forEach(c => mutate(P.cut(UI.pid, c.id), d => { d.panel = num(d.panel) + by; }));
+  return true;
+}
+async function insertCut(pg, panel, base, copyAll) {
+  const pid = UI.pid;
+  if (pageCuts(pg).some(c => num(c.panel) >= panel)) { if (!(await shiftPanels(pg, panel, 1))) return null; }
+  let data = newCutData(pg, panel, base);
+  if (copyAll && base) {
+    const src = clone(getDoc(P.cut(pid, base.id)) || base);
+    delete src.id;
+    data = Object.assign(src, { page: pg, panel, status: 'draft', picks: {}, chosen: '', prompt: trim(src.prompt), createdAt: now(), updatedAt: now() });
+  }
+  const id = uid('k');
+  create(P.cut(pid, id), data);
+  return id;
+}
+function lastCut() { const cs = cutsOf(); return cs[cs.length - 1] || null; }
+function openCut(id) { openSheet('cut', { path: P.cut(UI.pid, id) }); }
+
+/* ---------- Claude ---------- */
+const AI_STOP = new Set(['not_granted', 'sampling_disabled', 'not_declared', 'capability_disabled', 'capability_removed']);
+function aiErrText(e) {
+  const code = e && e.code;
+  if (AI_STOP.has(code)) { AI.off = true; return 'この画面では Claude を使えないため、この機能を止めました。'; }
+  switch (code) {
+    case 'cancelled': return '';
+    case 'rate_limited': return '呼び出しが多すぎるか、利用の上限に達しました。少し時間をおいてから押してください。';
+    case 'session_expired': return 'サインインが切れています。Claude にサインインし直してから押してください。';
+    case 'image_rejected': return '写真を受け付けられませんでした。別の写真を選んでください。';
+    case 'images_unavailable': if (Caps.limits) Caps.limits.images = null; return 'この画面では写真を送れません。台本だけで試してください。';
+    case 'refused': return 'Claude がこの内容を断りました。書き方を変えるか、家の変換で行ってください。';
+    case 'invalid_json': return '結果を読み取れませんでした。もう一度押すか、量を減らしてください。';
+    case 'prompt_too_large': return '量が多すぎます。台本を区切るか、写真の枚数を減らしてください。';
+    case 'empty_completion': return '結果が空でした。量を減らして試してください。';
+    default: return '通信に失敗しました。もう一度押してください。';
+  }
+}
+function rosterBrief() {
+  const rs = roster();
+  if (!rs.length) return '（キャラ名簿は空）';
+  return rs.map(ch => `- ${ch.name}${trim(ch.trigger) ? `（トリガー: ${trim(ch.trigger)}）` : ''}${trim(ch.features) ? `／特徴: ${trim(ch.features)}` : ''}${trim(ch.speech) ? `／口調: ${trim(ch.speech)}` : ''}`).join('\n');
+}
+function buildDraftPrompt(p, scs, startPage, script, nImages) {
+  const nextCode = 'S' + pad2(scs.length + 1);
+  return [
+    'あなたは、マンガのネームや台本を読んで「カット表」（1コマ1行の発注書）に起こす係です。',
+    '画像生成AIで1コマずつ絵を作る前提なので、各コマを具体的に書いてください。',
+    '',
+    '## 作品',
+    `題名: ${p.title || ''}`,
+    `一行あらすじ: ${trim(p.logline) || '（なし）'}`,
+    '',
+    '## 登場キャラ（chars には必ずこの名前の表記を使う）',
+    rosterBrief(),
+    '',
+    '## 既にあるシーン',
+    scs.length ? scs.map(s => `- ${s.code}: ${[s.place, s.time, s.light, s.weather].filter(Boolean).join('／')}`).join('\n') : '（なし）',
+    `必要なら新しいシーンを scenes に足してよい。番号は ${nextCode} から順に。既にあるシーンは scenes に入れない。`,
+    '',
+    '## 書き方の決まり',
+    `- page は ${startPage} から始める${nImages ? '（ネーム写真にページ番号が書いてあれば、それを優先）' : ''}`,
+    '- grade: "決"（各ページの見せ場を1つ）、"通"（通常）、"無"（絵を生成しないコマ: スマホ画面・通知・作中の文書・文字だけ・黒ベタなど）',
+    `- shot は次から1つ: ${SHOTS.join(', ')}`,
+    `- angle は次から1つ: ${ANGLES.join(', ')}`,
+    `- facing は次から1つ: ${FACINGS.join(', ')}（右から左へ読むので、話を進めるコマは左向き）`,
+    `- aspect は次から1つ（コマの形から選ぶ）: ${ASPECTS.map(a => a.k).join(', ')}`,
+    `- space は吹き出しを置く余白。次から0〜2個: ${SPACES.join(', ')}`,
+    '- 2人以上が同じコマに入るのは見せ場だけにし、会話は1人ずつの切り返しで組む',
+    '- 難しい動きは決めのポーズ1枚にして、残りは台詞や効果で見せる',
+    '- action は表情とポーズを短く。lines は台詞で、吹き出し1つを1行に「」付きで書く',
+    `- grade が "無" のときは muteKind を次から1つ選び、muteText に中身を書く: ${MUTE_KINDS.join(', ')}`,
+    nImages ? '- ネーム写真は手描きのコマ割りラフ。日本のマンガなので、コマは右上から左下へ読む。読み取れない所は推測でよいが、notes に「要確認」と書く' : null,
+    '- 分からない項目は空文字にする',
+    script ? '\n## 台本\n' + script : null,
+    '',
+    '## 出力',
+    '次の形の JSON だけを返す（説明の文章は付けない）:',
+    '{"scenes":[{"code":"' + nextCode + '","place":"宿の廊下","time":"夜","light":"ランプの暖色","weather":""}],',
+    ' "cuts":[{"page":' + startPage + ',"panel":1,"grade":"通","scene":"S01","chars":["名前"],"shot":"バストアップ","angle":"アイレベル","facing":"左向き","action":"振り向いて驚く","aspect":"縦","space":["右上"],"lines":"「……いつから？」","muteKind":"","muteText":"","backup":"","notes":""}]}',
+  ].filter(x => x != null).join('\n');
+}
+function normDraft(res, p, scs, startPage) {
+  const out = { scenes: [], cuts: [] };
+  if (!res || typeof res !== 'object') return out;
+  const rs = roster();
+  const norm = s => String(s || '').toLowerCase().replace(/[\s　・]/g, '');
+  const charId = name => {
+    const n = norm(name);
+    const hit = rs.find(ch => norm(ch.name) === n || (trim(ch.trigger) && norm(ch.trigger) === n));
+    return hit ? hit.id : null;
+  };
+  const codes = new Set(scs.map(s => String(s.code)));
+  for (const s of Array.isArray(res.scenes) ? res.scenes : []) {
+    const code = trim(s && s.code);
+    if (!code || codes.has(code)) continue;
+    codes.add(code);
+    out.scenes.push({ sel: true, code, place: trim(s.place), time: TIMES.includes(s.time) ? s.time : '', light: LIGHTS.includes(s.light) ? s.light : '', lightNote: LIGHTS.includes(s.light) ? '' : trim(s.light), weather: WEATHERS.includes(s.weather) ? s.weather : '' });
+  }
+  const aspMap = { 縦長: '縦', 横長: '横', 正方: '正方形' };
+  for (const c of Array.isArray(res.cuts) ? res.cuts : []) {
+    if (!c || typeof c !== 'object') continue;
+    const unknown = [];
+    const chars = (Array.isArray(c.chars) ? c.chars : []).map(n => { const id = charId(n); if (!id && trim(n)) unknown.push(trim(n)); return id; }).filter(Boolean);
+    const grade = GRADE[c.grade] ? c.grade : '通';
+    const asp = ASPECT[c.aspect] ? c.aspect : (aspMap[c.aspect] || '');
+    const notes = [trim(c.notes), unknown.length ? `名簿にないキャラ: ${unknown.join('、')}` : ''].filter(Boolean).join('／');
+    out.cuts.push({
+      sel: true,
+      page: Math.max(1, Math.round(num(c.page, startPage))), panel: Math.max(1, Math.round(num(c.panel, 1))),
+      sceneCode: trim(c.scene), grade, chars,
+      shot: SHOTS.includes(c.shot) ? c.shot : '', angle: ANGLES.includes(c.angle) ? c.angle : '', facing: FACINGS.includes(c.facing) ? c.facing : '',
+      action: trim(c.action), aspect: asp, space: (Array.isArray(c.space) ? c.space : []).filter(x => SPACES.includes(x)).slice(0, 3),
+      lines: Array.isArray(c.lines) ? c.lines.map(trim).filter(Boolean).join('\n') : trim(c.lines),
+      muteKind: MUTE_KINDS.includes(c.muteKind) ? c.muteKind : (grade === '無' && trim(c.muteKind) ? 'その他' : ''),
+      muteText: trim(c.muteText), backup: trim(c.backup), notes, count: GRADE[grade].count,
+    });
+  }
+  out.cuts.sort((a, b) => a.page - b.page || a.panel - b.panel);
+  // 既存のコマと番号が重なるものは、そのページの後ろへずらす
+  const taken = new Map();
+  for (const c of cutsOf()) { const pg = num(c.page, 1); if (!taken.has(pg)) taken.set(pg, new Set()); taken.get(pg).add(num(c.panel)); }
+  const fresh = new Map();
+  for (const c of out.cuts) {
+    const t = taken.get(c.page);
+    if (!fresh.has(c.page)) fresh.set(c.page, new Set());
+    const f = fresh.get(c.page);
+    if ((t && t.has(c.panel)) || f.has(c.panel)) {
+      const all = new Set([...(t || []), ...f]);
+      c.panel = Math.max(0, ...all) + 1;
+      c.moved = true;
+    }
+    f.add(c.panel);
+  }
+  return out;
+}
+async function blobOfAsset(asset) {
+  const r = await fetch('/_blob/' + asset);
+  if (!r.ok) throw new Error('fetch');
+  return r.blob();
+}
+async function runDraft() {
+  const sample = Caps.sample;
+  const p = project();
+  if (!sample || !p) return;
+  const pid = UI.pid;
+  const scs = scenesOf(pid);
+  const script = DRAFT.useScript ? String(p.script || '').slice(0, 24000) : '';
+  const maxImg = aiImages() ? num(Caps.limits.images.maxCount, 0) : 0;
+  let images = [];
+  if (maxImg) {
+    const picked = namesOf(pid).filter(n => DRAFT.photos.has(n.id) && n.asset);
+    for (const n of picked) { try { images.push(await blobOfAsset(n.asset)); } catch (e) { DRAFT.msg = 'ネーム写真の一部を読み込めませんでした。'; } }
+    images = images.concat(DRAFT.extra).slice(0, maxImg);
+  }
+  if (!script && !images.length) { DRAFT.msg = '台本を書くか、ネーム写真を選んでください。'; scheduleRender(); return; }
+  const start = Math.max(1, num(DRAFT.startPage, 1));
+  const prompt = buildDraftPrompt(p, scs, start, script, images.length);
+  const ctl = new AbortController();
+  Object.assign(DRAFT, { state: 'running', msg: '', chars: 0, ctl, result: null });
+  scheduleRender();
+  const opts = { signal: ctl.signal, onText: ({ text }) => { DRAFT.chars = text.length; scheduleRender(); } };
+  if (images.length) opts.images = images;
+  if (DRAFT.retry) opts.cache = false;
+  try {
+    const res = await sample.json(prompt, opts);
+    if (DRAFT.pid !== pid) return;
+    const r = normDraft(res, p, scs, start);
+    if (!r.cuts.length && !r.scenes.length) { Object.assign(DRAFT, { state: 'idle', msg: '下書きを作れませんでした。台本の範囲を絞るか、写真を変えて試してください。' }); }
+    else Object.assign(DRAFT, { state: 'done', result: r, msg: r.cuts.some(c => c.moved) ? '既にあるコマと番号が重なるものは、そのページの後ろへずらして追加します。' : '' });
+  } catch (e) {
+    if (DRAFT.pid !== pid) return;
+    Object.assign(DRAFT, { state: 'idle', msg: aiErrText(e) });
+  } finally {
+    DRAFT.ctl = null; DRAFT.retry = false;
+    scheduleRender();
+  }
+}
+function applyDraft() {
+  const r = DRAFT.result;
+  if (!r) return;
+  const pid = UI.pid;
+  const codeToId = new Map(scenesOf(pid).map(s => [String(s.code), s.id]));
+  let nS = 0, nC = 0;
+  for (const s of r.scenes) {
+    if (!s.sel) continue;
+    const id = uid('s');
+    create(P.scene(pid, id), { code: s.code, place: s.place, time: s.time, light: s.light, lightNote: s.lightNote || '', weather: s.weather, costumes: {}, costumeNotes: {}, props: '', notes: '', createdAt: now(), updatedAt: now() });
+    codeToId.set(s.code, id); nS++;
+  }
+  for (const c of r.cuts) {
+    if (!c.sel) continue;
+    const base = newCutData(c.page, c.panel, null);
+    Object.assign(base, {
+      sceneId: codeToId.get(c.sceneCode) || '', grade: c.grade, chars: c.chars, shot: c.shot, angle: c.angle, facing: c.facing, action: c.action,
+      aspect: c.aspect, space: c.space, count: c.count, lines: c.lines, muteKind: c.muteKind, muteText: c.muteText, backup: c.backup, notes: c.notes,
+    });
+    create(P.cut(pid, uid('k')), base); nC++;
+  }
+  Object.assign(DRAFT, { state: 'idle', result: null, msg: '' });
+  toast(`シーン${nS}・コマ${nC}を追加しました`);
+  UI.tab = 'cuts'; UI.filter = 'all';
+  scheduleRender();
+  window.scrollTo(0, 0);
+}
+function convertItem(c, ref) {
+  const sc = sceneOf(c);
+  return {
+    ref, id: cutKey(c), grade: c.grade,
+    chars: (c.chars || []).map(id => { const ch = charById(id) || {}; return { name: ch.name || '', trigger: trim(ch.trigger), features: trim(ch.features), costume: costumeOf(sc, id) }; }),
+    shot: c.shot || '', angle: c.angle || '', facing: c.facing || '', action: trim(c.action),
+    background: [sc && sc.place, sc && sc.time, sc && sc.light, sc && trim(sc.lightNote), sc && sc.weather, trim(c.bg)].map(trim).filter(Boolean).join('／'),
+    props: trim(sc && sc.props), aspect: aspectText(c.aspect), space: c.space || [], memo: trim(c.notes),
+  };
+}
+function buildConvertPrompt(items) {
+  const s = settings();
+  return [
+    s.instruction || DEFAULT_INSTRUCTION,
+    '',
+    '## 共通の品質タグ（先頭に付ける）',
+    s.quality || '（指定なし）',
+    s.negative ? '\n## 共通のネガティブ（参考。プロンプトには入れない）\n' + s.negative : null,
+    '',
+    '## コマ（JSON）',
+    JSON.stringify(items, null, 1),
+    '',
+    '## 出力',
+    '次の形の JSON だけを返す。コマごとに1つ、ref はそのまま返す:',
+    '{"results":[{"ref":"c1","prompt":"英語のプロンプト","note":"気になる点があれば日本語で一言（なければ空文字）"}]}',
+  ].filter(x => x != null).join('\n');
+}
+async function convertCuts(cuts, onProgress, signal) {
+  const sample = Caps.sample;
+  const items = cuts.map((c, i) => convertItem(c, 'c' + (i + 1)));
+  const opts = { signal };
+  if (typeof onProgress === 'function') opts.onText = onProgress;
+  const res = await sample.json(buildConvertPrompt(items), opts);
+  const results = res && Array.isArray(res.results) ? res.results : [];
+  let n = 0;
+  for (const r of results) {
+    const i = items.findIndex(x => x.ref === (r && r.ref));
+    if (i < 0 || !trim(r.prompt)) continue;
+    const c = cuts[i];
+    mutate(P.cut(UI.pid, c.id), d => { d.prompt = trim(r.prompt); d.promptNote = trim(r.note); });
+    n++;
+  }
+  return n;
+}
+async function runConvertOne(path) {
+  if (!aiReady() || AI.one) return;
+  const c0 = getDoc(path);
+  if (!c0) return;
+  const c = Object.assign({}, c0, { id: splitPath(path)[1] });
+  if (c.grade === '無') return;
+  const ctl = new AbortController();
+  AI.one = { path, ctl }; AI.oneMsg = ''; AI.oneMsgPath = path;
+  scheduleRender();
+  try {
+    const n = await convertCuts([c], null, ctl.signal);
+    if (!n) AI.oneMsg = '結果を読み取れませんでした。もう一度押してください。';
+  } catch (e) { AI.oneMsg = aiErrText(e); }
+  finally { AI.one = null; scheduleRender(); }
+}
+async function runConvertBulk() {
+  if (!aiReady() || AI.bulk) return;
+  const todo = exportCuts().filter(c => !trim(c.prompt));
+  if (!todo.length) return;
+  const ctl = new AbortController();
+  AI.bulk = { total: todo.length, done: 0, chars: 0, ctl };
+  AI.bulkMsg = '';
+  scheduleRender();
+  let ok = 0;
+  try {
+    for (let i = 0; i < todo.length; i += 8) {
+      const batch = todo.slice(i, i + 8);
+      AI.bulk.chars = 0;
+      ok += await convertCuts(batch, ({ text }) => { if (AI.bulk) { AI.bulk.chars = text.length; scheduleRender(); } }, ctl.signal);
+      if (AI.bulk) AI.bulk.done = Math.min(todo.length, i + batch.length);
+      scheduleRender();
+    }
+    AI.bulkMsg = ok < todo.length ? `${todo.length}件のうち${ok}件を英語にしました。残りはもう一度押すと続きから作ります。` : '';
+    if (ok) toast(`${ok}件のプロンプトを作りました`);
+  } catch (e) {
+    AI.bulkMsg = aiErrText(e) || (ok ? `${ok}件まで作って止めました。` : '');
+  } finally { AI.bulk = null; scheduleRender(); }
+}
+
+/* ---------- ネーム写真 ---------- */
+async function compressImage(file, max = 2000, q = 0.85) {
+  const url = URL.createObjectURL(file);
+  try {
+    const img = new Image();
+    img.decoding = 'async';
+    img.src = url;
+    await img.decode();
+    const sc = Math.min(1, max / Math.max(img.naturalWidth, img.naturalHeight));
+    const w = Math.max(1, Math.round(img.naturalWidth * sc)), h = Math.max(1, Math.round(img.naturalHeight * sc));
+    const cv = document.createElement('canvas');
+    cv.width = w; cv.height = h;
+    const ctx = cv.getContext('2d');
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(0, 0, w, h);
+    ctx.drawImage(img, 0, 0, w, h);
+    const blob = await new Promise(res => cv.toBlob(res, 'image/jpeg', q));
+    return blob || file;
+  } finally { URL.revokeObjectURL(url); }
+}
+async function addNamePhotos(files) {
+  const cloud = Store.mode === 'cloud' && !!Caps.assets;
+  if ((!cloud && !photosLocalOK()) || UP) return;
+  const list = Array.from(files).filter(f => /^image\//.test(f.type || '') || /\.(png|jpe?g|webp|gif|heic)$/i.test(f.name));
+  if (!list.length) return;
+  const pid = UI.pid;
+  let pg = namesOf(pid).reduce((m, n) => Math.max(m, num(n.page, 0)), 0);
+  UP = { done: 0, total: list.length };
+  scheduleRender();
+  let ok = 0;
+  for (const f of list) {
+    try {
+      const blob = await compressImage(f);
+      const key = uid('f');
+      if (cloud) {
+        const r = await Caps.assets.upload(blob, { type: 'image/jpeg' });
+        pg += 1;
+        create(P.name(pid, uid('n')), { page: pg, asset: r.id, photo: key, note: '', createdAt: now(), updatedAt: now() });
+      } else {
+        await IDB.put(key, { type: blob.type || 'image/jpeg', buf: await blob.arrayBuffer() });
+        PHOTO_URLS.set(key, URL.createObjectURL(blob));
+        pg += 1;
+        create(P.name(pid, uid('n')), { page: pg, photo: key, note: '', createdAt: now(), updatedAt: now() });
+      }
+      ok++;
+    } catch (e) {
+      if (!cloud) { toast('写真を保存できませんでした。端末の空きを確かめてください'); break; }
+      const code = e && e.code;
+      if (code === 'quota_or_state') { toast('写真の保存枠がいっぱいです。使わない写真を消してください'); break; }
+      if (code === 'rate_limited') { toast('続けて保存しすぎました。少し待ってから追加してください'); break; }
+      if (code === 'not_granted' || code === 'capability_disabled' || code === 'capability_removed') { Caps.assets = null; toast('この画面では写真を保存できません'); break; }
+      toast('保存できなかった写真があります');
+    }
+    UP.done++;
+    scheduleRender();
+  }
+  UP = null;
+  if (ok) toast(`ネーム写真を${ok}枚保存しました`);
+  scheduleRender();
+}
+
+/* ---------- 受け渡し（別の端末とファイル1つでやり取りする） ---------- */
+const SYNC = { busy: '', prog: '', prepared: null, withPhotos: true, plan: null, msg: '' };
+const FROM_LABEL = { offline: 'オフライン版', claude: 'Claude の段取工房', local: 'この端末だけの段取工房' };
+const hereKind = () => (OFFLINE ? 'offline' : Store.mode === 'cloud' ? 'claude' : 'local');
+const ID_PAT = '[A-Za-z0-9_\\-.~:@+]{1,120}';
+const PATH_OK = [new RegExp(`^roster/${ID_PAT}$`), /^settings\/main$/, new RegExp(`^projects/${ID_PAT}$`), new RegExp(`^projects/${ID_PAT}/(scenes|cuts|names)/${ID_PAT}$`)];
+const okPath = p => typeof p === 'string' && PATH_OK.some(r => r.test(p));
+const KIND_ORDER = ['settings', 'char', 'project', 'scene', 'cut', 'name'];
+const KIND_LABEL = { settings: '設定', char: 'キャラ', project: '作品', scene: 'シーン', cut: 'コマ', name: 'ネーム写真' };
+function kindOf(path) {
+  if (path.startsWith('roster/')) return 'char';
+  if (path === P.settings) return 'settings';
+  const m = path.match(/^projects\/[^/]+(?:\/(scenes|cuts|names)\/[^/]+)?$/);
+  if (!m) return '';
+  return m[1] ? { scenes: 'scene', cuts: 'cut', names: 'name' }[m[1]] : 'project';
+}
+const projectIdOf = path => { const m = path.match(/^projects\/([^/]+)/); return m ? m[1] : null; };
+const stripId = r => { const d = clone(r); delete d.id; return d; };
+function fmtDateTime(t) { if (!t) return ''; const d = new Date(t); return `${d.getMonth() + 1}/${d.getDate()} ${d.getHours()}:${pad2(d.getMinutes())}`; }
+function fmtSize(n) { return n >= 1048576 ? (n / 1048576).toFixed(1) + 'MB' : Math.max(1, Math.round(n / 1024)) + 'KB'; }
+function blobToB64(blob) {
+  return new Promise((res, rej) => {
+    const fr = new FileReader();
+    fr.onload = () => { const s = String(fr.result); res(s.slice(s.indexOf(',') + 1)); };
+    fr.onerror = () => rej(fr.error);
+    fr.readAsDataURL(blob);
+  });
+}
+function b64ToBuf(b64) { const bin = atob(b64); const u = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i); return u.buffer; }
+const PHOTO_TYPES = /^image\/(jpeg|png|webp|gif)$/;
+
+// この端末にあるものをすべて path → 中身 で集める
+async function collectDocs() {
+  const out = new Map();
+  for (const r of rows(P.roster)) out.set(P.char(r.id), stripId(r));
+  const st = getDoc(P.settings);
+  if (st) out.set(P.settings, clone(st));
+  for (const p of rows(P.projects)) {
+    out.set(P.project(p.id), stripId(p));
+    for (const c of [P.scenes(p.id), P.cuts(p.id), P.names(p.id)]) {
+      const list = loaded(c) ? rows(c) : await readCol(c);
+      for (const d of list) out.set(c + '/' + d.id, stripId(d));
+    }
+  }
+  return out;
+}
+async function syncPrepare() {
+  if (SYNC.busy) return;
+  SYNC.busy = 'export'; SYNC.prog = ''; SYNC.prepared = null; SYNC.msg = '';
+  scheduleRender();
+  try {
+    const docs = await collectDocs();
+    const photos = {};
+    const names = Array.from(docs).filter(([p]) => kindOf(p) === 'name');
+    let i = 0;
+    for (const [, d] of names) {
+      const key = photoKeyOf(d);
+      if (SYNC.withPhotos && key) {
+        SYNC.prog = `写真 ${++i}/${names.length}`; scheduleRender();
+        try { const b = await photoBlob(d); if (b) photos[key] = { type: PHOTO_TYPES.test(b.type) ? b.type : 'image/jpeg', b64: await blobToB64(b) }; } catch (e) { /* 読めない写真は入れない */ }
+      }
+      if (key) d.photo = key;
+      delete d.asset; // 写真の保存庫の番号は、そのページの中でしか通じない
+    }
+    const counts = {};
+    for (const [p] of docs) { const k = kindOf(p); counts[k] = (counts[k] || 0) + 1; }
+    const bundle = { app: '段取工房', v: 2, from: hereKind(), exportedAt: new Date().toISOString(), docs: Object.fromEntries(docs), tombs: Object.assign({}, (getDoc(P.tombs) || {}).map || {}), photos };
+    const text = JSON.stringify(bundle);
+    const d = new Date();
+    const stamp = `${d.getFullYear()}${pad2(d.getMonth() + 1)}${pad2(d.getDate())}-${pad2(d.getHours())}${pad2(d.getMinutes())}`;
+    SYNC.prepared = { filename: `段取工房_${OFFLINE ? 'オフライン' : 'Claude'}_${stamp}.json`, text, size: new Blob([text]).size, counts, nPhotos: Object.keys(photos).length, at: now() };
+  } catch (e) {
+    SYNC.msg = '書き出しの準備に失敗しました。通信を確かめて、もう一度押してください。';
+  } finally {
+    SYNC.busy = ''; SYNC.prog = '';
+    scheduleRender();
+  }
+}
+async function syncSend() {
+  const pr = SYNC.prepared;
+  if (!pr) return;
+  const ok = await saveFile(pr.filename, pr.text, 'application/json');
+  if (ok) { lsSet('dandori.lastExport', pr.at); scheduleRender(); }
+}
+function normalizeBundle(raw) {
+  if (!raw || typeof raw !== 'object' || raw.app !== '段取工房') throw { msg: '段取工房で書き出したファイルではないようです。' };
+  const obj = v => (v && typeof v === 'object' && !Array.isArray(v) ? v : {});
+  if (raw.v === 2) return { from: String(raw.from || ''), exportedAt: String(raw.exportedAt || ''), docs: obj(raw.docs), tombs: obj(raw.tombs), photos: obj(raw.photos) };
+  if (raw.v === 1) {
+    // 以前の「全部を書き出す」で作ったファイル
+    const docs = {};
+    for (const r of Array.isArray(raw.roster) ? raw.roster : []) if (r && r.id) docs[P.char(r.id)] = stripId(r);
+    if (raw.settings && typeof raw.settings === 'object' && Object.keys(raw.settings).length) docs[P.settings] = clone(raw.settings);
+    for (const b of Array.isArray(raw.projects) ? raw.projects : []) {
+      if (!b || !b.id) continue;
+      docs[P.project(b.id)] = clone(b.doc || {});
+      for (const [k, fn] of [['scenes', P.scene], ['cuts', P.cut], ['names', P.name]]) {
+        for (const r of Array.isArray(b[k]) ? b[k] : []) {
+          if (!r || !r.id) continue;
+          const d = stripId(r);
+          if (k === 'names' && d.asset && !d.photo) d.photo = 'a' + d.asset;
+          docs[fn(b.id, r.id)] = d;
+        }
+      }
+    }
+    return { from: '', exportedAt: String(raw.exportedAt || ''), docs, tombs: {}, photos: {} };
+  }
+  throw { msg: 'この段取工房より新しい形式のファイルです。段取工房を新しくしてから取り込んでください。' };
+}
+async function planImport(raw) {
+  const b = normalizeBundle(raw);
+  const docs = [];
+  for (const [p, d] of Object.entries(b.docs)) {
+    if (!okPath(p) || !d || typeof d !== 'object' || Array.isArray(d)) continue;
+    if (JSON.stringify(d).length > 200000) continue;
+    docs.push([p, d]);
+  }
+  const tombs = Object.entries(b.tombs).filter(([p, t]) => okPath(p) && Number.isFinite(Number(t)) && Number(t) > 0).map(([p, t]) => [p, Number(t)]);
+  const photos = {};
+  for (const [k, v] of Object.entries(b.photos)) {
+    if (/^[A-Za-z0-9_\-]{1,80}$/.test(k) && v && typeof v.b64 === 'string' && v.b64.length < 28e6 && PHOTO_TYPES.test(String(v.type || 'image/jpeg'))) photos[k] = { type: String(v.type || 'image/jpeg'), b64: v.b64 };
+  }
+  // この端末の今の中身（比べる相手）
+  const existing = new Map();
+  for (const r of rows(P.roster)) existing.set(P.char(r.id), r);
+  const st = getDoc(P.settings);
+  if (st) existing.set(P.settings, st);
+  for (const r of rows(P.projects)) existing.set(P.project(r.id), r);
+  const pids = new Set();
+  for (const [p] of docs.concat(tombs)) { const id = projectIdOf(p); if (id) pids.add(id); }
+  for (const pid of pids) {
+    for (const c of [P.scenes(pid), P.cuts(pid), P.names(pid)]) {
+      const list = loaded(c) ? rows(c) : await readCol(c);
+      for (const d of list) existing.set(c + '/' + d.id, d);
+    }
+  }
+  const localT = (getDoc(P.tombs) || {}).map || {};
+  const plan = { put: [], del: [], newer: 0, counts: {}, tombs: Object.fromEntries(tombs), photos, from: b.from, exportedAt: b.exportedAt };
+  const bump = (kind, k) => { plan.counts[kind] = plan.counts[kind] || { add: 0, upd: 0, del: 0 }; plan.counts[kind][k]++; };
+  for (const [p, d] of docs) {
+    const inc = num(d.updatedAt);
+    if (localT[p] && num(localT[p]) >= inc) continue; // この端末で、そのあとに消したもの
+    const ex = existing.get(p);
+    if (!ex) { plan.put.push({ path: p, data: d, ex: null }); bump(kindOf(p), 'add'); }
+    else if (inc > num(ex.updatedAt)) { plan.put.push({ path: p, data: d, ex }); bump(kindOf(p), 'upd'); }
+    else if (inc < num(ex.updatedAt)) plan.newer++;
+  }
+  const putSet = new Set(plan.put.map(x => x.path));
+  for (const [p, t] of tombs) {
+    const ex = existing.get(p);
+    if (ex && !putSet.has(p) && num(ex.updatedAt) <= t) { plan.del.push({ path: p, ex, at: t }); bump(kindOf(p), 'del'); }
+  }
+  return plan;
+}
+async function applyImport(plan, onProg) {
+  const rank = p => KIND_ORDER.indexOf(kindOf(p));
+  plan.put.sort((a, b) => rank(a.path) - rank(b.path));
+  const total = plan.put.length + plan.del.length;
+  let done = 0, photoFail = 0;
+  IMPORTING = true;
+  try {
+    for (const it of plan.put) {
+      const d = clone(it.data);
+      if (kindOf(it.path) === 'name') {
+        const key = d.photo || '';
+        delete d.asset;
+        const exKey = it.ex ? photoKeyOf(it.ex) : '';
+        const ph = key && plan.photos[key];
+        if (Store.mode === 'cloud') {
+          if (key && exKey === key && it.ex.asset) d.asset = it.ex.asset;
+          else if (ph && Caps.assets) {
+            try { const r = await Caps.assets.upload(new Blob([b64ToBuf(ph.b64)], { type: ph.type }), { type: ph.type }); d.asset = r.id; }
+            catch (e) { photoFail++; }
+          } else if (ph) photoFail++;
+        } else if (ph && typeof indexedDB !== 'undefined') {
+          try { await IDB.put(key, { type: ph.type, buf: b64ToBuf(ph.b64) }); PHOTO_LOADING.delete(key); }
+          catch (e) { photoFail++; }
+        }
+      }
+      create(it.path, d);
+      if (onProg) onProg(++done, total);
+    }
+    for (const it of plan.del) {
+      if (kindOf(it.path) === 'name') dropPhoto(it.ex);
+      removeDoc(it.path, { at: it.at });
+      if (onProg) onProg(++done, total);
+    }
+    const t = plan.tombs;
+    if (Object.keys(t).length) {
+      mutate(P.tombs, d => {
+        const m = Object.assign({}, d.map || {});
+        for (const [p, at] of Object.entries(t)) if (!(num(m[p]) >= at)) m[p] = at;
+        d.map = pruneTombs(m);
+      }, { create: true });
+    }
+  } finally { IMPORTING = false; SYNC.prepared = null; }
+  return { photoFail, total };
+}
+async function syncReadFile(file) {
+  if (SYNC.busy) return;
+  SYNC.busy = 'read'; SYNC.msg = '';
+  scheduleRender();
+  try {
+    if (file.size > 300 * 1048576) throw { msg: 'ファイルが大きすぎて読めません。' };
+    let raw;
+    try { raw = JSON.parse(await file.text()); } catch (e) { throw { msg: 'このファイルは読めませんでした。段取工房で書き出したファイルを選んでください。' }; }
+    SYNC.plan = await planImport(raw);
+    SYNC.busy = '';
+    openSheet('import', {});
+  } catch (e) {
+    SYNC.msg = (e && e.msg) || '読み込みに失敗しました。通信を確かめて、もう一度選んでください。';
+  } finally {
+    SYNC.busy = '';
+    scheduleRender();
+  }
+}
+function viewSync() {
+  if (!loaded(P.projects) || !loaded(P.roster)) return loadingHTML('読み込んでいます');
+  const pr = SYNC.prepared;
+  const last = lsGet('dandori.lastExport', 0);
+  const lastIn = lsGet('dandori.lastImport', 0);
+  const other = OFFLINE ? 'Claude の段取工房' : 'スマホのオフライン版';
+  const steps = OFFLINE
+    ? ['ここで「受け渡し用のファイルを作る」を押し、できたファイルを LINE やメールで自分に送るか、ファイルに保存する', '家のPCで Claude の段取工房を開き、「受け渡し」の「ファイルを選ぶ」でそのファイルを取り込む', '家で進めた分をスマホに戻すときは、向こうで書き出して、ここで取り込む']
+    : ['ここで「受け渡し用のファイルを作る」を押して保存し、そのファイルをスマホに送る（LINE、メール、クラウドなど）', 'スマホのオフライン版の「受け渡し」で、そのファイルを取り込む', 'オフライン版で書いた分は、向こうで書き出して、ここで取り込む'];
+  const exportCard = `<div class="card setc"><h3>書き出す</h3>
+    ${pr ? `<p class="hint">準備できました（${esc(fmtSize(pr.size))}・作品 ${pr.counts.project || 0}・コマ ${pr.counts.cut || 0}・写真 ${pr.nPhotos}枚）。</p>
+      <div class="row-wrap"><button type="button" class="btn pri" data-act="syncSend">${ICON.export}${OFFLINE ? '送る・保存する' : 'ファイルに保存'}</button><button type="button" class="btn ghost" data-act="syncDrop">やめる</button></div>`
+    : `<label class="switch"><input type="checkbox" id="f-syncphotos" data-act="syncPhotos" ${SYNC.withPhotos ? 'checked' : ''}><span>ネーム写真も入れる</span></label>
+      <div><button type="button" class="btn pri" data-act="syncPrepare" ${SYNC.busy ? 'disabled' : ''}>${ICON.export}${SYNC.busy === 'export' ? `準備しています${SYNC.prog ? `（${esc(SYNC.prog)}）` : ''}` : '受け渡し用のファイルを作る'}</button></div>`}
+    <p class="hint">${last ? `前回の書き出し: ${esc(fmtDateTime(last))}` : 'まだ書き出したことはありません。'}</p></div>`;
+  const importCard = `<div class="card setc"><h3>取り込む</h3>
+    <p class="hint">${esc(other)}で書き出したファイルを選びます。取り込む前に、何が変わるかを確かめられます。</p>
+    <div><label class="btn" for="f-syncin">${ICON.download}${SYNC.busy === 'read' ? '読んでいます…' : 'ファイルを選ぶ'}</label><input id="f-syncin" type="file" accept="application/json,.json" class="vh" data-file="syncin"></div>
+    ${lastIn ? `<p class="hint">前回の取り込み: ${esc(fmtDateTime(lastIn))}</p>` : ''}</div>`;
+  return `<p class="lede">${OFFLINE ? 'このオフライン版と、Claude の中の段取工房（家のPCと共有している方）の間で、ファイル1つでデータを受け渡します。' : 'このページと、スマホのオフライン版の間で、ファイル1つでデータを受け渡します。'}</p>
+    <ol class="steps">${steps.map(s => `<li>${esc(s)}</li>`).join('')}</ol>
+    ${SYNC.msg ? `<div class="banner warn">${esc(SYNC.msg)}</div>` : ''}
+    ${exportCard}${importCard}
+    <p class="hint">同じものを両方で直したときは、あとで直した方が残ります。片方で消したものは、取り込むともう片方でも消えます。</p>`;
+}
+
+/* ---------- 集計の保存（作品の一覧に出すため） ---------- */
+let statsTimer = null;
+function scheduleStats() { clearTimeout(statsTimer); statsTimer = setTimeout(saveStats, 2200); }
+function saveStats() {
+  const pid = UI.pid;
+  if (!pid || !loaded(P.cuts(pid)) || !project(pid)) return;
+  const cuts = cutsOf(pid);
+  const st = computeStats(cuts);
+  const last = cuts.reduce((m, c) => Math.max(m, num(c.updatedAt)), 0);
+  const lastMin = Math.floor(last / 60000) * 60000;
+  const p = project(pid);
+  if (JSON.stringify(p.stats || null) === JSON.stringify(st) && num(p.lastEdit) >= lastMin) return;
+  mutate(P.project(pid), d => { d.stats = st; d.lastEdit = Math.max(lastMin, num(d.lastEdit)); }, { keepTime: true });
+}
+
+/* ---------- 画面の移動 ---------- */
+function go(view) {
+  if (view === UI.view) return;
+  if (UI.sheet) closeSheet();
+  UI.prev = UI.view === 'project' ? 'project' : 'home';
+  UI.view = view;
+  lastMain = '';
+  render();
+  window.scrollTo(0, 0);
+}
+function openProject(pid, tab) {
+  if (UI.pid && UI.pid !== pid) {
+    for (const c of [P.scenes(UI.pid), P.cuts(UI.pid), P.names(UI.pid)]) unwatch(c);
+  }
+  UI.pid = pid; UI.view = 'project';
+  UI.tab = tab || lsGet('dandori.tab', 'cuts');
+  if (!TABS.find(t => t.k === UI.tab)) UI.tab = 'cuts';
+  UI.filter = 'all';
+  watchCol(P.scenes(pid)); watchCol(P.cuts(pid)); watchCol(P.names(pid));
+  lsSet('dandori.last', pid);
+  lastMain = '';
+  render();
+  window.scrollTo(0, 0);
+}
+function back() {
+  if (UI.sheet) { closeSheet(); return; }
+  if (UI.view === 'project') { saveStats(); UI.view = 'home'; lsSet('dandori.last', null); }
+  else if (UI.view === 'roster' || UI.view === 'settings' || UI.view === 'sync') UI.view = UI.prev === 'project' && UI.pid && project() ? 'project' : 'home';
+  else UI.view = 'home';
+  lastMain = '';
+  render();
+  window.scrollTo(0, 0);
+}
+
+/* ---------- 操作 ---------- */
+const ACT = {};
+ACT.go = t => go(t.dataset.view);
+ACT.back = () => back();
+ACT.tab = t => { UI.tab = t.dataset.tab; lsSet('dandori.tab', UI.tab); lastMain = ''; render(); window.scrollTo(0, 0); };
+ACT.openProject = t => openProject(t.dataset.id);
+ACT.newProject = () => openSheet('project', { isNew: true, draft: { title: '', kind: 'manga', abbr: '', logline: '' } });
+ACT.draftKind = t => { if (UI.sheet && UI.sheet.draft) { readDraftInputs(); UI.sheet.draft.kind = t.dataset.val; renderSheet(false); } };
+function readDraftInputs() { $$('#layer [data-draft]').forEach(el => { UI.sheet.draft[el.dataset.draft] = el.value; }); }
+ACT.createProject = () => {
+  readDraftInputs();
+  const d = UI.sheet.draft;
+  if (!trim(d.title)) { toast('題名を入れてください'); const el = $('#f-ptitle'); if (el) el.focus(); return; }
+  const pid = uid('p');
+  create(P.project(pid), { title: trim(d.title), kind: d.kind || 'manga', abbr: sanitizeName(d.abbr), logline: trim(d.logline), script: '', createdAt: now(), updatedAt: now(), lastEdit: now() });
+  closeSheet();
+  openProject(pid, 'cuts');
+};
+ACT.projSettings = () => openSheet('project', {});
+ACT.delProject = async () => {
+  const pid = UI.pid;
+  const p = project();
+  const ok = await ask({ title: `「${(p && p.title) || '作品'}」を消しますか？`, body: 'コマ・シーン・ネーム写真もすべて消え、元に戻せません。', ok: '消す', danger: true });
+  if (!ok) return;
+  const names = namesOf(pid);
+  for (const n of names) { dropPhoto(n); removeDoc(P.name(pid, n.id)); }
+  for (const c of cutsOf(pid)) removeDoc(P.cut(pid, c.id));
+  for (const s of scenesOf(pid)) removeDoc(P.scene(pid, s.id));
+  removeDoc(P.project(pid));
+  closeSheet();
+  UI.view = 'home'; UI.pid = null; lsSet('dandori.last', null);
+  lastMain = '';
+  render();
+  toast('作品を消しました');
+};
+ACT.closeSheet = () => closeSheet();
+ACT.sheetBg = (t, e) => { if (e.target === t) closeSheet(); };
+ACT.filter = t => { UI.filter = t.dataset.k; render(); };
+ACT.openCut = t => { if (UI.sheet && UI.sheet.kind !== 'cut') closeSheet(); openCut(t.dataset.id); };
+ACT.addCutEnd = async () => {
+  const lc = lastCut();
+  const pg = lc ? num(lc.page, 1) : 1;
+  const id = await insertCut(pg, lc ? maxPanel(pg) + 1 : 1, lc, false);
+  if (id) openCut(id);
+};
+ACT.pageMenu = async t => {
+  const pg = num(t.dataset.page, 1);
+  const k = await menu(`P${pad2(pg)} の操作`, [
+    { k: 'add', label: 'このページの最後にコマを足す' },
+    { k: 'renum', label: 'コマ番号を1から詰め直す' },
+    { k: 'ready', label: 'このページの書き漏れのないコマを「生成待ち」にする' },
+  ]);
+  if (k === 'add') {
+    const cs = pageCuts(pg);
+    const id = await insertCut(pg, maxPanel(pg) + 1, cs[cs.length - 1] || null, false);
+    if (id) openCut(id);
+  } else if (k === 'renum') {
+    const cs = pageCuts(pg);
+    const changes = cs.map((c, i) => ({ c, to: i + 1 })).filter(x => num(x.c.panel) !== x.to);
+    if (!changes.length) { toast('番号は詰まっています'); return; }
+    const gen = changes.filter(x => generated(x.c));
+    if (gen.length && !(await ask({ title: 'コマ番号がずれます', body: `生成済みのコマ（${gen.map(x => cutKey(x.c)).join('、')}）の番号が変わります。続けますか？`, ok: '続ける' }))) return;
+    changes.forEach(x => mutate(P.cut(UI.pid, x.c.id), d => { d.panel = x.to; }));
+    toast('番号を詰めました');
+  } else if (k === 'ready') {
+    const cs = pageCuts(pg).filter(c => (c.status || 'draft') === 'draft' && c.grade !== '無' && !missingOf(c).length);
+    cs.forEach(c => mutate(P.cut(UI.pid, c.id), d => { d.status = 'ready'; }));
+    toast(cs.length ? `${cs.length}コマを生成待ちにしました` : '当てはまるコマはありません');
+  }
+};
+ACT.cutNav = t => { if (t.dataset.id) { UI.sheet.path = P.cut(UI.pid, t.dataset.id); lastSheet = ''; renderSheet(true); } };
+ACT.cutMenu = async () => {
+  const path = UI.sheet.path;
+  const c0 = getDoc(path);
+  if (!c0) return;
+  const c = Object.assign({}, c0, { id: splitPath(path)[1] });
+  const pc = pageCuts(num(c.page, 1));
+  const i = pc.findIndex(x => x.id === c.id);
+  const k = await menu(`${cutKey(c)} の操作`, [
+    { k: 'up', label: '1つ前へ移動', disabled: i <= 0 },
+    { k: 'down', label: '1つ後ろへ移動', disabled: i < 0 || i >= pc.length - 1 },
+    { k: 'copyOrder', label: 'このコマの発注書をコピー' },
+    { k: 'del', label: 'このコマを消す', danger: true },
+  ]);
+  if (k === 'up' || k === 'down') {
+    const o = pc[k === 'up' ? i - 1 : i + 1];
+    if (!o) return;
+    if ((generated(o) || generated(c)) && !(await ask({ title: 'コマ番号が入れ替わります', body: '生成済みのコマの番号が変わり、保存した画像のファイル名と合わなくなります。続けますか？', ok: '続ける' }))) return;
+    const a = num(c.panel), b = num(o.panel);
+    mutate(path, d => { d.panel = b; });
+    mutate(P.cut(UI.pid, o.id), d => { d.panel = a; });
+  } else if (k === 'copyOrder') {
+    copyText(orderText(project(), [c]), '発注書');
+  } else if (k === 'del') {
+    if (await ask({ title: `${cutKey(c)} を消しますか？`, body: '元に戻せません。', ok: '消す', danger: true })) {
+      const cs = cutsOf();
+      const j = cs.findIndex(x => x.id === c.id);
+      const nb = cs[j + 1] || cs[j - 1];
+      removeDoc(path);
+      if (nb) { UI.sheet.path = P.cut(UI.pid, nb.id); lastSheet = ''; renderSheet(true); } else closeSheet();
+      toast('コマを消しました');
+    }
+  }
+};
+ACT.cutAddNext = async () => {
+  const c0 = getDoc(UI.sheet.path); if (!c0) return;
+  const c = Object.assign({}, c0, { id: splitPath(UI.sheet.path)[1] });
+  const id = await insertCut(num(c.page, 1), num(c.panel) + 1, c, false);
+  if (id) { UI.sheet.path = P.cut(UI.pid, id); lastSheet = ''; renderSheet(true); }
+};
+ACT.cutDup = async () => {
+  const c0 = getDoc(UI.sheet.path); if (!c0) return;
+  const c = Object.assign({}, c0, { id: splitPath(UI.sheet.path)[1] });
+  const id = await insertCut(num(c.page, 1), num(c.panel) + 1, c, true);
+  if (id) { UI.sheet.path = P.cut(UI.pid, id); lastSheet = ''; renderSheet(true); toast('複製しました'); }
+};
+ACT.cutNewPage = async () => {
+  const c0 = getDoc(UI.sheet.path); if (!c0) return;
+  const c = Object.assign({}, c0, { id: splitPath(UI.sheet.path)[1] });
+  const maxPage = cutsOf().reduce((m, x) => Math.max(m, num(x.page, 1)), 1);
+  const id = await insertCut(maxPage + 1, 1, c, false);
+  if (id) { UI.sheet.path = P.cut(UI.pid, id); lastSheet = ''; renderSheet(true); }
+};
+ACT.setGrade = t => {
+  const path = t.closest('[data-doc]').dataset.doc;
+  const g = t.dataset.val;
+  mutate(path, d => {
+    const old = GRADE[d.grade] || GRADE['通'];
+    if (num(d.count) === old.count || (d.grade === '無' && !num(d.count))) d.count = GRADE[g].count;
+    d.grade = g;
+    if (g === '無' && ST[d.status] && ST[d.status].i >= ST.ready.i && ST[d.status].i < ST.done.i) d.status = 'draft';
+  });
+};
+ACT.setStatus = t => {
+  const path = t.closest('[data-doc]').dataset.doc;
+  mutate(path, d => { d.status = t.dataset.val; });
+  toast(t.dataset.val === 'ready' ? '生成待ちにしました' : '完成にしました');
+};
+ACT.pick = t => {
+  const host = t.closest('[data-doc]');
+  if (!host || !host.dataset.doc) return;
+  const path = host.dataset.doc;
+  const f = t.dataset.field;
+  let v = t.dataset.val;
+  if (t.dataset.num) v = num(v);
+  const multi = !!t.dataset.multi, req = !!t.dataset.req;
+  mutate(path, d => {
+    const cur = getField(d, f);
+    if (multi) {
+      const arr = Array.isArray(cur) ? cur.slice() : [];
+      const i = arr.indexOf(v);
+      if (i >= 0) arr.splice(i, 1); else arr.push(v);
+      setField(d, f, arr);
+    } else if (cur === v && !req) setField(d, f, typeof v === 'number' ? 0 : '');
+    else setField(d, f, v);
+  }, { create: host.dataset.create === '1' });
+};
+ACT.step = t => {
+  const f = t.dataset.field, dlt = num(t.dataset.d);
+  const input = t.parentElement.querySelector('input');
+  const cur = num(input && input.value, 0);
+  applyStep(f, cur + dlt, t);
+};
+async function applyStep(f, val, el) {
+  if (f === 'draftStart') { DRAFT.startPage = Math.max(1, val); lastMain = ''; scheduleRender(); return; }
+  const s = UI.sheet;
+  if (!s) return;
+  if (f === 'namePage') { mutate(s.path, d => { d.page = Math.max(1, val); }); return; }
+  if (s.kind !== 'cut') return;
+  const path = s.path;
+  const c0 = getDoc(path); if (!c0) return;
+  const c = Object.assign({}, c0, { id: splitPath(path)[1] });
+  if (f === 'count') { mutate(path, d => { d.count = Math.max(0, Math.min(99, val)); }); return; }
+  if (f === 'page') {
+    const pg = Math.max(1, Math.min(999, val));
+    if (pg === num(c.page, 1)) { lastSheet = ''; scheduleRender(); return; }
+    if (generated(c) && !(await ask({ title: 'コマ番号が変わります', body: '生成済みのコマです。保存した画像のファイル名と合わなくなります。続けますか？', ok: '続ける' }))) { lastSheet = ''; scheduleRender(); return; }
+    mutate(path, d => { d.page = pg; d.panel = maxPanel(pg) + 1; });
+    return;
+  }
+  if (f === 'panel') {
+    const pn = Math.max(1, Math.min(99, val));
+    if (pn === num(c.panel)) { lastSheet = ''; scheduleRender(); return; }
+    const other = pageCuts(num(c.page, 1)).find(x => x.id !== c.id && num(x.panel) === pn);
+    if ((generated(c) || (other && generated(other))) && !(await ask({ title: 'コマ番号が変わります', body: '生成済みのコマの番号が変わり、保存した画像のファイル名と合わなくなります。続けますか？', ok: '続ける' }))) { lastSheet = ''; scheduleRender(); return; }
+    const old = num(c.panel);
+    mutate(path, d => { d.panel = pn; });
+    if (other) mutate(P.cut(UI.pid, other.id), d => { d.panel = old; });
+  }
+}
+ACT.copyPromptSheet = () => { const c = getDoc(UI.sheet.path); if (c && trim(c.prompt)) copyText(trim(c.prompt), 'プロンプト'); };
+ACT.aiOne = () => { if (UI.sheet) runConvertOne(UI.sheet.path); };
+ACT.addSceneFromCut = () => {
+  const cutPath = UI.sheet.path;
+  const id = newScene();
+  mutate(cutPath, d => { d.sceneId = id; });
+  openSheet('scene', { path: P.scene(UI.pid, id), returnTo: { kind: 'cut', path: cutPath } });
+};
+function newScene() {
+  const pid = UI.pid;
+  const scs = scenesOf(pid);
+  const codes = new Set(scs.map(s => s.code));
+  let n = scs.length + 1;
+  while (codes.has('S' + pad2(n))) n++;
+  const id = uid('s');
+  create(P.scene(pid, id), { code: 'S' + pad2(n), place: '', time: '', light: '', lightNote: '', weather: '', costumes: {}, costumeNotes: {}, props: '', notes: '', createdAt: now(), updatedAt: now() });
+  return id;
+}
+ACT.addScene = () => { const id = newScene(); openSheet('scene', { path: P.scene(UI.pid, id), fresh: true }); };
+ACT.openScene = t => openSheet('scene', { path: P.scene(UI.pid, t.dataset.id) });
+ACT.delScene = async () => {
+  const path = UI.sheet.path;
+  const id = splitPath(path)[1];
+  const used = cutsOf().filter(c => c.sceneId === id);
+  const ok = await ask({ title: 'このシーンを消しますか？', body: used.length ? `${used.length}コマがこのシーンを使っています。消すと、それらのコマは「シーンなし」になります。` : '', ok: '消す', danger: true });
+  if (!ok) return;
+  used.forEach(c => mutate(P.cut(UI.pid, c.id), d => { d.sceneId = ''; }));
+  removeDoc(path);
+  closeSheet();
+};
+ACT.addChar = () => {
+  const id = uid('c');
+  const n = roster().length;
+  create(P.char(id), { name: '', trigger: '', features: '', costumes: [], speech: '', color: CHAR_COLORS[n % CHAR_COLORS.length], order: n, createdAt: now(), updatedAt: now() });
+  openSheet('char', { path: P.char(id), fresh: true });
+};
+ACT.openChar = t => openSheet('char', { path: P.char(t.dataset.id) });
+ACT.addCostume = () => {
+  const path = UI.sheet.path;
+  mutate(path, d => {
+    const cos = Array.isArray(d.costumes) ? d.costumes.map(x => Object.assign({}, x)) : [];
+    cos.push({ id: uid('o'), name: '衣装' + 'ABCDEFGHIJ'.charAt(cos.length % 10), desc: '' });
+    d.costumes = cos;
+  });
+};
+ACT.delCostume = t => {
+  const i = num(t.dataset.i);
+  mutate(UI.sheet.path, d => { const cos = Array.isArray(d.costumes) ? d.costumes.map(x => Object.assign({}, x)) : []; cos.splice(i, 1); d.costumes = cos; });
+};
+ACT.delChar = async () => {
+  const path = UI.sheet.path;
+  const d = getDoc(path);
+  const ok = await ask({ title: `「${(d && d.name) || 'このキャラ'}」を名簿から消しますか？`, body: 'これまでのコマでは「削除したキャラ」と表示されます。', ok: '消す', danger: true });
+  if (!ok) return;
+  removeDoc(path);
+  closeSheet();
+};
+ACT.resetField = t => { mutate(P.settings, d => { d[t.dataset.field] = ''; }, { create: true }); lastMain = ''; const el = document.activeElement; if (el) el.blur(); scheduleRender(); };
+ACT.size = t => { lsSet('dandori.size', t.dataset.k); applySize(); lastMain = ''; render(); };
+ACT.syncPhotos = t => { SYNC.withPhotos = t.checked; };
+ACT.syncPrepare = () => syncPrepare();
+ACT.syncSend = () => syncSend();
+ACT.syncDrop = () => { SYNC.prepared = null; scheduleRender(); };
+ACT.importApply = async () => {
+  const pl = SYNC.plan;
+  if (!pl || SYNC.busy) return;
+  SYNC.busy = 'apply'; SYNC.prog = ''; SYNC.msg = '';
+  lastSheet = ''; renderSheet(false);
+  let res;
+  try {
+    res = await applyImport(pl, (i, n) => { SYNC.prog = `${i}/${n}`; scheduleRender(); });
+  } catch (e) {
+    SYNC.busy = '';
+    SYNC.msg = '取り込みの途中で失敗しました。もう一度取り込むと、続きから入ります。';
+    scheduleRender();
+    return;
+  }
+  SYNC.busy = '';
+  lsSet('dandori.lastImport', now());
+  closeSheet();
+  if (UI.view === 'home' || UI.view === 'sync') { lastMain = ''; }
+  toast(res.photoFail ? `${res.total}件を取り込みました（写真${res.photoFail}枚は入りませんでした）` : `${res.total}件を取り込みました`);
+};
+ACT.selectCopy = () => { const ta = $('#f-copybox'); if (ta) { ta.focus(); ta.select(); try { ta.setSelectionRange(0, ta.value.length); } catch (e) { /* noop */ } } };
+
+// 台本タブ・下書き
+ACT.draftScript = t => { DRAFT.useScript = t.checked; };
+ACT.draftPhoto = t => {
+  const id = t.dataset.id;
+  const max = aiImages() ? num(Caps.limits.images.maxCount, 0) : 0;
+  if (DRAFT.photos.has(id)) DRAFT.photos.delete(id);
+  else if (DRAFT.photos.size + DRAFT.extra.length >= max) { toast(`写真は${max}枚までです`); return; }
+  else DRAFT.photos.add(id);
+  scheduleRender();
+};
+ACT.draftClearExtra = () => { DRAFT.extra = []; scheduleRender(); };
+ACT.draftRun = () => runDraft();
+ACT.draftStop = () => { if (DRAFT.ctl) DRAFT.ctl.abort(); };
+ACT.draftToggle = t => { const r = DRAFT.result; if (!r) return; const it = r[t.dataset.kind][num(t.dataset.i)]; if (it) it.sel = t.checked; scheduleRender(); };
+ACT.draftApply = () => applyDraft();
+ACT.draftRedo = () => { DRAFT.retry = true; DRAFT.state = 'idle'; DRAFT.result = null; runDraft(); };
+ACT.draftDiscard = () => { Object.assign(DRAFT, { state: 'idle', result: null, msg: '' }); scheduleRender(); };
+ACT.openName = t => openSheet('name', { path: P.name(UI.pid, t.dataset.id) });
+ACT.nameZoom = () => { if (UI.sheet) { UI.sheet.zoom = !UI.sheet.zoom; renderSheet(false); } };
+ACT.nameToCuts = () => {
+  const d = getDoc(UI.sheet.path);
+  closeSheet();
+  UI.tab = 'cuts'; UI.filter = 'all'; lastMain = ''; render();
+  if (d) setTimeout(() => { const h = $$('.pagehead .pno').find(x => x.textContent === `P${pad2(num(d.page, 1))}`); if (h) h.scrollIntoView({ block: 'start' }); }, 60);
+};
+ACT.delName = async () => {
+  const path = UI.sheet.path;
+  const d = getDoc(path);
+  if (!(await ask({ title: 'この写真を消しますか？', body: '元に戻せません。', ok: '消す', danger: true }))) return;
+  dropPhoto(d);
+  removeDoc(path);
+  closeSheet();
+};
+
+// 選別
+ACT.selGroup = t => { SEL.cur = t.dataset.k; render(); };
+ACT.selOpen = t => openSheet('pick', { key: SEL.cur, i: num(t.dataset.i) });
+ACT.pickNav = t => { const s = UI.sheet; s.i = num(s.i) + num(t.dataset.d); s.zoom = false; renderSheet(true); };
+ACT.pickZoom = (t, e) => { if (e.target.closest('.vnav')) return; UI.sheet.zoom = !UI.sheet.zoom; renderSheet(false); };
+ACT.pickMark = t => {
+  const s = UI.sheet;
+  const arr = selGroups().get(s.key) || [];
+  const it = arr[s.i];
+  const cut = selCutFor(s.key);
+  if (!it || !cut) return;
+  const m = t.dataset.m;
+  mutate(P.cut(UI.pid, cut.id), d => {
+    const pk = Object.assign({}, d.picks || {});
+    if (pk[it.num] && pk[it.num].m === m) delete pk[it.num];
+    else pk[it.num] = { m, n: pk[it.num] && pk[it.num].m === '△' ? (pk[it.num].n || '') : '' };
+    d.picks = pk;
+  });
+  // 印を付けたら次の候補へ（△は直す所を書くので留まる）
+  const marked = getDoc(P.cut(UI.pid, cut.id));
+  if (m !== '△' && marked && marked.picks && marked.picks[it.num] && s.i < arr.length - 1) { setTimeout(() => { if (UI.sheet === s) { s.i++; renderSheet(true); } }, 220); }
+};
+ACT.selDone = () => {
+  const cut = selCutFor(SEL.cur);
+  if (!cut) return;
+  mutate(P.cut(UI.pid, cut.id), d => { if (!ST[d.status] || ST[d.status].i < ST.picked.i) d.status = 'picked'; });
+  toast(`${cutKey(cut)} を採用済にしました`);
+};
+ACT.selClear = async () => { if (await ask({ title: '読み込んだ画像を片付けますか？', body: '付けた印はコマに残ります。', ok: '片付ける' })) { clearSel(UI.pid); render(); } };
+
+// 書き出し
+ACT.expSt = t => { UI.expSt = t.dataset.k; render(); };
+ACT.expPage = t => { UI.expPage = t.dataset.k === 'all' ? 'all' : num(t.dataset.k); render(); };
+function cutFromAttr(t) { const d = getDoc(P.cut(UI.pid, t.dataset.id)); return d ? Object.assign({}, d, { id: t.dataset.id }) : null; }
+ACT.copyName = t => { const c = cutFromAttr(t); if (c) copyText(saveName(project(), c), '保存名'); };
+ACT.copyPrompt = t => { const c = cutFromAttr(t); if (c && trim(c.prompt)) copyText(trim(c.prompt), 'プロンプト'); };
+ACT.copyOrder = t => { const c = cutFromAttr(t); if (c) copyText(orderText(project(), [c]), '発注書'); };
+ACT.markGen = t => { mutate(P.cut(UI.pid, t.dataset.id), d => { d.status = 'gen'; }); toast('選別待ちにしました'); };
+ACT.copyOrderAll = () => { const cs = exportCuts(); if (cs.length) copyText(orderText(project(), cs), '発注書'); };
+ACT.copyPromptsAll = () => {
+  const cs = exportCuts().filter(c => trim(c.prompt));
+  if (cs.length) copyText(cs.map(c => trim(c.prompt).replace(/\s*\n\s*/g, ' ')).join('\n') + '\n', `プロンプト${cs.length}行`);
+};
+ACT.copyVideos = () => { const p = project(); const vs = cutsOf().filter(c => c.grade !== '無' && c.video && c.video.on); if (vs.length) copyText(vs.map(c => videoBrief(p, c)).join('\n\n') + '\n', '動画ブリーフ'); };
+ACT.copyPicks = () => {
+  const cs = cutsOf().filter(c => c.grade !== '無' && (picksText(c) || trim(c.chosen)));
+  if (!cs.length) { toast('まだ選別の印がありません'); return; }
+  copyText(cs.map(c => `${cutKey(c)}: ${[picksText(c), trim(c.chosen)].filter(Boolean).join(' ／ ')}`).join('\n') + '\n', '選別結果');
+};
+ACT.bulkConvert = () => runConvertBulk();
+ACT.bulkStop = () => { if (AI.bulk && AI.bulk.ctl) AI.bulk.ctl.abort(); };
+ACT.saveMenu = async () => {
+  const p = project();
+  const k = await menu('ファイルに保存', [
+    { k: 'order', label: '発注書（.txt）— いま絞り込んでいるコマ' },
+    { k: 'prompts', label: 'プロンプト一覧（.txt）— 1行に1つ' },
+    { k: 'sync', label: '受け渡し用ファイル（全部）— 別の端末へ' },
+  ]);
+  const base = abbrOf(p);
+  if (k === 'order') saveFile(`${base}_発注書_${dateStamp()}.txt`, orderText(p, exportCuts()));
+  else if (k === 'prompts') { const cs = exportCuts().filter(c => trim(c.prompt)); if (!cs.length) { toast('プロンプトのあるコマがありません'); return; } saveFile(`${base}_プロンプト_${dateStamp()}.txt`, cs.map(c => trim(c.prompt).replace(/\s*\n\s*/g, ' ')).join('\n') + '\n'); }
+  else if (k === 'sync') go('sync');
+};
+
+document.addEventListener('click', e => {
+  const t = e.target.closest('[data-act]');
+  if (!t || t.disabled) return;
+  const fn = ACT[t.dataset.act];
+  if (fn) fn(t, e);
+});
+document.addEventListener('input', e => {
+  const el = e.target;
+  if (!el.dataset) return;
+  if (el.dataset.bind && el.type !== 'checkbox') onBind(el);
+  else if (el.dataset.cos != null) onCostume(el);
+  else if (el.dataset.pickNote) onPickNote(el);
+  else if (el.dataset.draft && UI.sheet && UI.sheet.draft) UI.sheet.draft[el.dataset.draft] = el.value;
+  if (el.matches && el.matches('textarea[data-auto]')) autosize(el);
+});
+document.addEventListener('change', e => {
+  const el = e.target;
+  if (el.type === 'checkbox' && el.dataset.bind) { onBind(el); return; }
+  if (el.dataset && el.dataset.change) {
+    const f = el.dataset.change;
+    if (f === 'selAssign') { if (el.value) { SEL.assign[SEL.cur] = el.value; scheduleRender(); } return; }
+    const v = Math.round(num(el.value, 0));
+    // 数字を打ったあと別のボタンを押したときに、そのボタンの押下が消えないよう、描き直しは後に回す
+    if (document.activeElement === el) el.blur();
+    applyStep(f, v, el);
+    return;
+  }
+  if (el.dataset && el.dataset.file) {
+    const files = Array.from(el.files || []);
+    el.value = '';
+    if (!files.length) return;
+    const k = el.dataset.file;
+    if (k === 'names') addNamePhotos(files);
+    else if (k === 'sel') selAdd(files);
+    else if (k === 'syncin') syncReadFile(files[0]);
+    else if (k === 'draftimg') {
+      const max = aiImages() ? num(Caps.limits.images.maxCount, 0) : 0;
+      DRAFT.extra = DRAFT.extra.concat(files.filter(f => /^image\//.test(f.type || ''))).slice(0, Math.max(0, max - DRAFT.photos.size));
+      scheduleRender();
+    }
+  }
+});
+function onBind(el) {
+  const host = el.closest('[data-doc]');
+  if (!host || !host.dataset.doc) return;
+  const path = host.dataset.doc;
+  const f = el.dataset.bind;
+  let v = el.type === 'checkbox' ? el.checked : el.value;
+  if (el.dataset.type === 'num') v = num(v, 0);
+  mutate(path, d => setField(d, f, v), { create: host.dataset.create === '1' });
+  if (el.dataset.live && UI.sheet && UI.sheet.path === path) liveCut(path);
+  if (el.type === 'checkbox') { lastSheet = ''; renderSheet(false); }
+}
+function liveCut(path) {
+  const c = getDoc(path);
+  if (!c) return;
+  const m = $('#sh-miss'); if (m) m.innerHTML = missHTML(c);
+  const l = $('#sh-lines'); if (l) l.textContent = linesInfo(c.lines);
+}
+function onCostume(el) {
+  const i = num(el.dataset.cos), k = el.dataset.k;
+  mutate(UI.sheet.path, d => {
+    const cos = Array.isArray(d.costumes) ? d.costumes.map(x => Object.assign({}, x)) : [];
+    if (cos[i]) cos[i][k] = el.value;
+    d.costumes = cos;
+  });
+}
+function onPickNote(el) {
+  const s = UI.sheet;
+  const it = (selGroups().get(s.key) || [])[s.i];
+  const cut = selCutFor(s.key);
+  if (!it || !cut) return;
+  mutate(P.cut(UI.pid, cut.id), d => {
+    const pk = Object.assign({}, d.picks || {});
+    if (pk[it.num]) pk[it.num] = Object.assign({}, pk[it.num], { n: el.value });
+    d.picks = pk;
+  });
+}
+
+// 選別ビューア: 左右のスワイプとキーボードで送る（閉じるのは画面のボタンで）
+let swipe = null;
+document.addEventListener('touchstart', e => {
+  if (!UI.sheet || UI.sheet.kind !== 'pick' || UI.sheet.zoom) return;
+  if (!e.target.closest('#pick-stage')) return;
+  const t = e.touches[0]; swipe = { x: t.clientX, y: t.clientY };
+}, { passive: true });
+document.addEventListener('touchend', e => {
+  if (!swipe || !UI.sheet || UI.sheet.kind !== 'pick') { swipe = null; return; }
+  const t = e.changedTouches[0];
+  const dx = t.clientX - swipe.x, dy = t.clientY - swipe.y;
+  swipe = null;
+  if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.4) {
+    const arr = selGroups().get(UI.sheet.key) || [];
+    const ni = UI.sheet.i + (dx < 0 ? 1 : -1);
+    if (ni >= 0 && ni < arr.length) { UI.sheet.i = ni; renderSheet(true); }
+  }
+}, { passive: true });
+document.addEventListener('keydown', e => {
+  if (!UI.sheet || UI.sheet.kind !== 'pick' || isTyping(e.target)) return;
+  const arr = selGroups().get(UI.sheet.key) || [];
+  if (e.key === 'ArrowRight' && UI.sheet.i < arr.length - 1) { UI.sheet.i++; renderSheet(true); }
+  else if (e.key === 'ArrowLeft' && UI.sheet.i > 0) { UI.sheet.i--; renderSheet(true); }
+  else { const mk = { '1': '◎', '2': '○', '3': '△', '4': '×' }[e.key]; if (mk) { const b = $(`.markbtn[data-m="${mk}"]`); if (b) b.click(); } }
+});
+
+// 画面を離れるときは、保存待ちを先に送る
+function flushAll() { if (Store.mode !== 'cloud') { if (Store.mode === 'local') persistLocal(); return; } for (const p of Array.from(Store.timers.keys())) { clearTimeout(Store.timers.get(p)); flush(p); } }
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') { saveStats(); flushAll(); } });
+window.addEventListener('pagehide', flushAll);
+
+function applySize() { document.documentElement.dataset.size = lsGet('dandori.size', 'm') === 'l' ? 'l' : ''; }
+
+/* ---------- 起動 ---------- */
+async function init() {
+  applySize();
+  render();
+  loadCaps();
+  let db = null;
+  if (window.claude && typeof window.claude.use === 'function') {
+    try { db = await window.claude.use('db'); } catch (e) { db = null; }
+  }
+  if (db) {
+    Store.db = db; Store.mode = 'cloud';
+    watchCol(P.roster); watchCol(P.projects); watchDoc(P.settings); watchDoc(P.tombs);
+  } else {
+    Store.mode = 'local';
+    loadLocal();
+    if (OFFLINE) { try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => null); } catch (e) { /* noop */ } }
+  }
+  const last = lsGet('dandori.last', null);
+  if (last) {
+    const tryOpen = () => {
+      if (!loaded(P.projects)) { setTimeout(tryOpen, 150); return; }
+      if (project(last) && UI.view === 'home') openProject(last);
+    };
+    tryOpen();
+  }
+  render();
+}
+init();
+})();
+</script>
+<script>
+(function () {
+  if (!('serviceWorker' in navigator)) return;
+  if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') return;
+  window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
+})();
+</script>
+</body>
+</html>
