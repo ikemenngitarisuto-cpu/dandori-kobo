@@ -1,6 +1,6 @@
 // 段取工房 オフライン版: 電波がなくても開けるよう、ページとアイコンを端末にしまっておく。
 // 扱うのは、このページ自身の置き場のファイルだけ。外のサイトには一切取りに行かない。
-const CACHE = 'dandori-202610162203';
+const CACHE = 'dandori-202610181633';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-maskable-512.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', event => {
